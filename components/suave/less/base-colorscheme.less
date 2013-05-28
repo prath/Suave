@@ -1,0 +1,60 @@
+// Default
+// =========================================
+body{
+    background-color: @default-background;
+    color: @default-text;
+}
+a{
+    color: @default-accent;
+    &:hover{
+        color: mix(@default-accent, @default-background, 75%);
+    }
+}
+
+
+
+
+// Secondary
+// =========================================
+.base-secondary{
+    background-color: @secondary-background;
+    color: @secondary-text;
+    a{
+        color: @secondary-accent;
+        &:hover{
+            color: mix(@secondary-accent, @secondary-background, 75%);
+        }
+    }
+}
+
+
+
+
+// Tertiary
+// =========================================
+.base-tertiary{
+    background-color: @tertiary-background;
+    color: @tertiary-text;
+    a{
+        color: @tertiary-accent;
+        &:hover{
+            color: mix(@tertiary-accent, @tertiary-background, 75%);
+        }
+    }
+}
+
+
+
+
+// Tertiary
+// =========================================
+.base-invert{
+    background-color: @invert-background;
+    color: @invert-text;
+    a{
+        color: @invert-accent;
+        &:hover{
+            color: mix(@invert-accent, @invert-background, 75%);
+        }
+    }
+}
