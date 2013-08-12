@@ -18,6 +18,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-dom-munger');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-prettify');
 
     grunt.initConfig({
 
@@ -95,6 +97,30 @@ module.exports = function(grunt) {
                     src: ['suave.css'],
                     dest: 'assets/css',
                     ext: '.min.css',
+                }]
+            }
+        },
+        /**
+         * autoprefix css
+         * @type {Object}
+         */
+        autoprefixer: {
+            dist: {
+                options: {
+                    browsers: ['last 4 version', '> 1%', 'ie 8', 'ie 7']
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'assets/css',
+                    src: ['*.css', '!bootstrap.css', '!bootstrap-responsive.css'],
+                    dest: 'assets/css',
+                    ext: '.css',
+                }, {
+                    expand: true,
+                    cwd: './',
+                    src: ['suave.css'],
+                    dest: './',
+                    ext: '.css',
                 }]
             }
         },
@@ -283,6 +309,26 @@ module.exports = function(grunt) {
         },
 
         /**
+         * Prettify HTML Outputs
+         * 
+         * @type {Object}
+         */
+        prettify: {
+            options: {
+                indent_size: 4,
+                brace_style: 'expand',
+                unformatted: ['sub', 'sup', 'b', 'i', 'u']
+            },
+            all: {
+                expand: true, 
+                cwd: './', 
+                ext: '.html',
+                src: ['*.html'],
+                dest: './'
+            }
+        },
+
+        /**
          * watch and guard tasks
          *
          * @type {Object}
@@ -296,7 +342,7 @@ module.exports = function(grunt) {
                 files: [
                     'src/less/**/*.less'],
                 tasks: [
-                    'clean:css', 'less','copy:fontellocss']
+                    'clean:css', 'less', 'copy:fontellocss', 'autoprefixer']
             },
             scripts: {
                 files: [
@@ -312,7 +358,7 @@ module.exports = function(grunt) {
                 files: [
                     'src/templates/**/*'],
                 tasks: [
-                    'clean:template', 'less', 'jade', 'copy:js']
+                    'clean:template', 'less', 'jade', 'prettify', 'copy:js']
             }
         }
     });
@@ -322,8 +368,9 @@ module.exports = function(grunt) {
      */
 
     grunt.registerTask('default', ['clean:all', 
-        'less','copy:fontellocss',
-        'jade', 
+        'less','copy:fontellocss', 'autoprefixer',
+        'jade',
+        'prettify', 
         'copy:img',
         'copy:js',
         'connect', 

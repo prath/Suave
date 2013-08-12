@@ -1,0 +1,42 @@
+//- 
+    =====================================================================
+    * Navbar Partial
+    *
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+    
+.navbar.main-navigation
+    .navbar-inner
+        .container
+            .row-fluid
+                .span12
+                    a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.brand(href='index.html') Suave.
+                    .nav-collapse.collapse
+                        .pull-right
+                            ul.nav
+                                li.active
+                                    a(href='index.html') Home
+                                li.dropdown
+                                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                                        | Features
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='#') Another action
+                                        li
+                                            a(href='#') Something else here
+                                        li.divider
+                                        li.nav-header Bootstrap
+                                        li
+                                            a(href='typography.html') Typography
+                                        li
+                                            a(href='tables.html') Tables
+                                li
+                                    a(href='index.html') Pricing
+                            .button-wrap
+                                button.btn(type='button') View Demo
+                                button.btn.btn-primary(type='button') Buy Now!

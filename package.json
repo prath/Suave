@@ -22,7 +22,10 @@
     "grunt-open": "~0.2.2",
     "grunt-dom-munger": "~1.0.1",
     "grunt-grunticon": "~0.3.4",
-    "grunt-contrib-less": "~0.5.2"
+    "grunt-contrib-less": "~0.5.2",
+    "autoprefixer": "~0.4.20130603",
+    "grunt-autoprefixer": "~0.1.20130615",
+    "grunt-prettify": "~0.1.5"
   },
   "keywords": []
 }
