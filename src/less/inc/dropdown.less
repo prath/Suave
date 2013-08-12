@@ -1,0 +1,38 @@
+
+.dropdown-menu{
+    .border-radius(3px);
+    background-color: @default-text;
+    color: @default-background;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    li > a{
+        color: @default-background;
+    }
+
+    &:before{
+        border-bottom-color: @default-text;
+    }
+    &:after{
+        display: none;
+    }
+
+    .divider{
+        background-color: mix(@default-text, @default-background, 95%);
+        border-bottom: none;
+    }
+}
+
+.navbar .nav > li {
+    .dropdown-menu{
+        opacity: 0;
+        margin-top: -20px;
+    }
+    &.open > .dropdown-menu{
+        margin-top: 10px;
+        opacity: 1;
+        .transition(~'margin 0.3s ease')
+    }
+
+}
