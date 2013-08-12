@@ -29,8 +29,8 @@ module.exports = function(grunt) {
          * @type {Object}
          */
         clean: {
-            all: ['assets', 'suave.css', './*.html', '*.ico', '*.png'],
-            css: ['assets/css', 'suave.css'],
+            all: ['assets', 'style.css', './*.html', '*.ico', '*.png'],
+            css: ['assets/css', 'style.css'],
             js: ['assets/js'],
             img: ['assets/images', '*.ico', '*.png'],
             template: ['./*.html']
@@ -72,13 +72,13 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/less/',
-                    src: ['suave.less'],
+                    src: ['style.less'],
                     dest: './',
                     ext: '.css',
                 }, {
                     expand: true,
                     cwd: 'src/less/',
-                    src: ['*.less', '!suave.less'],
+                    src: ['*.less', '!style.less'],
                     dest: 'assets/css',
                     ext: '.css',
                 }]
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: './',
-                    src: ['suave.css'],
+                    src: ['style.css'],
                     dest: 'assets/css',
                     ext: '.min.css',
                 }]
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     cwd: './',
-                    src: ['suave.css'],
+                    src: ['style.css'],
                     dest: './',
                     ext: '.css',
                 }]
@@ -336,7 +336,8 @@ module.exports = function(grunt) {
          */
         watch: {
             options: {
-                livereload: true
+                livereload: true,
+                nospawn: true
             },
             css: {
                 files: [
