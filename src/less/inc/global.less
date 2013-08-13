@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------
+// * [Global Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+@import "variables";
+@import "mixins";
+
+/* [Body Classes]
+-------------------------------------------------------------------*/
+body{
+    font-family: @font-1;
+    font-size: @base-font-size;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.region{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+body.suave{
+    margin-top: 80px;
+    .container{
+        max-width: 1000px;
+    }
+}

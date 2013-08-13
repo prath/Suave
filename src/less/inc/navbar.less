@@ -1,101 +1,100 @@
-    .navbar{
-        > .navbar-inner{
-            padding: 10px 0;
-        }
+// -----------------------------------------------------------------
+// * [Navbar Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
 
+.navbar{
+    > .navbar-inner{
+        padding: 10px 0;
+    }
+    .brand{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 44px;
+    }
+    ul.nav{
+        margin: 0;
+        display: inline-block;
+        > li{
+            line-height: 24px;
+            margin: 0 0 0 50px ;
+            > a{
+                font-size: 14px;
+                line-height: 18px;
+                padding: 0;
+                margin-top: 13px;
+                font-weight: 800;
+                /*letter-spacing: 1px;*/
+                /*text-transform: uppercase;*/
+                border-bottom: 3px solid transparent;
+            }
+            &:hover > a{
+                border-bottom: 3px solid;
+            }
+            &.active > a{
+                background: none;
+                .box-shadow(none);
+                border-bottom: 3px solid;
 
-        .brand{
-            padding-top: 0;
-            padding-bottom: 0;
-            font-size: 32px;
-            font-weight: 300;
-            line-height: 44px;
-        }
-
-        ul.nav{
-            margin: 0;
-            display: inline-block;
-            > li{
-                line-height: 24px;
-                margin: 0 0 0 50px ;
-                > a{
-                    font-size: 14px;
-                    line-height: 18px;
-                    padding: 0;
-                    margin-top: 13px;
-                    font-weight: 800;
-                    /*letter-spacing: 1px;*/
-                    /*text-transform: uppercase;*/
-                    border-bottom: 3px solid transparent;
-                }
-                &:hover > a{
-                    border-bottom: 3px solid;
-                }
-                &.active > a{
+                &:hover{
                     background: none;
                     .box-shadow(none);
+                }
+            }
+
+            &.dropdown{
+                &.open > .dropdown-toggle{
+                    background: none;
                     border-bottom: 3px solid;
-
-                    &:hover{
-                        background: none;
-                        .box-shadow(none);
-                    }
                 }
-
-                &.dropdown{
-                    &.open > .dropdown-toggle{
-                        background: none;
-                        border-bottom: 3px solid;
-                    }
-                    > .dropdown-toggle .caret{
-                        margin-left: 6px;
-                        margin-top: 5px;
-                    }
-                }
-            }
-        }
-
-        .btn,.btn-group{
-            margin-top: -2px;
-        }
-
-        .button-wrap{
-            float: left;
-            margin-top: 6px;
-            margin-left: 50px;
-            .btn{
-                margin-left: 10px;
-                /*margin-top: 0px;*/
-            }
-        }
-
-
-
-
-
-
-        &.main-navigation{
-            margin-bottom: 0;
-            left: 0;
-            right: 0;
-
-            &.navbar-absolute-bottom{
-                position: absolute;
-            }
-
-            > .navbar-inner{
-                .box-shadow(~'0 0 2px 1px rgba(0,0,0,0.25)');
-                .border-radius(0);
-                /*background-color: @invert-background;*/
-                /*color: @invert-text;*/
-                /*background-color: @mainnav-background;*/
-                /*color: @mainnav-text;*/
-                background-image: none;
-                border: none;
-                > .container{
-                    padding-top: 20px;
-                    padding-bottom: 20px;
+                > .dropdown-toggle .caret{
+                    margin-left: 6px;
+                    margin-top: 5px;
                 }
             }
         }
     }
+    .btn,.btn-group{
+        margin-top: -2px;
+    }
+    .button-wrap{
+        float: left;
+        margin-top: 6px;
+        margin-left: 50px;
+        .btn{
+            margin-left: 10px;
+            /*margin-top: 0px;*/
+        }
+    }
+    &.main-navigation{
+        margin-bottom: 0;
+        left: 0;
+        right: 0;
+
+        &.navbar-absolute-bottom{
+            position: absolute;
+        }
+
+        > .navbar-inner{
+            .box-shadow(~'0 0 2px 1px rgba(0,0,0,0.25)');
+            .border-radius(0);
+            /*background-color: @invert-background;*/
+            /*color: @invert-text;*/
+            /*background-color: @mainnav-background;*/
+            /*color: @mainnav-text;*/
+            background-image: none;
+            border: none;
+            > .container{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

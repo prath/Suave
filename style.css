@@ -17,44 +17,23 @@ Text Domain: Suave Wordpress
  [Table of contents]
 --------------------------------------------------------------------
  1. Global Styles
- 2. Icon Styles
- 3. Sidebar Navigation / .sidebar
- 4. Global Main Content Area
- 4. Navs
- 6. Header / .main-header
- 7. Dropdown
- 8. Portlet
- 9. Project Classes
- 10. Table Classes
- 11. Graph Classes 
- 12. Footer
- 13. Helper Classes
- 14. Responsive Classes
+ 2. Navbar
+ 3. Headline
+ 4. Footer
+ 5. Text
+ 6. Form
+ 7. Button
+ 8. Dropdown
+ 9. Base Colorscheme
+ 10. Responsive
 ------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
  [1. Global Styles]
 ------------------------------------------------------------------*/
 
-/* PALETTE
- * ========================================= */
-
-/* PALETTE
- * ========================================= */
-
-/* Default --- */
-
-/* Secondary --- */
-
-/* Tertiary --- */
-
-/* Invert --- */
-
-/* FORM
- * ========================================== */
-
-/* BUTTON ColorScheme
- * ========================================== */
+/* [Clearfix]
+-------------------------------------------------------------------*/
 
 .clearfix {
   *zoom: 1;
@@ -70,6 +49,33 @@ Text Domain: Suave Wordpress
 .clearfix:after {
   clear: both;
 }
+
+/* [Body Classes]
+-------------------------------------------------------------------*/
+
+body {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.region {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+body.suave {
+  margin-top: 80px;
+}
+
+body.suave .container {
+  max-width: 1000px;
+}
+
+/*------------------------------------------------------------------
+ [2. Navbar]
+------------------------------------------------------------------*/
 
 .navbar > .navbar-inner {
   padding: 10px 0;
@@ -175,6 +181,10 @@ Text Domain: Suave Wordpress
   padding-bottom: 20px;
 }
 
+/*------------------------------------------------------------------
+ [3. Headline]
+------------------------------------------------------------------*/
+
 .headline {
   margin-top: -80px;
   overflow: hidden;
@@ -203,6 +213,10 @@ Text Domain: Suave Wordpress
   line-height: 1.5em;
 }
 
+/*------------------------------------------------------------------
+ [4. Footer]
+------------------------------------------------------------------*/
+
 .site-footer h2 {
   text-transform: uppercase;
   font-size: 13px;
@@ -221,6 +235,14 @@ Text Domain: Suave Wordpress
   list-item: none;
   margin: 0;
 }
+
+/*------------------------------------------------------------------
+ [5. Text]
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ [6. Form]
+------------------------------------------------------------------*/
 
 select,
 textarea,
@@ -288,6 +310,10 @@ input[type="color"]:focus,
   background-color: #ffffff;
   border-color: #999999;
 }
+
+/*------------------------------------------------------------------
+ [7. Button]
+------------------------------------------------------------------*/
 
 .btn {
   background-image: none;
@@ -539,6 +565,10 @@ input[type="color"]:focus,
   font-size: 10px;
 }
 
+/*------------------------------------------------------------------
+ [8. Dropdown]
+------------------------------------------------------------------*/
+
 .dropdown-menu {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -579,6 +609,13 @@ input[type="color"]:focus,
   transition: margin 0.3s ease;
 }
 
+/*------------------------------------------------------------------
+ [9. Base Colorscheme]
+------------------------------------------------------------------*/
+
+/* [Default]
+-------------------------------------------------------------------*/
+
 body {
   background-color: #fafafa;
   color: #444444;
@@ -591,6 +628,9 @@ a {
 a:hover {
   color: #a5befe;
 }
+
+/* [Secondary]
+-------------------------------------------------------------------*/
 
 .base-secondary {
   background-color: #5577ff;
@@ -605,6 +645,9 @@ a:hover {
   color: #aeb7d9;
 }
 
+/* [Tertiary]
+-------------------------------------------------------------------*/
+
 .base-tertiary {
   background-color: #eeeeee;
   color: #444444;
@@ -617,6 +660,9 @@ a:hover {
 .base-tertiary a:hover {
   color: #7b95fb;
 }
+
+/* [Invert]
+-------------------------------------------------------------------*/
 
 .base-invert {
   background-color: #444444;
@@ -631,22 +677,6 @@ a:hover {
   color: #d06a51;
 }
 
-body {
-  font-family: "Open Sans";
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.region {
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
-body.suave {
-  margin-top: 80px;
-}
-
-body.suave .container {
-  max-width: 1000px;
-}
+/*------------------------------------------------------------------
+ [10. Responsive]
+------------------------------------------------------------------*/
