@@ -10,27 +10,25 @@
 
 .button-colorscheme(@bgBase, @txBase){
     margin-top: -2px;
-    background-color    : @bgBase;
+    background-color    : transparent;
     border-color        : @bgBase;
-    border-radius       : 0px;
+    border-radius       : 3px;
     color               : @txBase;
-    border-left: 5px solid mix(@bgBase, #000000, 80%);
+    border: 2px solid @txBase;
 
     &:hover{
-        background-color    : darken(@bgBase, 5%);
-        border-color        : darken(@bgBase, 5%);
-        color               : lighten(@txBase, 5%);
-        border-left         : 5px solid mix(darken(@bgBase, 10%), #000000, 70%);
+        background-color    : transparent;
+        border-color        : darken(@bgBase, 25%);
+        color               : darken(@bgBase, 25%);
     }
 
     &:focus, &.focus,
     &:active, &.active{
         margin-top: 0px;
-        background-color    : darken(@bgBase, 5%);
-        border-color        : darken(@bgBase, 5%);
-        color               : lighten(@txBase, 5%);
-        border-left         : none;
-        .box-shadow(~'0px 1px 9px rgba(0,0,0,0.25) inset');
+        background-color    : transparent;
+        border-color        : lighten(@bgBase, 15%);
+        color               : lighten(@bgBase, 15%);
+        box-shadow          : none;
     }
 }
 
@@ -39,13 +37,10 @@
     .border-radius(3px);
     text-shadow: none;
     .box-shadow(none);
-
     font-weight: 800;
     font-size: 12px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-family: @font-1;
-    border: none;
     padding: 0 15px;
     line-height: 32px;
 
@@ -56,26 +51,26 @@
         padding: 0 20px;
     }
 
-    .button-colorscheme(@btn-default, @btn-text);
+    .button-colorscheme(@btn-default, @btn-default);
 
     &.btn-primary{
-        .button-colorscheme(@btn-primary, @btn-text);
+        .button-colorscheme(@btn-primary, @btn-primary);
     }
 
     &.btn-info{
-        .button-colorscheme(@btn-info, @btn-text);
+        .button-colorscheme(@btn-info, @btn-info);
     }
 
     &.btn-success{
-        .button-colorscheme(@btn-success, @btn-text);
+        .button-colorscheme(@btn-success, @btn-success);
     }
 
     &.btn-warning{
-        .button-colorscheme(@btn-warning, @btn-text);
+        .button-colorscheme(@btn-warning, @btn-warning);
     }
 
     &.btn-danger{
-        .button-colorscheme(@btn-danger, @btn-text);
+        .button-colorscheme(@btn-danger, @btn-danger);
     }
 
     &.btn-inverse{
@@ -83,7 +78,8 @@
     }
 
     &.btn-link{
-        .button-colorscheme(@btn-link, @btn-text);
+        .button-colorscheme(@btn-link, @btn-link);
+        border: none;
     }
 
     &.btn-cta {
@@ -91,12 +87,12 @@
         font-size: 14px;
         font-weight: 500;
         text-transform: uppercase;
-        .button-colorscheme(@btn-text, @btn-primary);
-        border-left: 5px solid @btn-primary;
+        .button-colorscheme(@default-background, @default-background);
+        border-left: 2px solid @btn-primary;
         &:hover{
-            background-color : @btn-primary;
-            border-left: 5px solid @btn-primary;
-            color: @btn-text
+            background-color : transparent;
+            border: 2px solid @btn-primary;
+            color: @btn-primary;
         }
     }
 
