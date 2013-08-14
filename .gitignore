@@ -1,6 +1,7 @@
-components/suave/css/
 Session.vim
+components/suave/css/
 /*.html
+node_modules/
 
 /suave-html.sublime-workspace
 /suave-html.sublime-project
