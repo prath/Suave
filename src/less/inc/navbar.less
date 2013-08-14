@@ -42,13 +42,12 @@
                 border-bottom: 3px solid transparent;
             }
             &:hover > a{
-                border-bottom: 2px solid @default-accent;
+                color: @default-accent;
             }
             &.active > a{
                 background: none;
                 .box-shadow(none);
-                border-bottom: 3px solid;
-
+                color: @default-accent;
                 &:hover{
                     background: none;
                     .box-shadow(none);
@@ -58,13 +57,18 @@
             &.dropdown{
                 &.open > .dropdown-toggle{
                     background: none;
-                    border-bottom: 3px solid;
                 }
                 > .dropdown-toggle .caret{
                     border-bottom-color: @default-accent;
                     border-top-color: @default-accent;
                     margin-left: 10px;
                     margin-top: 7px;
+                }
+            }
+            > .dropdown-menu {
+                &:before,
+                &:after {
+                    border: 0px;
                 }
             }
         }
