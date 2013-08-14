@@ -37,7 +37,7 @@
     .border-radius(3px);
     text-shadow: none;
     .box-shadow(none);
-    font-weight: 800;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px;
     font-family: @font-1;
@@ -91,13 +91,24 @@
         .button-colorscheme(darken(@btn-text, 5%), @btn-inverse);
     }
 
+    &.btn-white{
+        .button-colorscheme(@default-background, @default-background);
+        &:hover {
+            border-color: darken(@default-background, 10%);
+            color: darken(@default-background, 10%);
+        }
+    }
+
     &.btn-link{
         .button-colorscheme(@btn-link, @btn-link);
         border: none;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &.btn-cta {
-        font-family: @font-3;
+        font-family: @font-1;
         font-size: 14px;
         font-weight: 500;
         text-transform: uppercase;

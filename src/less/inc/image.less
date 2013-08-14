@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------
+// * [Image Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Image Portfolio Classes]
+-------------------------------------------------------------------*/
+
+.portfolio-slider-full {
+    .clearfix();
+    width: 2400px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    > li.portfolio-item {
+        background-color: @default-accent;
+        float: left;
+        height: 400px;
+        width: 600px;
+        > div {
+            display: inline-block;
+            position: relative;
+            img {
+                transition: all .8s ease;
+            }
+            &:hover {
+                img {
+                    opacity: 0.2;
+                    transition: all .8s ease;
+                }
+                .portfolio-info {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0px;
+                    text-align: center;
+                    transition: all .8s ease;
+                    h4 {
+                        color: @default-background;
+                        line-height: 340px;
+                    }
+                    a {
+                        margin-top: -260px;
+                    }
+                }
+            }
+            .portfolio-info {
+                transition: all .8s ease;
+            }
+        }
+    }
+}

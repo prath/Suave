@@ -13,13 +13,14 @@ block title
 
 //- content
 block content
-
+    // HEADLINE
     .headline.base-secondary(style='background-image: url(assets/images/top_view.jpg); background-attachment: fixed;')
         div(style='background-color: rgba(10,0,50, 0.30); height: 100%;')
             .container
                 .row-fluid.vertically-centered
                     .span12
                         .hero-unit
+                            // LOGO
                             .logo-big
                                 img(src="assets/images/logo-big.png", alt="suave logo")
                             h1 Introducing: Suave
@@ -28,8 +29,10 @@ block content
                                 | Built with simplicity and flexibility in mind.
                                 br
                                 | Perfect for various business needs.
+                            // CTA
                             p
                                 a.btn.btn-primary.btn-large.btn-cta Learn more 
+    // INTRO
     .region.base-tertiary(style='background-image: url(assets/images/pattern1.png); background-attachment: fixed;')
         .container
             .row-fluid
@@ -38,17 +41,21 @@ block content
                         | Suave is Business WordPress Theme Built for Your Needs.
                     p.sub-copy
                         | Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+                    // CTA
                     p
                         a.btn.btn-primary.btn-large Buy Theme 
                         | &nbsp;&nbsp;or
                         a.btn.btn-link.btn-large See Features
+    // OUR SERVICES
     .region
         .container
             .row-fluid.copy-center
+                i.icon-gears.icon-muted.icon-title
                 h2
                     | Our Services
                 p.sub-copy
                     | Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service.
+            // SERVICES
             .row-fluid.widen-top-gap
                 .span4.copy-center
                     i.icon-html5.icon-6x.icon-simple-red
@@ -69,51 +76,32 @@ block content
                     p.
                         The movie star the professor and Mary Ann here on Gilligans Isle. We're gonna do it. On your mark get set and go now. 
                     a.btn.btn-link Learn more
-                //- .span3.copy-center
-                //-     i.icon-dashboard.icon-6x.icon-simple-blue
-                //-     h4 App Development
-
-                //- ul.thumbnails
-                //-     li.span4
-                //-         .thumbnail
-                //-             img(src='http://placehold.it/400x200', alt='')
-                //-             .caption
-                //-                 h3 Thumbnail label
-                //-                 p
-                //-                     | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                //-                 p
-                //-                     a.btn.btn-primary(href='#') Action
-                //-                     a.btn(href='#') Action
-                //-     li.span4
-                //-         .thumbnail
-                //-             img(src='http://placehold.it/400x200', alt='')
-                //-             .caption
-                //-                 h3 Thumbnail label
-                //-                 p
-                //-                     | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                //-                 p
-                //-                     a.btn.btn-primary(href='#') Action
-                //-                     a.btn(href='#') Action
-                //-     li.span4
-                //-         .thumbnail
-                //-             img(src='http://placehold.it/400x200', alt='')
-                //-             .caption
-                //-                 h3 Thumbnail label
-                //-                 p
-                //-                     | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                //-                 p
-                //-                     a.btn.btn-primary(href='#') Action
-                //-                     a.btn(href='#') Action
-    .region.base-tertiary
+    // PORTFOLIO
+    .region.base-quaternary.reset-bottom-gap
         .container
-            .row-fluid
-                .span4
-                    .bg-fc0
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem arcu, auctor eu feugiat eget, suscipit vitae magna. Duis vitae sapien eget tellus convallis accumsan ac eu leo. Aliquam rhoncus scelerisque justo, vitae vehicula est accumsan eget. Nulla cursus ullamcorper aliquam. Vivamus eget tristique est. Ut vitae lacinia nisl. Fusce at ligula vitae ipsum auctor convallis sit amet vitae velit. Cras dapibus justo ut dolor tincidunt in suscipit purus tempor. Etiam in rutrum neque.
-                .span4
-                    .bg-fc0
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem arcu, auctor eu feugiat eget, suscipit vitae magna. Duis vitae sapien eget tellus convallis accumsan ac eu leo. Aliquam rhoncus scelerisque justo, vitae vehicula est accumsan eget. Nulla cursus ullamcorper aliquam. Vivamus eget tristique est. Ut vitae lacinia nisl. Fusce at ligula vitae ipsum auctor convallis sit amet vitae velit. Cras dapibus justo ut dolor tincidunt in suscipit purus tempor. Etiam in rutrum neque.
-                .span4
-                    .bg-fc0
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem arcu, auctor eu feugiat eget, suscipit vitae magna. Duis vitae sapien eget tellus convallis accumsan ac eu leo. Aliquam rhoncus scelerisque justo, vitae vehicula est accumsan eget. Nulla cursus ullamcorper aliquam. Vivamus eget tristique est. Ut vitae lacinia nisl. Fusce at ligula vitae ipsum auctor convallis sit amet vitae velit. Cras dapibus justo ut dolor tincidunt in suscipit purus tempor. Etiam in rutrum neque.
-
+            .row-fluid.copy-center
+                i.icon-suitcase.icon-muted.icon-title
+                h2
+                    | Portfolio
+                p.sub-copy
+                    | Our latest and proudest works and projects.
+        .container-fluid.container-full.widen-top-gap
+            ul.portfolio-slider-full
+                li.portfolio-item
+                    div
+                        img(src="assets/images/porto3.jpg", alt="item 1")
+                        .portfolio-info
+                            h4 Lorem Ipsum Dolor Sit Amet 
+                            a.btn.btn-white(href="") See Project
+                li.portfolio-item
+                    div   
+                        img(src="assets/images/porto2.jpg", alt="item 1")
+                        .portfolio-info
+                            h4 The movie star the professor
+                            a.btn.btn-white(href="") See Project
+                li.portfolio-item
+                    div
+                        img(src="assets/images/porto1.jpg", alt="item 1")
+                        .portfolio-info
+                            h4 Dynamically innovate resource-leveling
+                            a.btn.btn-white(href="") See Project
