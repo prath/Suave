@@ -14,27 +14,34 @@ block title
 //- content
 block content
 
-    .headline.base-secondary(style='background-image: url(assets/images/top_view.jpg);')
-        div(style='background-color: rgba(10,0,50, 0.50); height: 100%;')
+    .headline.base-secondary(style='background-image: url(assets/images/top_view.jpg); background-attachment: fixed;')
+        div(style='background-color: rgba(10,0,50, 0.30); height: 100%;')
             .container
                 .row-fluid.vertically-centered
                     .span12
                         .hero-unit
+                            .logo-big
+                                img(src="assets/images/logo-big.png", alt="suave logo")
                             h1 Introducing: Suave
                             p
-                                | Minimalist Business Theme for Bootstrap.
-                                br
+                                | Minimalist Business WordPress Theme.
                                 | Built with simplicity and flexibility in mind.
                                 br
                                 | Perfect for various business needs.
                             p
-                                a.btn.btn-primary.btn-large Learn more 
-    .region.base-tertiary
+                                a.btn.btn-primary.btn-large.btn-cta Learn more 
+    .region.base-tertiary(style='background-image: url(assets/images/pattern1.png); background-attachment: fixed;')
         .container
             .row-fluid
-                .span8.offset2
-                    h1
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .span12.copy-intro
+                    h2
+                        | Suave is Business WordPress Theme Built for Your Needs.
+                    p.
+                        Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+                    p
+                        a.btn.btn-primary.btn-large.btn-cta Buy Theme 
+                        | &nbsp;&nbsp;or&nbsp;&nbsp;
+                        a.btn.btn-primary.btn-large.btn-cta See Features
     .region
         .container
             .row-fluid

@@ -9,15 +9,21 @@
 // -----------------------------------------------------------------
 
 .navbar{
+    border-bottom: 2px solid @default-accent;
     > .navbar-inner{
+        background-color: @default-background;
+        box-shadow: none;
         padding: 10px 0;
     }
     .brand{
         padding-top: 0;
         padding-bottom: 0;
-        font-size: 32px;
-        font-weight: 300;
+        color: @default-accent;
+        letter-spacing: -1.0px;
         line-height: 44px;
+        font-family: @font-3;
+        font-size: 32px;
+        font-weight: 400;
     }
     ul.nav{
         margin: 0;
@@ -26,17 +32,17 @@
             line-height: 24px;
             margin: 0 0 0 50px ;
             > a{
-                font-size: 14px;
-                line-height: 18px;
+                margin-top: 18px;
                 padding: 0;
-                margin-top: 13px;
-                font-weight: 800;
-                /*letter-spacing: 1px;*/
-                /*text-transform: uppercase;*/
+                line-height: 18px;
+                font-size: 12px;
+                font-family: @font-3;
+                font-weight: 700;
+                text-transform: uppercase;
                 border-bottom: 3px solid transparent;
             }
             &:hover > a{
-                border-bottom: 3px solid;
+                border-bottom: 2px solid @default-accent;
             }
             &.active > a{
                 background: none;
@@ -55,10 +61,20 @@
                     border-bottom: 3px solid;
                 }
                 > .dropdown-toggle .caret{
-                    margin-left: 6px;
-                    margin-top: 5px;
+                    border-bottom-color: @default-accent;
+                    border-top-color: @default-accent;
+                    margin-left: 10px;
+                    margin-top: 7px;
                 }
             }
+        }
+        .dropdown-toggle {
+            .caret {
+                border-bottom-color: @default-accent;
+                border-top-color: @default-accent;
+                margin-left: 10px;
+                margin-top: 7px;
+            }   
         }
     }
     .btn,.btn-group{
@@ -92,8 +108,8 @@
             background-image: none;
             border: none;
             > .container{
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
     }

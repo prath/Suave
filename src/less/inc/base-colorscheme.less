@@ -47,6 +47,19 @@ a{
     }
 }
 
+/* [quaternary]
+-------------------------------------------------------------------*/
+.base-quaternary{
+    background-color: @quaternary-background;
+    color: @quaternary-text;
+    a{
+        color: @quaternary-accent;
+        &:hover{
+            color: mix(@quaternary-accent, @quaternary-background, 75%);
+        }
+    }
+}
+
 /* [Invert]
 -------------------------------------------------------------------*/
 .base-invert{
