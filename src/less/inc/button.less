@@ -14,12 +14,14 @@
     border-color        : @bgBase;
     border-radius       : 3px;
     color               : @txBase;
-    border: 1px solid @txBase;
+    border              : 1px solid @txBase;
+    transition          : all .8s ease;
 
     &:hover{
         background-color    : transparent;
         border-color        : darken(@bgBase, 25%);
         color               : darken(@bgBase, 25%);
+        transition          : all .8s ease;
     }
 
     &:focus, &.focus,
@@ -96,6 +98,7 @@
         &:hover {
             border-color: darken(@default-background, 10%);
             color: darken(@default-background, 10%);
+            transition: all .8s ease;
         }
     }
 
