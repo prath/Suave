@@ -493,6 +493,7 @@ h4 {
   display: inline-block;
   padding: 0px;
   margin: 30px 0px;
+  color: #eb6f63;
 }
 
 .heading-alt p.sub-copy {
@@ -501,7 +502,7 @@ h4 {
 }
 
 .heading-alt .icon-action {
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 /*------------------------------------------------------------------
@@ -1118,9 +1119,9 @@ input[type="color"]:focus,
 }
 
 .portfolio-slider-full > li.portfolio-item > div img {
-  -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
 }
 
 .portfolio-slider-full > li.portfolio-item > div:hover img {
@@ -1153,6 +1154,47 @@ input[type="color"]:focus,
 
 .portfolio-slider-full > li.portfolio-item > div .portfolio-info a {
   margin-top: 30px;
+}
+
+.portfolio-slider-nav {
+  *zoom: 1;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.portfolio-slider-nav:before,
+.portfolio-slider-nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.portfolio-slider-nav:after {
+  clear: both;
+}
+
+.portfolio-slider-nav a {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  /* Fix for IE7 */
+  background-color: #252a2f;
+  height: 30px;
+  width: 30px;
+}
+
+.portfolio-slider-nav a i {
+  line-height: 30px;
+}
+
+.portfolio-slider-nav-prev {
+  float: left;
+}
+
+.portfolio-slider-nav-next {
+  float: right;
 }
 
 /*------------------------------------------------------------------

@@ -26,7 +26,7 @@
             display: inline-block;
             position: relative;
             img {
-                transition: all .8s ease;
+                transition: all 1.5s ease;
             }
             &:hover {
                 img {
@@ -55,5 +55,27 @@
                 }
             }
         }
+    }
+}
+
+.portfolio-slider-nav {
+    .clearfix();
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    a {
+        .inlineDisplay();
+        background-color: darken(@invert-background, 10%);
+        height: 30px;
+        width: 30px;
+        i {
+            line-height: 30px;
+        }
+    }
+    &-prev {
+        float: left;
+    }
+    &-next {
+        float: right;
     }
 }
