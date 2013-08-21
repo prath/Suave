@@ -43,6 +43,9 @@ a{
     p.sub-copy {
         color: lighten(@secondary-background, 35%);
     }
+    .icon-title {
+        color: @default-background;
+    }
 }
 
 /* [Tertiary]
@@ -65,6 +68,9 @@ a{
     h6,
     p.sub-copy {
         color: lighten(@tertiary-background, 35%);
+    }
+    .icon-title {
+        color: @default-background;
     }
 }
 
@@ -89,6 +95,9 @@ a{
     p.sub-copy {
         color: @quaternary-accent;
     }
+    .icon-title {
+        color: @default-background;
+    }
 }
 
 /* [Invert]
@@ -111,6 +120,9 @@ a{
     p.sub-copy {
         color: lighten(@invert-background, 35%);
     }
+    .icon-title {
+        color: @default-background;
+    }
 }
 
 /* [Greyscale]
@@ -123,5 +135,8 @@ a{
         &:hover{
             color: mix(@greyscale-accent, @greyscale-background, 75%);
         }
+    }
+    .icon-title {
+        color: @default-background;
     }
 }
