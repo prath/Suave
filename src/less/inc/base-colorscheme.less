@@ -17,7 +17,8 @@ body{
 a{
     color: @default-accent;
     &:hover{
-        color: mix(@default-accent, @default-background, 75%);
+        color: darken(@default-accent, 30%);
+        text-decoration: none;
     }
 }
 
@@ -29,8 +30,18 @@ a{
     a{
         color: @secondary-accent;
         &:hover{
-            color: mix(@secondary-accent, @secondary-background, 75%);
+            color: lighten(@secondary-accent, 15%);
+            text-decoration: none;
         }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p.sub-copy {
+        color: lighten(@secondary-background, 35%);
     }
 }
 
@@ -42,8 +53,18 @@ a{
     a{
         color: @tertiary-accent;
         &:hover{
-            color: mix(@tertiary-accent, @tertiary-background, 75%);
+            color: darken(@tertiary-accent, 20%);
+            text-decoration: none;
         }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p.sub-copy {
+        color: lighten(@tertiary-background, 35%);
     }
 }
 
@@ -56,7 +77,17 @@ a{
         color: @quaternary-accent;
         &:hover{
             color: mix(@quaternary-accent, @quaternary-background, 75%);
+            text-decoration: none;
         }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p.sub-copy {
+        color: @quaternary-accent;
     }
 }
 
@@ -69,6 +100,28 @@ a{
         color: @invert-accent;
         &:hover{
             color: mix(@invert-accent, @invert-background, 75%);
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p.sub-copy {
+        color: lighten(@invert-background, 35%);
+    }
+}
+
+/* [Greyscale]
+-------------------------------------------------------------------*/
+.base-greyscale{
+    background-color: @greyscale-background;
+    color: @greyscale-text;
+    a{
+        color: @greyscale-accent;
+        &:hover{
+            color: mix(@greyscale-accent, @greyscale-background, 75%);
         }
     }
 }
