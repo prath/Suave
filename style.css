@@ -63,11 +63,17 @@ body.suave .container {
   margin-top: 40px;
 }
 
+.reset-vertical-gap {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
 .reset-bottom-gap {
   padding-bottom: 0px;
 }
 
 .container-full {
+  position: relative;
   padding: 0px;
   overflow: hidden;
   text-align: center;
@@ -466,6 +472,36 @@ h2 {
 h3,
 h4 {
   margin-bottom: 20px;
+}
+
+.heading-alt {
+  background-color: rgba(59, 67, 76, 0.95);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99;
+  text-align: left;
+}
+
+.heading-alt h1,
+.heading-alt h2,
+.heading-alt h3,
+.heading-alt h4,
+.heading-alt h5,
+.heading-alt h6 {
+  display: inline-block;
+  padding: 0px;
+  margin: 30px 0px;
+}
+
+.heading-alt p.sub-copy {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.heading-alt .icon-action {
+  margin-top: 45px;
 }
 
 /*------------------------------------------------------------------
@@ -1072,7 +1108,7 @@ input[type="color"]:focus,
 .portfolio-slider-full > li.portfolio-item {
   background-color: #eb6f63;
   float: left;
-  height: 400px;
+  height: 500px;
   width: 600px;
 }
 
@@ -1089,36 +1125,34 @@ input[type="color"]:focus,
 
 .portfolio-slider-full > li.portfolio-item > div:hover img {
   opacity: 0.2;
-  -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
-  transition: all .8s ease;
 }
 
 .portfolio-slider-full > li.portfolio-item > div:hover .portfolio-info {
   display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  text-align: center;
-  -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
-  transition: all .8s ease;
-}
-
-.portfolio-slider-full > li.portfolio-item > div:hover .portfolio-info h4 {
-  color: #ffffff;
-  line-height: 340px;
-}
-
-.portfolio-slider-full > li.portfolio-item > div:hover .portfolio-info a {
-  margin-top: -260px;
+  top: 40%;
+  -webkit-transition: top .6s ease;
+  -o-transition: top .6s ease;
+  transition: top .6s ease;
 }
 
 .portfolio-slider-full > li.portfolio-item > div .portfolio-info {
-  -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
-  transition: all .8s ease;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 600px;
+  text-align: center;
+  -webkit-transition: top .6s ease;
+  -o-transition: top .6s ease;
+  transition: top .6s ease;
+}
+
+.portfolio-slider-full > li.portfolio-item > div .portfolio-info h4 {
+  color: #ffffff;
+}
+
+.portfolio-slider-full > li.portfolio-item > div .portfolio-info a {
+  margin-top: 30px;
 }
 
 /*------------------------------------------------------------------

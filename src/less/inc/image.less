@@ -20,7 +20,7 @@
     > li.portfolio-item {
         background-color: @default-accent;
         float: left;
-        height: 400px;
+        height: 500px;
         width: 600px;
         > div {
             display: inline-block;
@@ -31,27 +31,28 @@
             &:hover {
                 img {
                     opacity: 0.2;
-                    transition: all .8s ease;
                 }
                 .portfolio-info {
                     display: block;
-                    height: 100%;
-                    width: 100%;
-                    position: absolute;
-                    top: 0px;
-                    text-align: center;
-                    transition: all .8s ease;
-                    h4 {
-                        color: @default-background;
-                        line-height: 340px;
-                    }
-                    a {
-                        margin-top: -260px;
-                    }
+                    top: 40%;
+                    transition: top .6s ease;
                 }
             }
             .portfolio-info {
-                transition: all .8s ease;
+                display: block;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 600px;
+                text-align: center;
+                transition: top .6s ease;
+                h4 {
+                    color: @default-background;
+                    // line-height: 340px;
+                }
+                a {
+                    margin-top: 30px;
+                }
             }
         }
     }
