@@ -23,6 +23,7 @@ body{
 .region{
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
 }
 
 body.suave{
@@ -31,17 +32,8 @@ body.suave{
         max-width: 1000px;
     }
 }
-
-.widen-top-gap {
-    margin-top: 40px;
-}
-.reset-vertical-gap {
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-
-.reset-bottom-gap {
-    padding-bottom: 0px;
+.container {
+    position: relative;
 }
 
 .container-full {
@@ -49,4 +41,52 @@ body.suave{
     padding: 0px;
     overflow: hidden;
     text-align: center;
+}
+
+.subscribe {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    h4 {
+        .inlineDisplay();
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+    div {
+        form {
+            margin-bottom: 0px;
+            input[type="text"] {
+                margin-top: -1px;
+            }
+        }
+    }
+}
+
+.foot-marketing {
+    
+    font-family: @font-2;
+    
+    font-size: 24px;
+    text-align: center;
+    h3 {
+        color: @default-background !important;
+        font-weight: 100;
+    }
+}
+
+.client-list {
+    a {
+        img {
+            height: 48px;
+            width: 48px;
+            opacity: 0.5;
+            transition: all 0.8s ease;
+        }
+        margin-left: 35px;
+        margin-right: 35px;
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
 }

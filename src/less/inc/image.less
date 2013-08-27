@@ -8,9 +8,8 @@
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
 
-/* [Image Portfolio Classes]
+/* [Portfolio Images]
 -------------------------------------------------------------------*/
-
 .portfolio-slider-full {
     .clearfix();
     width: 2400px;
@@ -20,7 +19,7 @@
     > li.portfolio-item {
         background-color: @default-accent;
         float: left;
-        height: 500px;
+        height: 400px;
         width: 600px;
         > div {
             .inlineDisplay();
@@ -34,7 +33,7 @@
                 }
                 .portfolio-info {
                     display: block;
-                    top: 40%;
+                    top: 30%;
                     transition: top .6s ease;
                 }
             }
@@ -77,5 +76,40 @@
     }
     &-next {
         float: right;
+    }
+}
+
+.thumbnail {
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+    > img {
+        // width: 100%;
+    }
+    .caption {
+        padding: 0px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 10px;
+        a {
+            color: @heading-color;
+            font-size: 15px;
+            &:hover {
+                color: @default-accent;
+            }
+        }
+    }
+}
+
+.blog-posts {
+    img {
+        // height: 200px;
     }
 }
