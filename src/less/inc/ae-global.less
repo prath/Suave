@@ -8,8 +8,8 @@
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
 
-@import "variables";
-@import "mixins";
+@import "ae-variables";
+@import "ae-mixins";
 
 /* [Body Classes]
 -------------------------------------------------------------------*/
@@ -28,12 +28,10 @@ body{
 
 body.suave{
     margin-top: 80px;
-    .container{
-        max-width: 1000px;
-    }
 }
 .container {
     position: relative;
+    // max-width: 1000px;
 }
 
 .container-full {
@@ -41,6 +39,7 @@ body.suave{
     padding: 0px;
     overflow: hidden;
     text-align: center;
+    max-width: 100%;
 }
 
 .subscribe {

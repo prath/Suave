@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         less: {
             compile: {
                 options: {
-                    paths: ['src/less', 'src/less/inc']
+                    paths: ['src/less', 'src/less/inc', 'src/less/bootstrap-less', 'src/less/bootstrap-theme']
                 },
                 files: [{
                     expand: true,
