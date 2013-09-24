@@ -8,6 +8,8 @@
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
 
+// [Global Mixins]
+// ------------------------------------------------------------------
 .clearfix() {
     *zoom: 1;
     &:before,
@@ -156,4 +158,26 @@
     filter: ~"alpha(opacity=@{opacity})";
 }
 
+// [Button Mixins]
+// ------------------------------------------------------------------
+.button-colorscheme(@bgBase, @txBase){
+    border              : 1px solid @txBase;
 
+    color               : @txBase;
+    font-family         : @font-1;
+
+    border-radius       : @base-radius;
+
+    &:hover{
+        border-color        : darken(@bgBase, 70%);
+
+        color               : darken(@bgBase, 70%);
+    }
+
+    &:focus, &.focus,
+    &:active, &.active{
+        border-color        : lighten(@bgBase, 15%);
+        
+        color               : lighten(@bgBase, 15%);
+    }
+}

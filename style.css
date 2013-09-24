@@ -213,11 +213,11 @@ a:hover {
 }
 
 .base-quaternary a {
-  color: #eb6f63;
+  color: #e45b36;
 }
 
 .base-quaternary a:hover {
-  color: #f08d7e;
+  color: #eb7e5c;
   text-decoration: none;
 }
 
@@ -228,7 +228,7 @@ a:hover {
 .base-quaternary h5,
 .base-quaternary h6,
 .base-quaternary p.sub-copy {
-  color: #eb6f63;
+  color: #e45b36;
 }
 
 .base-quaternary .icon-title {
