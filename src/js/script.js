@@ -13,7 +13,8 @@ function refreshMenuPos(){
     var scrollTop = jQuery(window).scrollTop();
     var headline = jQuery('.headline');
 
-    //console.log([scrollTop, winH-]);
+    console.log(winH);
+    console.log(mainNav.height());
 
     if(scrollTop >= winH-mainNav.height() || headline.length === 0){
         mainNav.addClass('navbar-fixed-top');

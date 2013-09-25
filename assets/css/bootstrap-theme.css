@@ -11,14 +11,11 @@
  8. Panels
  9. Wells
 ------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------
  [1. Buttons]
 ------------------------------------------------------------------*/
-
 /* [Buttons]
 -------------------------------------------------------------------*/
-
 .btn {
   background-color: transparent;
   margin-top: -2px;
@@ -27,37 +24,27 @@
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 36px;
-  -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
   transition: all .8s ease;
   border: 1px solid #444444;
   color: #444444;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn:hover {
   background-color: transparent;
-  -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
   transition: all .8s ease;
 }
-
 .btn:focus,
 .btn.focus,
 .btn:active,
 .btn.active {
   margin-top: 0px;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
-
 .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn:focus,
 .btn.focus,
 .btn:active,
@@ -65,20 +52,16 @@
   border-color: #6a6a6a;
   color: #6a6a6a;
 }
-
 .btn.btn-default {
   border: 1px solid #444444;
   color: #444444;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn.btn-default:focus,
 .btn.btn-default.focus,
 .btn.btn-default:active,
@@ -86,20 +69,16 @@
   border-color: #6a6a6a;
   color: #6a6a6a;
 }
-
 .btn.btn-primary {
   border: 1px solid #ff7755;
   color: #ff7755;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn.btn-primary:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn.btn-primary:focus,
 .btn.btn-primary.focus,
 .btn.btn-primary:active,
@@ -107,20 +86,16 @@
   border-color: #ffb4a2;
   color: #ffb4a2;
 }
-
 .btn.btn-success {
   border: 1px solid #87ac24;
   color: #87ac24;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn.btn-success:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn.btn-success:focus,
 .btn.btn-success.focus,
 .btn.btn-success:active,
@@ -128,20 +103,16 @@
   border-color: #b0d845;
   color: #b0d845;
 }
-
 .btn.btn-info {
   border: 1px solid #3d9fe4;
   color: #3d9fe4;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn.btn-info:focus,
 .btn.btn-info.focus,
 .btn.btn-info:active,
@@ -149,20 +120,16 @@
   border-color: #80c0ed;
   color: #80c0ed;
 }
-
 .btn.btn-warning {
   border: 1px solid #f69f24;
   color: #f69f24;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn.btn-warning:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn.btn-warning:focus,
 .btn.btn-warning.focus,
 .btn.btn-warning:active,
@@ -170,20 +137,16 @@
   border-color: #f9bf6d;
   color: #f9bf6d;
 }
-
 .btn.btn-danger {
   border: 1px solid #e50808;
   color: #e50808;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn.btn-danger:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn.btn-danger:focus,
 .btn.btn-danger.focus,
 .btn.btn-danger:active,
@@ -191,21 +154,17 @@
   border-color: #f84141;
   color: #f84141;
 }
-
 .btn.btn-link {
   border: 1px solid #ff7755;
   color: #ff7755;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .btn.btn-link:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn.btn-link:focus,
 .btn.btn-link.focus,
 .btn.btn-link:active,
@@ -213,24 +172,19 @@
   border-color: #ffb4a2;
   color: #ffb4a2;
 }
-
 .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .btn.btn-inverse {
   border: 1px solid #a5a5a5;
   color: #a5a5a5;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn.btn-inverse:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .btn.btn-inverse:focus,
 .btn.btn-inverse.focus,
 .btn.btn-inverse:active,
@@ -238,20 +192,16 @@
   border-color: #5e5e5e;
   color: #5e5e5e;
 }
-
 .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .btn.btn-white:focus,
 .btn.btn-white.focus,
 .btn.btn-white:active,
@@ -259,12 +209,10 @@
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .btn.btn-cta {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border-left: 1px solid #ff7755;
   padding: 0 30px;
@@ -273,12 +221,10 @@
   line-height: 48px;
   text-transform: uppercase;
 }
-
 .btn.btn-cta:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .btn.btn-cta:focus,
 .btn.btn-cta.focus,
 .btn.btn-cta:active,
@@ -286,50 +232,41 @@
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .btn.btn-cta:hover {
   background-color: transparent;
   border: 1px solid #ff7755;
   color: #ff7755;
 }
-
 .btn.btn-lg {
   padding: 0 30px;
   font-size: 16px;
   font-weight: 500;
   line-height: 48px;
 }
-
 .btn.btn-sm {
   padding: 0 20px;
   font-size: 12px;
   font-weight: 500;
   line-height: 30px;
 }
-
 .btn.btn-xs {
   padding: 0 10px;
   font-size: 11px;
   font-weight: 500;
   line-height: 24px;
 }
-
 /* [Buttons on secondary base]
 -------------------------------------------------------------------*/
-
 .base-secondary .btn {
   border: 1px solid #044639;
   color: #044639;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn:focus,
 .base-secondary .btn.focus,
 .base-secondary .btn:active,
@@ -337,20 +274,16 @@
   border-color: #088e74;
   color: #088e74;
 }
-
 .base-secondary .btn.btn-default {
   border: 1px solid #044639;
   color: #044639;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-default:focus,
 .base-secondary .btn.btn-default.focus,
 .base-secondary .btn.btn-default:active,
@@ -358,20 +291,16 @@
   border-color: #088e74;
   color: #088e74;
 }
-
 .base-secondary .btn.btn-primary {
   border: 1px solid #044639;
   color: #044639;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-primary:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-primary:focus,
 .base-secondary .btn.btn-primary.focus,
 .base-secondary .btn.btn-primary:active,
@@ -379,20 +308,16 @@
   border-color: #088e74;
   color: #088e74;
 }
-
 .base-secondary .btn.btn-success {
   border: 1px solid #94f871;
   color: #94f871;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-success:hover {
   border-color: #010400;
   color: #010400;
 }
-
 .base-secondary .btn.btn-success:focus,
 .base-secondary .btn.btn-success.focus,
 .base-secondary .btn.btn-success:active,
@@ -400,20 +325,16 @@
   border-color: #cbfcba;
   color: #cbfcba;
 }
-
 .base-secondary .btn.btn-info {
   border: 1px solid #037fb2;
   color: #037fb2;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-info:focus,
 .base-secondary .btn.btn-info.focus,
 .base-secondary .btn.btn-info:active,
@@ -421,20 +342,16 @@
   border-color: #07b4fb;
   color: #07b4fb;
 }
-
 .base-secondary .btn.btn-warning {
   border: 1px solid #fee4a6;
   color: #fee4a6;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-warning:hover {
   border-color: #3e2c01;
   color: #3e2c01;
 }
-
 .base-secondary .btn.btn-warning:focus,
 .base-secondary .btn.btn-warning.focus,
 .base-secondary .btn.btn-warning:active,
@@ -442,20 +359,16 @@
   border-color: #fffbf2;
   color: #fffbf2;
 }
-
 .base-secondary .btn.btn-danger {
   border: 1px solid #a32323;
   color: #a32323;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-danger:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-danger:focus,
 .base-secondary .btn.btn-danger.focus,
 .base-secondary .btn.btn-danger:active,
@@ -463,21 +376,17 @@
   border-color: #d53d3d;
   color: #d53d3d;
 }
-
 .base-secondary .btn.btn-link {
   border: 1px solid #044639;
   color: #044639;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .base-secondary .btn.btn-link:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-link:focus,
 .base-secondary .btn.btn-link.focus,
 .base-secondary .btn.btn-link:active,
@@ -485,24 +394,19 @@
   border-color: #088e74;
   color: #088e74;
 }
-
 .base-secondary .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .base-secondary .btn.btn-inverse {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-inverse:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-secondary .btn.btn-inverse:focus,
 .base-secondary .btn.btn-inverse.focus,
 .base-secondary .btn.btn-inverse:active,
@@ -510,20 +414,16 @@
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-secondary .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-secondary .btn.btn-white:focus,
 .base-secondary .btn.btn-white.focus,
 .base-secondary .btn.btn-white:active,
@@ -531,23 +431,46 @@
   border-color: #ffffff;
   color: #ffffff;
 }
-
+.base-secondary .btn.btn-cta {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Maven Pro";
+  border-radius: 3px;
+  border-left: 1px solid #ff7755;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.base-secondary .btn.btn-cta:hover {
+  border-color: #4d4d4d;
+  color: #4d4d4d;
+}
+.base-secondary .btn.btn-cta:focus,
+.base-secondary .btn.btn-cta.focus,
+.base-secondary .btn.btn-cta:active,
+.base-secondary .btn.btn-cta.active {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.base-secondary .btn.btn-cta:hover {
+  background-color: transparent;
+  border: 1px solid #ff7755;
+  color: #ff7755;
+}
 /* [Buttons on tertiary base]
 -------------------------------------------------------------------*/
-
 .base-tertiary .btn {
   border: 1px solid #081011;
   color: #081011;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn:focus,
 .base-tertiary .btn.focus,
 .base-tertiary .btn:active,
@@ -555,20 +478,16 @@
   border-color: #204145;
   color: #204145;
 }
-
 .base-tertiary .btn.btn-default {
   border: 1px solid #081011;
   color: #081011;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-default:focus,
 .base-tertiary .btn.btn-default.focus,
 .base-tertiary .btn.btn-default:active,
@@ -576,20 +495,16 @@
   border-color: #204145;
   color: #204145;
 }
-
 .base-tertiary .btn.btn-primary {
   border: 1px solid #46ede2;
   color: #46ede2;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-primary:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-primary:focus,
 .base-tertiary .btn.btn-primary.focus,
 .base-tertiary .btn.btn-primary:active,
@@ -597,20 +512,16 @@
   border-color: #8cf4ed;
   color: #8cf4ed;
 }
-
 .base-tertiary .btn.btn-success {
   border: 1px solid #48c064;
   color: #48c064;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-success:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-success:focus,
 .base-tertiary .btn.btn-success.focus,
 .base-tertiary .btn.btn-success:active,
@@ -618,20 +529,16 @@
   border-color: #81d494;
   color: #81d494;
 }
-
 .base-tertiary .btn.btn-info {
   border: 1px solid #42b0e9;
   color: #42b0e9;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-info:focus,
 .base-tertiary .btn.btn-info.focus,
 .base-tertiary .btn.btn-info:active,
@@ -639,20 +546,16 @@
   border-color: #87cdf1;
   color: #87cdf1;
 }
-
 .base-tertiary .btn.btn-warning {
   border: 1px solid #f5ca65;
   color: #f5ca65;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-warning:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-warning:focus,
 .base-tertiary .btn.btn-warning.focus,
 .base-tertiary .btn.btn-warning:active,
@@ -660,20 +563,16 @@
   border-color: #fae3ad;
   color: #fae3ad;
 }
-
 .base-tertiary .btn.btn-danger {
   border: 1px solid #fa8383;
   color: #fa8383;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-danger:hover {
   border-color: #170101;
   color: #170101;
 }
-
 .base-tertiary .btn.btn-danger:focus,
 .base-tertiary .btn.btn-danger.focus,
 .base-tertiary .btn.btn-danger:active,
@@ -681,21 +580,17 @@
   border-color: #fdcdcd;
   color: #fdcdcd;
 }
-
 .base-tertiary .btn.btn-link {
   border: 1px solid #46ede2;
   color: #46ede2;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .base-tertiary .btn.btn-link:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-link:focus,
 .base-tertiary .btn.btn-link.focus,
 .base-tertiary .btn.btn-link:active,
@@ -703,24 +598,19 @@
   border-color: #8cf4ed;
   color: #8cf4ed;
 }
-
 .base-tertiary .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .base-tertiary .btn.btn-inverse {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-inverse:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-tertiary .btn.btn-inverse:focus,
 .base-tertiary .btn.btn-inverse.focus,
 .base-tertiary .btn.btn-inverse:active,
@@ -728,20 +618,16 @@
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-tertiary .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-tertiary .btn.btn-white:focus,
 .base-tertiary .btn.btn-white.focus,
 .base-tertiary .btn.btn-white:active,
@@ -749,23 +635,46 @@
   border-color: #ffffff;
   color: #ffffff;
 }
-
+.base-tertiary .btn.btn-cta {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Maven Pro";
+  border-radius: 3px;
+  border-left: 1px solid #ff7755;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.base-tertiary .btn.btn-cta:hover {
+  border-color: #4d4d4d;
+  color: #4d4d4d;
+}
+.base-tertiary .btn.btn-cta:focus,
+.base-tertiary .btn.btn-cta.focus,
+.base-tertiary .btn.btn-cta:active,
+.base-tertiary .btn.btn-cta.active {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.base-tertiary .btn.btn-cta:hover {
+  background-color: transparent;
+  border: 1px solid #ff7755;
+  color: #ff7755;
+}
 /* [Buttons on quaternary base]
 -------------------------------------------------------------------*/
-
 .base-quaternary .btn {
   border: 1px solid #a19080;
   color: #a19080;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn:focus,
 .base-quaternary .btn.focus,
 .base-quaternary .btn:active,
@@ -773,20 +682,16 @@
   border-color: #c2b6ac;
   color: #c2b6ac;
 }
-
 .base-quaternary .btn.btn-default {
   border: 1px solid #a19080;
   color: #a19080;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-default:focus,
 .base-quaternary .btn.btn-default.focus,
 .base-quaternary .btn.btn-default:active,
@@ -794,20 +699,16 @@
   border-color: #c2b6ac;
   color: #c2b6ac;
 }
-
 .base-quaternary .btn.btn-primary {
   border: 1px solid #e45b36;
   color: #e45b36;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-primary:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-primary:focus,
 .base-quaternary .btn.btn-primary.focus,
 .base-quaternary .btn.btn-primary:active,
@@ -815,20 +716,16 @@
   border-color: #ed9279;
   color: #ed9279;
 }
-
 .base-quaternary .btn.btn-success {
   border: 1px solid #84b010;
   color: #84b010;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-success:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-success:focus,
 .base-quaternary .btn.btn-success.focus,
 .base-quaternary .btn.btn-success:active,
@@ -836,20 +733,16 @@
   border-color: #b4eb22;
   color: #b4eb22;
 }
-
 .base-quaternary .btn.btn-info {
   border: 1px solid #1d8ad7;
   color: #1d8ad7;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-info:focus,
 .base-quaternary .btn.btn-info.focus,
 .base-quaternary .btn.btn-info:active,
@@ -857,20 +750,16 @@
   border-color: #58ade8;
   color: #58ade8;
 }
-
 .base-quaternary .btn.btn-warning {
   border: 1px solid #c98000;
   color: #c98000;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-warning:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-warning:focus,
 .base-quaternary .btn.btn-warning.focus,
 .base-quaternary .btn.btn-warning:active,
@@ -878,20 +767,16 @@
   border-color: #ffab17;
   color: #ffab17;
 }
-
 .base-quaternary .btn.btn-danger {
   border: 1px solid #fc0507;
   color: #fc0507;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-danger:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-danger:focus,
 .base-quaternary .btn.btn-danger.focus,
 .base-quaternary .btn.btn-danger:active,
@@ -899,21 +784,17 @@
   border-color: #fd5152;
   color: #fd5152;
 }
-
 .base-quaternary .btn.btn-link {
   border: 1px solid #e45b36;
   color: #e45b36;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .base-quaternary .btn.btn-link:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-link:focus,
 .base-quaternary .btn.btn-link.focus,
 .base-quaternary .btn.btn-link:active,
@@ -921,24 +802,19 @@
   border-color: #ed9279;
   color: #ed9279;
 }
-
 .base-quaternary .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .base-quaternary .btn.btn-inverse {
   border: 1px solid #a5a5a5;
   color: #a5a5a5;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-inverse:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-inverse:focus,
 .base-quaternary .btn.btn-inverse.focus,
 .base-quaternary .btn.btn-inverse:active,
@@ -946,20 +822,16 @@
   border-color: #cbcbcb;
   color: #cbcbcb;
 }
-
 .base-quaternary .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-quaternary .btn.btn-white:focus,
 .base-quaternary .btn.btn-white.focus,
 .base-quaternary .btn.btn-white:active,
@@ -967,23 +839,46 @@
   border-color: #ffffff;
   color: #ffffff;
 }
-
+.base-quaternary .btn.btn-cta {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Maven Pro";
+  border-radius: 3px;
+  border-left: 1px solid #ff7755;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.base-quaternary .btn.btn-cta:hover {
+  border-color: #4d4d4d;
+  color: #4d4d4d;
+}
+.base-quaternary .btn.btn-cta:focus,
+.base-quaternary .btn.btn-cta.focus,
+.base-quaternary .btn.btn-cta:active,
+.base-quaternary .btn.btn-cta.active {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.base-quaternary .btn.btn-cta:hover {
+  background-color: transparent;
+  border: 1px solid #ff7755;
+  color: #ff7755;
+}
 /* [Buttons on invert base]
 -------------------------------------------------------------------*/
-
 .base-invert .btn {
   border: 1px solid #818e9d;
   color: #818e9d;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn:focus,
 .base-invert .btn.focus,
 .base-invert .btn:active,
@@ -991,20 +886,16 @@
   border-color: #acb5be;
   color: #acb5be;
 }
-
 .base-invert .btn.btn-default {
   border: 1px solid #818e9d;
   color: #818e9d;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-default:focus,
 .base-invert .btn.btn-default.focus,
 .base-invert .btn.btn-default:active,
@@ -1012,20 +903,16 @@
   border-color: #acb5be;
   color: #acb5be;
 }
-
 .base-invert .btn.btn-primary {
   border: 1px solid #88aaff;
   color: #88aaff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-primary:hover {
   border-color: #000a22;
   color: #000a22;
 }
-
 .base-invert .btn.btn-primary:focus,
 .base-invert .btn.btn-primary.focus,
 .base-invert .btn.btn-primary:active,
@@ -1033,20 +920,16 @@
   border-color: #d5e1ff;
   color: #d5e1ff;
 }
-
 .base-invert .btn.btn-success {
   border: 1px solid #84b010;
   color: #84b010;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-success:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-success:focus,
 .base-invert .btn.btn-success.focus,
 .base-invert .btn.btn-success:active,
@@ -1054,20 +937,16 @@
   border-color: #b4eb22;
   color: #b4eb22;
 }
-
 .base-invert .btn.btn-info {
   border: 1px solid #1d8ad7;
   color: #1d8ad7;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-info:focus,
 .base-invert .btn.btn-info.focus,
 .base-invert .btn.btn-info:active,
@@ -1075,20 +954,16 @@
   border-color: #58ade8;
   color: #58ade8;
 }
-
 .base-invert .btn.btn-warning {
   border: 1px solid #c98000;
   color: #c98000;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-warning:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-warning:focus,
 .base-invert .btn.btn-warning.focus,
 .base-invert .btn.btn-warning:active,
@@ -1096,20 +971,16 @@
   border-color: #ffab17;
   color: #ffab17;
 }
-
 .base-invert .btn.btn-danger {
   border: 1px solid #fc0507;
   color: #fc0507;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-danger:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-danger:focus,
 .base-invert .btn.btn-danger.focus,
 .base-invert .btn.btn-danger:active,
@@ -1117,21 +988,17 @@
   border-color: #fd5152;
   color: #fd5152;
 }
-
 .base-invert .btn.btn-link {
   border: 1px solid #88aaff;
   color: #88aaff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .base-invert .btn.btn-link:hover {
   border-color: #000a22;
   color: #000a22;
 }
-
 .base-invert .btn.btn-link:focus,
 .base-invert .btn.btn-link.focus,
 .base-invert .btn.btn-link:active,
@@ -1139,24 +1006,19 @@
   border-color: #d5e1ff;
   color: #d5e1ff;
 }
-
 .base-invert .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .base-invert .btn.btn-inverse {
   border: 1px solid #101316;
   color: #101316;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-inverse:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-inverse:focus,
 .base-invert .btn.btn-inverse.focus,
 .base-invert .btn.btn-inverse:active,
@@ -1164,20 +1026,16 @@
   border-color: #303942;
   color: #303942;
 }
-
 .base-invert .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-invert .btn.btn-white:focus,
 .base-invert .btn.btn-white.focus,
 .base-invert .btn.btn-white:active,
@@ -1185,110 +1043,178 @@
   border-color: #ffffff;
   color: #ffffff;
 }
-
+.base-invert .btn.btn-cta {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Maven Pro";
+  border-radius: 3px;
+  border-left: 1px solid #ff7755;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.base-invert .btn.btn-cta:hover {
+  border-color: #4d4d4d;
+  color: #4d4d4d;
+}
+.base-invert .btn.btn-cta:focus,
+.base-invert .btn.btn-cta.focus,
+.base-invert .btn.btn-cta:active,
+.base-invert .btn.btn-cta.active {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.base-invert .btn.btn-cta:hover {
+  background-color: transparent;
+  border: 1px solid #ff7755;
+  color: #ff7755;
+}
 .btn-group > .btn,
 .btn-group > .popover {
   font-size: 10px;
 }
-
 /*------------------------------------------------------------------
  [2. Images]
 ------------------------------------------------------------------*/
-
 .thumbnail,
 .img-thumbnail {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
 }
-
 /*------------------------------------------------------------------
  [3. Dropdowns]
 ------------------------------------------------------------------*/
-
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#428bca), to(#357ebd));
-  background-image: -webkit-linear-gradient(top, #428bca, 0%, #357ebd, 100%);
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%);
-  background-image: -o-linear-gradient(top, #428bca 0%, #357ebd 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
-  background-color: #357ebd;
+.dropdown-menu {
+  background-color: #3b434c;
+  border: none;
+  top: 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border-radius: 0px;
 }
-
+.dropdown-menu > li > a {
+  border-left: 5px solid #eb6f63;
+  width: 160px;
+  padding: 10px 20px;
+  color: #c3ccd7;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.dropdown-menu .divider {
+  background-color: #515c69;
+  border-bottom: none;
+}
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover {
+  background-color: #eb6f63;
+  background-image: none;
+  color: #fff;
+}
+.dropup .dropdown-menu {
+  margin-bottom: 10px;
+}
 /*------------------------------------------------------------------
  [4. Navbar]
 ------------------------------------------------------------------*/
-
 .navbar {
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
-  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  border-radius: 0px;
 }
-
-.navbar .navbar-nav > .active > a {
-  background-color: #f8f8f8;
+.navbar.main-navigation {
+  left: 0;
+  right: 0;
 }
-
-.navbar-brand,
+.navbar.main-navigation.navbar-absolute-bottom {
+  position: absolute;
+}
+.navbar > .container {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.navbar-default {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 0px;
+}
+.navbar-default .navbar-brand {
+  color: #eb6f63;
+}
+.navbar-default .navbar-nav li:hover > a {
+  color: #eb6f63;
+}
+.navbar-default .navbar-nav > .active > a {
+  background-color: transparent;
+  color: #eb6f63;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #eb6f63;
+}
+.navbar-default .navbar-nav > .dropup.open > .dropdown-toggle {
+  background: none;
+}
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a.focus,
+.navbar-default .navbar-nav > .open > a:active,
+.navbar-default .navbar-nav > .open > a.active {
+  background-color: transparent;
+  color: #eb6f63;
+}
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Maven Pro";
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 44px;
+  text-shadow: none;
+}
+.navbar-nav > li {
+  margin: 0 0 0 50px ;
+}
 .navbar-nav > li > a {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  margin-top: 6px;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Maven Pro";
+  font-weight: 700;
+  line-height: 44px;
+  text-transform: uppercase;
 }
-
-.navbar-inverse {
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#3c3c3c), to(#222222));
-  background-image: -webkit-linear-gradient(top, #3c3c3c, 0%, #222222, 100%);
-  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
-  background-image: -o-linear-gradient(top, #3c3c3c 0%, #222222 100%);
-  background-image: linear-gradient(to bottom, #3c3c3c 0%, #222222 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+.navbar-nav > li.dropdown.open > .dropdown-toggle {
+  background: none;
 }
-
-.navbar-inverse .navbar-nav > .active > a {
-  background-color: #222222;
+.navbar-nav > li.dropdown i,
+.navbar-nav > li.dropup i {
+  margin-left: 5px;
 }
-
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav > li > a {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+.navbar-nav > li > .dropdown-menu:before,
+.navbar-nav > li > .dropdown-menu:after {
+  border: 0px;
 }
-
-.navbar-static-top,
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  -webkit-border-radius: 0;
-  border-radius: 0;
+.navbar .nav > li .dropdown-menu {
+  opacity: 0;
+  margin-top: -20px;
 }
-
+.navbar .nav > li.open > .dropdown-menu {
+  margin-top: 10px;
+  opacity: 1;
+  -webkit-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+}
 /*------------------------------------------------------------------
  [5. Alerts]
 ------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------
  [6. Progress Bars]
 ------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------
  [7. List Groups]
 ------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------
  [8. Panels]
 ------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------
  [9. Wells]
 ------------------------------------------------------------------*/

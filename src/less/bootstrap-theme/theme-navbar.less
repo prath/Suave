@@ -10,37 +10,117 @@
 
 // Basic navbar
 .navbar {
-    #gradient > .vertical(@start-color: lighten(@navbar-default-bg, 10%); @end-color: @navbar-default-bg;);
-    border-radius: @navbar-border-radius;
-    @shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
-    .box-shadow(@shadow);
+    border-radius: 0px;
+    &.main-navigation{
+        left: 0;
+        right: 0;
 
-    .navbar-nav > .active > a {
-        background-color: @navbar-default-bg;
+        &.navbar-absolute-bottom{
+            position: absolute;
+        }
     }
-}
-.navbar-brand,
-.navbar-nav > li > a {
-    text-shadow: 0 1px 0 rgba(255,255,255,.25);
-}
-
-// Inverted navbar
-.navbar-inverse {
-    #gradient > .vertical(@start-color: lighten(@navbar-inverse-bg, 10%); @end-color: @navbar-inverse-bg;);
-
-    .navbar-nav > .active > a {
-        background-color: @navbar-inverse-bg;
-    }
-
-    .navbar-brand,
-    .navbar-nav > li > a {
-        text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    > .container {
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 }
 
-// Undo rounded corners in static and fixed navbars
-.navbar-static-top,
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-    border-radius: 0;
+.navbar-default {
+    background-color: fadeout(@default-background, 5%);
+    border: 0px;
+    .navbar-brand {
+        color: @default-accent;
+    }
+    .navbar-nav {
+        li:hover > a{
+            color: @default-accent;
+        }
+        > .active > a{
+            background-color: transparent;
+
+            color: @default-accent;
+            &:hover {
+                background-color: transparent;
+
+                color: @default-accent;
+            }
+        }
+        > .dropup {
+            &.open > .dropdown-toggle{
+                background: none;
+            }
+        }
+        > .open {
+            > a {
+                &:hover,
+                &:focus, 
+                &.focus, 
+                &:active, 
+                &.active {
+                    background-color: transparent;
+                
+                    color: @default-accent;
+                }
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    font-family: @font-1;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -1.0px;
+    line-height: 44px;
+    text-shadow: none;
+}
+
+.navbar-nav {
+    > li{
+        margin: 0 0 0 50px ;
+        > a{
+            margin-top: 6px;
+            padding: 0;
+
+            font-size: 12px;
+            font-family: @font-1;
+            font-weight: 700;
+            line-height: 44px;
+            text-transform: uppercase;
+        }
+
+        &.dropdown{
+            &.open > .dropdown-toggle{
+                background: none;
+            }
+        }
+        &.dropdown,
+        &.dropup {
+            i {
+                margin-left: 5px;
+            }
+        }
+        > .dropdown-menu {
+            &:before,
+            &:after {
+                border: 0px;
+            }
+        }
+    }
+}
+
+.navbar .nav > li {
+    .dropdown-menu {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    &.open > .dropdown-menu{
+        margin-top: 10px;
+        opacity: 1;
+        .transition(~'margin 0.3s ease')
+    }
+
 }
