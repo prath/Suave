@@ -268,7 +268,7 @@ a:hover {
   font-weight: 300;
   font-size: 20px;
   text-align: center;
-  line-height: 24px;
+  line-height: 25px;
 }
 /*------------------------------------------------------------------
  [5. Footer]
@@ -277,7 +277,7 @@ a:hover {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 900;
 }
 .site-footer ul.menu {
   display: block;
@@ -297,6 +297,12 @@ a:hover {
 .copy-center {
   text-align: center;
 }
+.copy-center h1,
+.copy-center h2 {
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+.copy-center h1,
 .copy-center h2,
 .copy-center h3 {
   width: 90%;
@@ -306,12 +312,33 @@ a:hover {
 }
 .copy-center .sub-copy {
   width: 80%;
-  line-height: 24px;
+  line-height: 25px;
   font-size: 18px;
   margin: 0px auto 30px;
 }
-blockquote {
-  border-left: 0px;
+h1 {
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+h2 {
+  font-size: 30px;
+  letter-spacing: 0px;
+}
+h3 {
+  font-size: 24px;
+  letter-spacing: 0px;
+}
+h4 {
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+h5 {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+h6 {
+  font-size: 13px;
+  letter-spacing: 0px;
 }
 h1,
 h2,
@@ -327,6 +354,10 @@ h2,
 h3,
 h4 {
   font-weight: 400;
+}
+h5,
+h6 {
+  font-weight: 700;
 }
 h1,
 h2 {
@@ -359,6 +390,11 @@ h4 {
   color: #eb6f63;
   font-weight: 100;
 }
+.heading-alt h4,
+.heading-alt h5,
+.heading-alt h6 {
+  font-weight: 300;
+}
 .heading-alt p.sub-copy {
   display: inline-block;
   vertical-align: top;
@@ -372,10 +408,14 @@ h4 {
 .heading-alt .icon-action {
   margin-top: 50px;
 }
+blockquote {
+  border-left: 0px;
+}
 /* [Headline Typo]
 -------------------------------------------------------------------*/
 .hero-unit h1 {
   color: #ffffff;
+  letter-spacing: -2px;
 }
 /* [Testimonial Typo]
 -------------------------------------------------------------------*/
@@ -624,7 +664,7 @@ input[type="color"]:focus,
 .thumbnail h5 a,
 .thumbnail h6 a {
   color: #444444;
-  font-size: 15px;
+  font-size: 16px;
 }
 .thumbnail h1 a:hover,
 .thumbnail h2 a:hover,

@@ -12,6 +12,12 @@
 -------------------------------------------------------------------*/
 .copy-center {
     text-align: center;
+    h1, 
+    h2 {
+        font-weight: 300;
+        letter-spacing: @ls-nr;
+    }
+    h1,
     h2, 
     h3 {
         width: 90%;
@@ -21,14 +27,35 @@
     }
     .sub-copy {
         width: 80%;
-        line-height: 24px;
-        font-size: 18px;
+        line-height: @line-height-med;
+        font-size: @body-fz-xl;
         margin: 0px auto 30px;
     }
 }
 
-blockquote {
-    border-left: 0px;
+h1 {
+    font-size: @heading-1-fz;
+    letter-spacing: @ls-nr;
+}
+h2 {
+    font-size: @heading-2-fz;
+    letter-spacing: @ls-nm;
+}
+h3 {
+    font-size: @heading-3-fz;
+    letter-spacing: @ls-nm;
+}
+h4 {
+    font-size: @heading-4-fz;
+    letter-spacing: @ls-nm;
+}
+h5 {
+    font-size: @heading-5-fz;
+    letter-spacing: @ls-nm;
+}
+h6 {
+    font-size: @heading-6-fz;
+    letter-spacing: @ls-nm;
 }
 
 h1,
@@ -46,6 +73,11 @@ h2,
 h3,
 h4 {
     font-weight: 400;
+}
+
+h5,
+h6 {
+    font-weight: 700;
 }
 
 h1, 
@@ -75,14 +107,23 @@ h4 {
         color: @default-accent;
         font-weight: 100;
     }
+    h4, 
+    h5,
+    h6 {
+        font-weight: 300;
+    }
     p.sub-copy {
         .inlineDisplay();
         margin-left: 20px;
-        line-height: 100px;
+        line-height: @line-height-uwide;
     }
     .icon-action {
         margin-top: 50px;
     }
+}
+
+blockquote {
+    border-left: 0px;
 }
 
 /* [Headline Typo]
@@ -90,19 +131,20 @@ h4 {
 .hero-unit {
     h1 {
         color: @default-background;
+        letter-spacing: @ls-xn;
     }
 }
 
 /* [Testimonial Typo]
 -------------------------------------------------------------------*/
 .copy-quote {
-    line-height: 25px;
+    line-height: @line-height-med;
     font-family: @font-2;
-    font-size: 16px;
+    font-size: @body-fz-lg;
     span {
         display: block;
         margin-top: 30px;
         font-family: @font-1;
-        font-size: 13px;
+        font-size: @body-fz-df;
     }
 }

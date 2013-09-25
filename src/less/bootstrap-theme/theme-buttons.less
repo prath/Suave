@@ -14,12 +14,12 @@
     background-color    : transparent;
 
     margin-top          : -2px;
-    padding             : 0 20px;
+    padding             : 3px 15px;
 
-    font-size           : 14px;
+    font-size           : @body-fz-md;
     font-weight         : 500;
-    letter-spacing      : 1px;
-    line-height         : 36px;
+    letter-spacing      : @ls-wd;
+    line-height         : @line-height-wide;
 
     transition          : all .8s ease;
     &:hover {
@@ -91,9 +91,9 @@
         
         padding: 0 30px;
 
-        font-size: 16px;
+        font-size: @body-fz-lg;
         font-weight: 500;
-        line-height: 48px;
+        line-height: @line-height-xwide;
         text-transform: uppercase;
         &:hover{
             background-color : transparent;
@@ -107,27 +107,27 @@
     &.btn-lg{
         padding: 0 30px;
 
-        font-size: 16px;
+        font-size: @body-fz-lg;
         font-weight: 500;
-        line-height: 48px;
+        line-height: @line-height-xwide;
     }
     
     //*-----[Button Small]-----*/
     &.btn-sm {
-        padding: 0 20px;
+        padding: 0 10px;
 
-        font-size: 12px;
+        font-size: @body-fz-sm;
         font-weight: 500;
-        line-height: 30px;
+        line-height: @line-height-med;
     }
     
     //*-----[Button Extra Small]-----*/
     &.btn-xs {
-        padding: 0 10px;
+        padding: 2px 5px;
 
-        font-size: 11px;
+        font-size: @body-fz-us;
         font-weight: 500;
-        line-height: 24px;
+        line-height: @line-height-narrow;
     }
 
 }
@@ -174,9 +174,9 @@
             
             padding: 0 30px;
 
-            font-size: 16px;
+            font-size: @body-fz-lg;
             font-weight: 500;
-            line-height: 48px;
+            line-height: @line-height-xwide;
             text-transform: uppercase;
             &:hover{
                 background-color : transparent;
@@ -230,9 +230,9 @@
             
             padding: 0 30px;
 
-            font-size: 16px;
+            font-size: @body-fz-lg;
             font-weight: 500;
-            line-height: 48px;
+            line-height: @line-height-xwide;
             text-transform: uppercase;
             &:hover{
                 background-color : transparent;
@@ -286,9 +286,9 @@
             
             padding: 0 30px;
 
-            font-size: 16px;
+            font-size: @body-fz-lg;
             font-weight: 500;
-            line-height: 48px;
+            line-height: @line-height-xwide;
             text-transform: uppercase;
             &:hover{
                 background-color : transparent;
@@ -342,9 +342,9 @@
             
             padding: 0 30px;
 
-            font-size: 16px;
+            font-size: @body-fz-lg;
             font-weight: 500;
-            line-height: 48px;
+            line-height: @line-height-xwide;
             text-transform: uppercase;
             &:hover{
                 background-color : transparent;
@@ -360,5 +360,5 @@
 // ------------------------------------------------------------------
 .btn-group > .btn,
 .btn-group > .popover {
-    font-size: 10px;
+    font-size: @body-fz-us;
 }
