@@ -292,9 +292,12 @@
         <div class="container">
             <h4>Get the latest news and updates. We promise, we won't spam you.</h4>
             <div class="pull-right">
-                <form id="" method="" action="" class="form-inline">
-                    <input type="text" placeholder="Type your email here">
-                    <button class="btn btn-primary">Submit</button>
+                <form id="" method="" action="" role="form" class="form-inline">
+                    <div class="form-group">
+                        <label for="subscribe-form" class="sr-only">Email Address</label>
+                        <input type="email" placeholder="Type your email here" id="subscribe-form" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
@@ -305,6 +308,7 @@
         <div class="heading-alt">
             <div class="container">
                 <h3>Recent Posts</h3>
+                <p class="sub-copy">Our Thoughts on Many Things</p>
                 <div class="pull-right icon-action">
                     <a href=""><i class="icon-external-link"></i>
                     </a>

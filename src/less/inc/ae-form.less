@@ -8,34 +8,60 @@
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
 
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input{
-    font-family: @font-1;
-    border: 2px solid @input-border;
-    background-color: @input-background;
-    .box-shadow(none);
-    .transition(0.5s all ease);
-    padding: 7px 15px;
-    border-radius: 3px;
+.subscribe {
+    .form-control {
+        width: 300px;
+    }
+}
 
-    &.focus, &:focus{
-        .box-shadow(none);
-        background-color: @input-background-focus;
-        border-color: @input-border-focus;
+.base-secondary{
+    .form-control {
+        border-color: lighten(@secondary-btn-default, 15%);
+
+        color: @secondary-text;
+
+        .placeholder(@color: lighten(@secondary-background, 35%));
+        &:focus {
+            border-color: @btn-info;
+        }
+    }
+}
+
+.base-tertiary{
+    .form-control {
+        border-color: darken(@tertiary-accent, 20%);
+
+        color: @tertiary-text;
+
+        .placeholder(@color: lighten(@tertiary-background, 35%));
+        &:focus {
+            border-color: @btn-info;
+        }
+    }
+}
+
+.base-quaternary{
+    .form-control {
+        border-color: lighten(@quaternary-accent, 20%);
+
+        color: @quaternary-text;
+
+        .placeholder(@color: darken(@quaternary-accent, 10%));
+        &:focus {
+            border-color: @btn-info;
+        }
+    }
+}
+
+.base-invert{
+    .form-control {
+        border-color: @invert-btn-default;
+
+        color: @invert-text;
+
+        .placeholder(@color: lighten(@invert-background, 25%));
+        &:focus {
+            border-color: @btn-info;
+        }
     }
 }

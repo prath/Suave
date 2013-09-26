@@ -135,15 +135,19 @@ block content
             h4.
                 Get the latest news and updates. We promise, we won't spam you.
             .pull-right
-                form.form-inline(id="", method="", action="")
-                    input(type="text", placeholder="Type your email here")
-                    button.btn.btn-primary Submit
+                form.form-inline(id="", method="", action="", role="form")
+                    .form-group
+                        label.sr-only(for="subscribe-form") Email Address
+                        input.form-control(type="email", placeholder="Type your email here", id="subscribe-form")
+                    button.btn.btn-primary(type="submit") Submit
     // RECENT POST
     .region.reset-vertical-gap
         // HEADING ALTERNATIVE
         .heading-alt
             .container
                 h3 Recent Posts
+                p.sub-copy
+                    | Our Thoughts on Many Things
                 .pull-right.icon-action
                     a(href="")
                         i.icon-external-link
