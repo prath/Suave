@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------
+// * [Theme Panels]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Buttons]
+-------------------------------------------------------------------*/
+
+.footer-widgets {
+    .panel {
+        &.widget {
+            margin-bottom: 0px;
+            background-color: transparent;
+            border: 0px;
+            border-radius: 0px;
+            box-shadow: none;
+            .panel-heading {
+                padding: 0px;
+                margin: 0px;
+                margin-bottom: 0px;
+                border-bottom: 1px solid @invert-accent;
+                border-top-right-radius: 0px;
+                border-top-left-radius: 0px;
+                .widget-heading{
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    font-family: @font-1 ;
+                    font-size: @body-fz-df ;
+                    letter-spacing: @ls-nm;
+                    font-weight: 700;
+                }
+                .widget-subheading {
+                    margin-bottom: 10px;
+                    margin-top: 5px;
+                    font-family: @font-1 ;
+                    font-size: @body-fz-xs;
+                    font-weight: 700;
+                    letter-spacing: @ls-nm;
+                    text-transform: uppercase;
+                }
+            }
+            .panel-body {
+                border-top: 1px solid lighten(@invert-background, 20%);
+                padding: 20px 0px 0px 0px;
+                margin-top: 1px;
+            }
+        }
+    }
+
+    .panel-default {
+        &.widget {
+            border: 0px;
+            .panel-heading {
+                color: #333333;
+                background-color: transparent;
+                // border-color: transparent;
+            }
+        }
+    }
+}

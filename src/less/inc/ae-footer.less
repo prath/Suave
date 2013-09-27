@@ -8,21 +8,40 @@
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
 
-.site-footer{
-    h2{
-        text-transform: uppercase;
-        font-size: @body-fz-df ;
-        letter-spacing: @ls-wd;
-        font-weight: 900;
-    }
+.footer-widgets{
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: @body-fz-sm;
     ul.menu{
         display: block;
-        list-item: none;
+        padding: 0px;
         margin: 0;
         li{
             display: block;
-            list-item: none;
+            padding: 0px;
             margin: 0;
         }
     }
 }
+
+footer {
+    font-size: @body-fz-xs;
+    .footer-container {
+        border-top: 1px solid lighten(@invert-background, 20%);
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    .footer-menu {
+        margin: 0px;
+        padding: 0px;
+        li {
+            float: left;
+            list-style: none;
+            a {
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+        }
+        .clearfix();
+    }
+} 

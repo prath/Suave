@@ -10,6 +10,7 @@
 
 // Basic navbar
 .navbar {
+    min-height: 30px;
     border-radius: 0px;
     &.main-navigation{
         left: 0;
@@ -18,10 +19,6 @@
         &.navbar-absolute-bottom{
             position: absolute;
         }
-    }
-    > .container {
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
 }
 
@@ -71,11 +68,18 @@
     padding-bottom: 0;
 
     font-family: @font-1;
-    font-size: @heading-2-fz;
+    font-size: @heading-3-fz;
     font-weight: 400;
     letter-spacing: @ls-nr;
-    line-height: @line-height-xwide;
+    line-height: 40px;
     text-shadow: none;
+}
+
+.navbar-toggle {
+    padding: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: @base-radius;
 }
 
 .navbar-nav {

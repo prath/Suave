@@ -14,136 +14,135 @@ block title
 //- content
 block content
     // HEADLINE
-    .headline(style='background-image: url(assets/images/top_view.jpg); background-attachment: fixed;')
+    .headline(style='background-image: url(assets/images/top_view.jpg); background-attachment: fixed; background-size:cover')
         div(style='background-color: rgba(10,0,50, 0.30); height: 100%;')
             .container
-                .row.vertically-centered
-                    .col-md-12.col-lg-12.col-sm-12
-                        .hero-unit
-                            // LOGO
-                            .logo-big
-                                img(src="assets/images/logo-big1.png", alt="suave logo")
-                            h1 Introducing: Suave
-                            p
-                                | Multipurpose WordPress Theme.
-                                | Built with simplicity and flexibility in mind.
-                                br
-                                | Perfect for various business needs.
-                            // CTA
-                            p
-                                a.btn.btn-primary.btn-lg.btn-cta Buy Now 
-    // INTRO
-    .region(style='background-image: url(assets/images/pattern1.jpg); background-attachment: fixed;')
-        .container
-            .row
-                .col-md-12.col-lg-12.col-sm-12.copy-center
-                    h2
-                        | Suave is Multipurpose WordPress Theme.
-                    p.sub-copy
-                        | Collaboratively <a href="">administrate</a>&nbsp;empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+                section.vertically-centered.hero-unit
+                    header
+                        // LOGO
+                        .logo-big
+                            img(src="assets/images/logo-big1.png", alt="suave logo")
+                        h1 Introducing: Suave
+                    p
+                        | Multipurpose WordPress Theme.
+                        | Built with simplicity and flexibility in mind.
+                        | Perfect for various business needs.
                     // CTA
                     p
-                        a.btn.btn-primary.btn-lg Buy Theme 
-                        | &nbsp;&nbsp;or
-                        a.btn.btn-link.btn-lg See Features
+                        a.btn.btn-primary.btn-lg.btn-cta Buy Now 
+    // INTRO
+    .region(style='background-image: url(assets/images/pattern1.jpg); background-attachment: fixed;')
+         section.copy-center.container
+            h2
+                | Suave is Multipurpose WordPress Theme.
+            p.sub-copy
+                | Collaboratively <a href="">administrate</a>&nbsp;empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+            // CTA
+            p
+                a.btn.btn-primary.btn-lg Buy Theme 
+                | &nbsp;&nbsp;or
+                a.btn.btn-link.btn-lg See Features
     // OUR SERVICES
-    .region
-        .container
-            .row.copy-center
-                i.icon-gears.icon-muted.icon-title
-                h3 Our Services
-                p.sub-copy
-                    | Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service.
+    section.container.region
+        header.copy-center
+            i.icon-gears.icon-muted.icon-title
+            h3 Our Services
+            p.sub-copy
+                | Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service.
 
-            // SERVICES
-            .row.widen-top-outergap
-                .col-md-4.col-lg-4.col-sm-4.col-xs-6.copy-center
+        // SERVICES
+        .row.widen-top-outergap
+            article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                header
                     i.icon-html5.icon-6x.icon-simple-red
                     h4 Web Design
+                div
                     p.
                         Here's the story of a lovely lady who was bringing up three very lovely girls. Just sit right back and you'll hear a tale a tale.
                     a.btn.btn-primary.btn-xs Learn more
-                .col-md-4.col-lg-4.col-sm-4.col-xs-6.copy-center
+            article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                header
                     i.icon-code.icon-6x.icon-simple-green
                     h4 Web Development
+                div
                     p.
                         Said Californ'y is the place you ought to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.
                     a.btn.btn-primary.btn-xs Learn more
-                .col-md-4.col-lg-4.col-sm-4.col-xs-6.copy-center
+            article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                header
                     i.icon-mobile-phone.icon-6x.icon-simple-yellow
                     h4 Mobile App Development
+                div
                     p.
                         The movie star the professor and Mary Ann here on Gilligans Isle. We're gonna do it. On your mark get set and go now professor. 
                     a.btn.btn-primary.btn-xs Learn more
     // PORTFOLIO
-    .region.reset-vertical-gap
-        .container.container-full
-            // HEADING ALTERNATIVE
-            .heading-alt
-                .container
-                    h3 Portfolio
-                    p.sub-copy
-                        | Our latest and proudest works and projects.
-                    .pull-right.icon-action
-                        a(href="")
-                            i.icon-external-link
-            // PORTFOLIO SLIDER
-            ul.portfolio-slider-full
-                li.portfolio-item
-                    div
-                        img(src="assets/images/porto3.jpg", alt="item 1")
-                        .portfolio-info
-                            h4 Lorem Ipsum Dolor Sit Amet 
-                            a.btn.btn-white(href="") See Project
-                li.portfolio-item
-                    div   
-                        img(src="assets/images/porto2.jpg", alt="item 1")
-                        .portfolio-info
-                            h4 The movie star the professor
-                            a.btn.btn-white(href="") See Project
-                li.portfolio-item
-                    div
-                        img(src="assets/images/porto1.jpg", alt="item 1")
-                        .portfolio-info
-                            h4 Dynamically innovate resource-leveling
-                            a.btn.btn-white(href="") See Project
-            // PORTFOLIO SLIDER NAV
-            .portfolio-slider-nav
-                a.portfolio-slider-nav-prev(href="")
-                    i.icon-chevron-left
-                a.portfolio-slider-nav-next(href="")
-                    i.icon-chevron-right
+    section.region.reset-vertical-gap.container.container-full
+        // HEADING ALTERNATIVE
+        header.heading-alt
+            .container
+                h3 Portfolio
+                p.sub-copy
+                    | Our latest and proudest works and projects.
+                .pull-right.icon-action
+                    a(href="")
+                        i.icon-external-link
+        // PORTFOLIO SLIDER
+        ul.portfolio-slider-full
+            li.portfolio-item
+                div
+                    img(src="assets/images/porto3.jpg", alt="item 1")
+                    .portfolio-info
+                        h4 Lorem Ipsum Dolor Sit Amet 
+                        a.btn.btn-white(href="") See Project
+            li.portfolio-item
+                div   
+                    img(src="assets/images/porto2.jpg", alt="item 1")
+                    .portfolio-info
+                        h4 The movie star the professor
+                        a.btn.btn-white(href="") See Project
+            li.portfolio-item
+                div
+                    img(src="assets/images/porto1.jpg", alt="item 1")
+                    .portfolio-info
+                        h4 Dynamically innovate resource-leveling
+                        a.btn.btn-white(href="") See Project
+        // PORTFOLIO SLIDER NAV
+        .portfolio-slider-nav
+            a.portfolio-slider-nav-prev(href="")
+                i.icon-chevron-left
+            a.portfolio-slider-nav-next(href="")
+                i.icon-chevron-right
 
     // TESTIMONIAL
-    .region.testimonial
-        .container
-            .row.copy-center
-                i.icon-bullhorn.icon-muted.icon-title
-                blockquote.copy-quote
-                    | "Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but media information without cross-media value quickly maximize timely deliverables."
-                    span.name − <strong>John William Doe</strong>, Aestik
-                .testimonial-slider-nav
-                    a(href="") 
-                        i.icon-circle-blank
-                    a(href="") 
-                        i.icon-circle-blank
-                    a(href="") 
-                        i.icon-circle-blank
+    .region.testimonial.container
+        .copy-center
+            i.icon-bullhorn.icon-muted.icon-title
+            blockquote.copy-quote
+                | "Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but media information without cross-media value quickly maximize timely deliverables."
+                span.name − <strong>John William Doe</strong>, Aestik
+            .testimonial-slider-nav
+                a(href="") 
+                    i.icon-circle-blank
+                a(href="") 
+                    i.icon-circle-blank
+                a(href="") 
+                    i.icon-circle-blank
+
     // SUBSCRIBE FORM
     .region.base-quaternary.subscribe
-        .container 
+        section.container 
             h4.
                 Get the latest news and updates. We promise, we won't spam you.
-            .pull-right
-                form.form-inline(id="", method="", action="", role="form")
-                    .form-group
-                        label.sr-only(for="subscribe-form") Email Address
-                        input.form-control(type="email", placeholder="Type your email here", id="subscribe-form")
-                    button.btn.btn-primary(type="submit") Submit
+            form.form-inline(id="", method="", action="", role="form").pull-right
+                .form-group
+                    label.sr-only(for="subscribe-form") Email Address
+                    input.form-control(type="email", placeholder="Type your email here", id="subscribe-form")
+                button.btn.btn-primary(type="submit") Submit
     // RECENT POST
-    .region.reset-vertical-gap
+    section.region.reset-vertical-gap
         // HEADING ALTERNATIVE
-        .heading-alt
+        header.heading-alt
             .container
                 h3 Recent Posts
                 p.sub-copy
@@ -153,40 +152,43 @@ block content
                         i.icon-external-link
         .container
             .row.blog-posts.widen-vertical-outergap
-                .col-md-4.col-lg-4.col-sm-4.thumbnail
-                    img(src="assets/images/porto2.jpg", alt="")
-                    .caption
-                        h4 
-                            a(href="") Link climb leg rub face on everything
-                        p.
-                            Celery seakale desert raisin taro wakame pea sprouts broccoli rabe courgette rock melon.
-                .col-md-4.col-lg-4.col-sm-4.thumbnail
-                    img(src="assets/images/porto1.jpg", alt="")
-                    .caption
-                        h4 
-                            a(href="") Bugger bag egg's old boy willy jolly scrote
-                        p.
-                            Pommy ipsum gallivanting around bit of a div chuffed chap stupendous gosh horses for courses.
-                .col-md-4.col-lg-4.col-sm-4.thumbnail
-                    img(src="assets/images/porto3.jpg", alt="")
-                    .caption
-                        h4 
-                            a(href="") Caerphilly swiss fromage frais brie cheese
-                        p.
-                            Roquefort cheese strings who moved my cheese. Blue castello brie goat when the cheese comes out.
+                .col-md-4.col-lg-4.col-sm-4
+                    article.thumbnail
+                        img(src="assets/images/porto2.jpg", alt="")
+                        .caption
+                            h4 
+                                a(href="") Link climb leg rub face on everything
+                            p.
+                                Celery seakale desert raisin taro wakame pea sprouts broccoli rabe courgette rock melon.
+                .col-md-4.col-lg-4.col-sm-4
+                    article.thumbnail
+                        img(src="assets/images/porto1.jpg", alt="")
+                        .caption
+                            h4 
+                                a(href="") Bugger bag egg's old boy willy jolly scrote
+                            p.
+                                Pommy ipsum gallivanting around bit of a div chuffed chap stupendous gosh horses for courses.
+                .col-md-4.col-lg-4.col-sm-4
+                    article.thumbnail
+                        img(src="assets/images/porto3.jpg", alt="")
+                        .caption
+                            h4 
+                                a(href="") Caerphilly swiss fromage frais brie cheese
+                            p.
+                                Roquefort cheese strings who moved my cheese. Blue castello brie goat when the cheese comes out.
     // FOOT CTA
     .region.base-invert.reset-vertical-gap(style='background-image: url(assets/images/cta-foot-blur.jpg); background-attachment: fixed;')
         div(style='background-color: rgba(0,0,0, 0.50); height: 100%;')
-            .container.widen-vertical-gap.foot-marketing
+            section.container.widen-vertical-gap.foot-marketing
                 h3 So, What Are You Waiting For? 
                 p 
                     a.btn.btn-primary.btn-lg.btn-cta Buy This Theme Now! 
     // CLIENT LIST
     .region.base-greyscale
-        .container
-            .row.copy-center
+        section.container
+            header.copy-center
                 h3 Our Clients
-            .row.copy-center.client-list
+            .copy-center.client-list
                 a(href="http://") 
                     img(src="assets/images/HTML5_3D.png", alt="")
                 a(href="http://") 
@@ -203,3 +205,6 @@ block content
                     img(src="assets/images/HTML5_Semantics.png", alt="")
                 a(href="http://") 
                     img(src="assets/images/HTML5_Styling.png", alt="")
+
+    // Footer Widgets
+    include inc/footer-widget

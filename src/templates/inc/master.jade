@@ -32,11 +32,13 @@ html(lang='en')
                 | or
                 a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
                 | to improve your experience.
-        // NAVS  
-        include navs  
+        header(role="banner")
+            // NAVS  
+            include navs  
         
-        // CONTENT
-        block content
+        main(role="main")
+            // CONTENT
+            block content
         
         // FOOTER
         include footer
