@@ -30,7 +30,6 @@ Text Domain: Suave Wordpress
  10. Dropdown
  11. Image
  12. Helper
- 13. Responsive
 ------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -41,16 +40,34 @@ Text Domain: Suave Wordpress
 -------------------------------------------------------------------*/
 
 body {
+  background-color: #ffffff;
+  color: #7c7c7c;
   font-family: "Maven Pro";
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
 }
 
+a {
+  color: #eb6f63;
+}
+
+a:hover {
+  color: #a02115;
+  text-decoration: none;
+}
+
 .region {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .region {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 body.suave {
@@ -69,6 +86,25 @@ body.suave {
   max-width: 100%;
 }
 
+.services article {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .services article {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services article {
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .subscribe {
   padding-bottom: 20px;
   padding-top: 20px;
@@ -80,8 +116,14 @@ body.suave {
   zoom: 1;
   *display: inline;
   /* Fix for IE7 */
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe h4 {
+    margin-bottom: 0px;
+  }
 }
 
 .subscribe div form {
@@ -104,8 +146,20 @@ body.suave {
 }
 
 .client-list a {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  /* Fix for IE7 */
+  margin-bottom: 20px;
   margin-left: 35px;
   margin-right: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .client-list a {
+    margin-bottom: 0px;
+  }
 }
 
 .client-list a img {
@@ -124,23 +178,6 @@ body.suave {
 /*------------------------------------------------------------------
  [2. Base Colorscheme]
 ------------------------------------------------------------------*/
-
-/* [Default]
--------------------------------------------------------------------*/
-
-body {
-  background-color: #ffffff;
-  color: #7c7c7c;
-}
-
-a {
-  color: #eb6f63;
-}
-
-a:hover {
-  color: #a02115;
-  text-decoration: none;
-}
 
 /* [Secondary]
 -------------------------------------------------------------------*/
@@ -312,9 +349,35 @@ a:hover {
   margin: 0px auto;
 }
 
+@media screen and (min-width: 600px) {
+  .headline .hero-unit .logo-big {
+    width: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headline .hero-unit .logo-big {
+    width: 93px;
+  }
+}
+
 .headline .hero-unit .logo-big img {
   width: 68px;
   height: 70px;
+}
+
+@media screen and (min-width: 600px) {
+  .headline .hero-unit .logo-big img {
+    width: 38px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headline .hero-unit .logo-big img {
+    width: 93px;
+    height: 100px;
+  }
 }
 
 .headline .hero-unit h1 {
@@ -323,6 +386,19 @@ a:hover {
   font-weight: 100;
   text-align: center;
   margin: 1em auto 0px;
+}
+
+@media screen and (min-width: 600px) {
+  .headline .hero-unit h1 {
+    margin: 0.2em auto 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headline .hero-unit h1 {
+    font-size: 72px;
+    margin: 1.5em auto 0px;
+  }
 }
 
 .headline .hero-unit p {
@@ -334,6 +410,23 @@ a:hover {
   font-size: 16px;
   text-align: center;
   line-height: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .headline .hero-unit p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headline .hero-unit p {
+    margin: 20px auto 40px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 70%;
+  }
 }
 
 /*------------------------------------------------------------------
@@ -384,6 +477,13 @@ footer .footer-menu li a {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  footer .footer-menu li a {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+
 footer .footer-menu:before,
 footer .footer-menu:after {
   display: table;
@@ -401,6 +501,14 @@ footer .footer-menu:after {
 
 /* [Global Typo]
 -------------------------------------------------------------------*/
+
+.sub-copy {
+  margin: 0px auto 30px;
+  width: 80%;
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+}
 
 .copy-center {
   text-align: center;
@@ -436,7 +544,8 @@ footer .footer-menu:after {
 .heading-alt {
   background-color: rgba(59, 67, 76, 0.95);
   position: relative;
-  height: 80px;
+  padding: 25px 0px;
+  height: auto;
   width: 100%;
   text-align: left;
 }
@@ -447,15 +556,26 @@ footer .footer-menu:after {
 .heading-alt h4,
 .heading-alt h5,
 .heading-alt h6 {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  /* Fix for IE7 */
+  display: block;
   padding: 0px;
-  margin: 25px 0px;
+  margin: 0px;
   color: #eb6f63;
   font-weight: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-alt h1,
+  .heading-alt h2,
+  .heading-alt h3,
+  .heading-alt h4,
+  .heading-alt h5,
+  .heading-alt h6 {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    /* Fix for IE7 */
+  }
 }
 
 .heading-alt h4,
@@ -465,18 +585,39 @@ footer .footer-menu:after {
 }
 
 .heading-alt p.sub-copy {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  /* Fix for IE7 */
-  margin-top: 31px;
-  margin-left: 20px;
+  display: block;
+  margin: 0px;
   color: #c3ccd7;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-alt p.sub-copy {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    /* Fix for IE7 */
+    margin-left: 20px;
+    margin-top: 5px;
+  }
 }
 
 .heading-alt .icon-action {
-  margin-top: 35px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-alt .icon-action {
+    position: relative;
+    right: 0px;
+    margin-top: 0px;
+  }
 }
 
 /* [Headline Typo]
@@ -1659,7 +1800,7 @@ footer .footer-menu:after {
   padding: 10px;
   position: relative;
   top: -25px;
-  color: #c9c9c9;
+  color: #a0a0a0;
 }
 
 /* [Testimonial Icons]
@@ -1680,52 +1821,86 @@ footer .footer-menu:after {
 /* [Portfolio Images]
 -------------------------------------------------------------------*/
 
+.slider {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  .slider {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    height: 400px;
+  }
+}
+
 .portfolio-slider-full {
-  *zoom: 1;
-  width: 2400px;
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-.portfolio-slider-full:before,
-.portfolio-slider-full:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.portfolio-slider-full:after {
-  clear: both;
+@media screen and (min-width: 600px) {
+  .portfolio-slider-full {
+    width: 1000%;
+  }
 }
 
 .portfolio-slider-full > li.portfolio-item {
+  position: relative;
   background-color: #eb6f63;
   float: left;
-  height: 400px;
-  width: 600px;
+  height: auto;
+  width: 100%;
 }
 
-.portfolio-slider-full > li.portfolio-item > div {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  /* Fix for IE7 */
-  position: relative;
+@media screen and (min-width: 600px) {
+  .portfolio-slider-full > li.portfolio-item {
+    height: 200px;
+    width: 300px;
+  }
 }
 
-.portfolio-slider-full > li.portfolio-item > div img {
+@media screen and (min-width: 768px) {
+  .portfolio-slider-full > li.portfolio-item {
+    height: 400px;
+    width: 600px;
+  }
+}
+
+.portfolio-slider-full > li.portfolio-item img {
+  height: auto;
+  width: 100%;
   -webkit-transition: all 1.5s ease;
   -o-transition: all 1.5s ease;
   transition: all 1.5s ease;
 }
 
-.portfolio-slider-full > li.portfolio-item > div:hover img {
+@media screen and (min-width: 600px) {
+  .portfolio-slider-full > li.portfolio-item img {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-slider-full > li.portfolio-item img {
+    height: 400px;
+    width: 600px;
+  }
+}
+
+.portfolio-slider-full > li.portfolio-item:hover img {
   opacity: 0.2;
 }
 
-.portfolio-slider-full > li.portfolio-item > div:hover .portfolio-info {
+.portfolio-slider-full > li.portfolio-item:hover .portfolio-info {
   display: block;
   top: 30%;
   -webkit-transition: top .6s ease;
@@ -1733,7 +1908,7 @@ footer .footer-menu:after {
   transition: top .6s ease;
 }
 
-.portfolio-slider-full > li.portfolio-item > div .portfolio-info {
+.portfolio-slider-full > li.portfolio-item .portfolio-info {
   display: block;
   position: absolute;
   height: 100%;
@@ -1745,11 +1920,11 @@ footer .footer-menu:after {
   transition: top .6s ease;
 }
 
-.portfolio-slider-full > li.portfolio-item > div .portfolio-info h4 {
+.portfolio-slider-full > li.portfolio-item .portfolio-info h4 {
   color: #ffffff;
 }
 
-.portfolio-slider-full > li.portfolio-item > div .portfolio-info a {
+.portfolio-slider-full > li.portfolio-item .portfolio-info a {
   margin-top: 30px;
 }
 
@@ -1792,6 +1967,63 @@ footer .footer-menu:after {
 
 .portfolio-slider-nav-next {
   float: right;
+}
+
+.thumbnail {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .thumbnail {
+    margin-bottom: 0px;
+  }
+}
+
+.thumbnail-image {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .thumbnail-image {
+    display: none;
+  }
+}
+
+.thumbnail-image > img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail h1,
+.thumbnail h2,
+.thumbnail h3,
+.thumbnail h4,
+.thumbnail h5,
+.thumbnail h6 {
+  margin-bottom: 0px;
+}
+
+.thumbnail .post-date {
+  display: block;
+  border-bottom: 1px solid #f7c2bd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.thumbnail:before,
+.thumbnail:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.thumbnail:after {
+  clear: both;
 }
 
 /*------------------------------------------------------------------
@@ -1857,102 +2089,18 @@ footer .footer-menu:after {
   float: none !important;
 }
 
-/*------------------------------------------------------------------
- [13. Responsive]
-------------------------------------------------------------------*/
-
-@media screen and (min-width: 600px) {
-  /* [Headlines]
-      -------------------------------------------------------------------*/
-
-  .headline {
-    margin-top: -80px;
-  }
-
-  .headline .hero-unit .logo-big {
-    width: 38px;
-  }
-
-  .headline .hero-unit .logo-big img {
-    width: 38px;
-    height: 40px;
-  }
-
-  .headline .hero-unit h1 {
-    margin: 0.2em auto 0px;
-  }
-
-  .headline .hero-unit p {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  /* [Pull Right]
-      -------------------------------------------------------------------*/
-
   .pull-right {
     float: right !important;
   }
+}
 
-  /* [Headlines]
-      -------------------------------------------------------------------*/
+.pull-left {
+  float: none !important;
+}
 
-  .headline .hero-unit {
-    margin-top: -80px;
-  }
-
-  .headline .hero-unit .logo-big {
-    width: 93px;
-  }
-
-  .headline .hero-unit .logo-big img {
-    width: 93px;
-    height: 100px;
-  }
-
-  .headline .hero-unit h1 {
-    font-size: 72px;
-    margin: 1.5em auto 0px;
-  }
-
-  .headline .hero-unit p {
-    margin: 20px auto 40px;
-    font-size: 20px;
-    line-height: 25px;
-    width: 70%;
-    text-align: center;
-  }
-
-  /* [Header]
-      -------------------------------------------------------------------*/
-
-  /*-----[Navbar]-----*/
-
-  .navbar {
-    min-height: 50px;
-  }
-
-  .navbar > .container {
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-
-  /*-----[Brand]-----*/
-
-  .navbar-brand {
-    font-size: 30px;
-    line-height: 48px;
-  }
-
-  /* [Footer]
-      -------------------------------------------------------------------*/
-
-  footer .footer-menu li a {
-    margin-left: 10px;
-    margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .pull-left {
+    float: left !important;
   }
 }

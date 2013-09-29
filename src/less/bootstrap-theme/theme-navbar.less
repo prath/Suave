@@ -20,6 +20,13 @@
             position: absolute;
         }
     }
+    @media screen and (min-width: 768px) {
+        min-height: 50px;
+        > .container {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+    }
 }
 
 .navbar-default {
@@ -73,6 +80,10 @@
     letter-spacing: @ls-nr;
     line-height: 40px;
     text-shadow: none;
+    @media screen and (min-width: 768px) {
+        font-size: @heading-2-fz;
+        line-height: @line-height-xwide;
+    }
 }
 
 .navbar-toggle {

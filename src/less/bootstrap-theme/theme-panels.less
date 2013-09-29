@@ -47,7 +47,19 @@
             .panel-body {
                 border-top: 1px solid lighten(@invert-background, 20%);
                 padding: 20px 0px 0px 0px;
+                margin-bottom: 20px;
                 margin-top: 1px;
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 0px;
+                    
+                }
+                address:last-child {
+                    margin-bottom: 0px;
+                    @media screen and (min-width: 768px) {
+                        margin-bottom: 20px;
+                        
+                    }
+                }
             }
         }
     }

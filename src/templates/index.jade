@@ -30,6 +30,7 @@ block content
                     // CTA
                     p
                         a.btn.btn-primary.btn-lg.btn-cta Buy Now 
+
     // INTRO
     .region(style='background-image: url(assets/images/pattern1.jpg); background-attachment: fixed;')
          section.copy-center.container
@@ -42,40 +43,46 @@ block content
                 a.btn.btn-primary.btn-lg Buy Theme 
                 | &nbsp;&nbsp;or
                 a.btn.btn-link.btn-lg See Features
+
     // OUR SERVICES
-    section.container.region
-        header.copy-center
-            i.icon-gears.icon-muted.icon-title
-            h3 Our Services
-            p.sub-copy
-                | Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service.
+    section.region.services.reset-top-gap
+        header.heading-alt
+            .container
+                h3 Our Services
+                .pull-right.icon-action
+                    a(href="")
+                        i.icon-external-link
 
         // SERVICES
-        .row.widen-top-outergap
-            article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
-                header
-                    i.icon-html5.icon-6x.icon-simple-red
-                    h4 Web Design
-                div
-                    p.
-                        Here's the story of a lovely lady who was bringing up three very lovely girls. Just sit right back and you'll hear a tale a tale.
-                    a.btn.btn-primary.btn-xs Learn more
-            article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
-                header
-                    i.icon-code.icon-6x.icon-simple-green
-                    h4 Web Development
-                div
-                    p.
-                        Said Californ'y is the place you ought to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.
-                    a.btn.btn-primary.btn-xs Learn more
-            article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
-                header
-                    i.icon-mobile-phone.icon-6x.icon-simple-yellow
-                    h4 Mobile App Development
-                div
-                    p.
-                        The movie star the professor and Mary Ann here on Gilligans Isle. We're gonna do it. On your mark get set and go now professor. 
-                    a.btn.btn-primary.btn-xs Learn more
+        .container.widen-top-gap
+            p.sub-copy
+                | Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service.
+            .row.widen-top-outergap
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    header
+                        i.icon-html5.icon-6x.icon-simple-red
+                        h4 Web Design
+                    div
+                        p.
+                            Here's the story of a lovely lady who was bringing up three very lovely girls. Just sit right back and you'll hear a tale a tale.
+                        a.btn.btn-primary.btn-xs Learn more
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    header
+                        i.icon-code.icon-6x.icon-simple-green
+                        h4 Web Development
+                    div
+                        p.
+                            Said Californ'y is the place you ought to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.
+                        a.btn.btn-primary.btn-xs Learn more
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    header
+                        i.icon-mobile-phone.icon-6x.icon-simple-yellow
+                        h4 Mobile App Development
+                    div
+                        p.
+                            The movie star the professor and Mary Ann here on Gilligans Isle. We're gonna do it. On your mark get set and go now professor. 
+                        a.btn.btn-primary.btn-xs Learn more
+
     // PORTFOLIO
     section.region.reset-vertical-gap.container.container-full
         // HEADING ALTERNATIVE
@@ -88,21 +95,19 @@ block content
                     a(href="")
                         i.icon-external-link
         // PORTFOLIO SLIDER
-        ul.portfolio-slider-full
-            li.portfolio-item
-                div
+        .slider
+            ul.portfolio-slider-full
+                li.portfolio-item
                     img(src="assets/images/porto3.jpg", alt="item 1")
                     .portfolio-info
                         h4 Lorem Ipsum Dolor Sit Amet 
                         a.btn.btn-white(href="") See Project
-            li.portfolio-item
-                div   
+                li.portfolio-item
                     img(src="assets/images/porto2.jpg", alt="item 1")
                     .portfolio-info
                         h4 The movie star the professor
                         a.btn.btn-white(href="") See Project
-            li.portfolio-item
-                div
+                li.portfolio-item
                     img(src="assets/images/porto1.jpg", alt="item 1")
                     .portfolio-info
                         h4 Dynamically innovate resource-leveling
@@ -139,6 +144,7 @@ block content
                     label.sr-only(for="subscribe-form") Email Address
                     input.form-control(type="email", placeholder="Type your email here", id="subscribe-form")
                 button.btn.btn-primary(type="submit") Submit
+
     // RECENT POST
     section.region.reset-vertical-gap
         // HEADING ALTERNATIVE
@@ -154,28 +160,44 @@ block content
             .row.blog-posts.widen-vertical-outergap
                 .col-md-4.col-lg-4.col-sm-4
                     article.thumbnail
-                        img(src="assets/images/porto2.jpg", alt="")
+                        .thumbnail-image
+                            img(src="assets/images/porto2.jpg", alt="")
                         .caption
                             h4 
                                 a(href="") Link climb leg rub face on everything
+                            span.post-date
+                                | January, 1st 2013
                             p.
                                 Celery seakale desert raisin taro wakame pea sprouts broccoli rabe courgette rock melon.
+                            a(href="").pull-right Read more&nbsp;
+                                i.icon-angle-right
                 .col-md-4.col-lg-4.col-sm-4
                     article.thumbnail
-                        img(src="assets/images/porto1.jpg", alt="")
+                        .thumbnail-image
+                            img(src="assets/images/porto1.jpg", alt="")
                         .caption
                             h4 
                                 a(href="") Bugger bag egg's old boy willy jolly scrote
+                            span.post-date
+                                | January, 1st 2013
                             p.
                                 Pommy ipsum gallivanting around bit of a div chuffed chap stupendous gosh horses for courses.
+                            a(href="").pull-right Read more&nbsp;
+                                i.icon-angle-right
                 .col-md-4.col-lg-4.col-sm-4
                     article.thumbnail
-                        img(src="assets/images/porto3.jpg", alt="")
+                        .thumbnail-image
+                            img(src="assets/images/porto3.jpg", alt="")
                         .caption
                             h4 
                                 a(href="") Caerphilly swiss fromage frais brie cheese
+                            span.post-date
+                                | January, 1st 2013
                             p.
                                 Roquefort cheese strings who moved my cheese. Blue castello brie goat when the cheese comes out.
+                            a(href="").pull-right Read more&nbsp;
+                                i.icon-angle-right
+
     // FOOT CTA
     .region.base-invert.reset-vertical-gap(style='background-image: url(assets/images/cta-foot-blur.jpg); background-attachment: fixed;')
         div(style='background-color: rgba(0,0,0, 0.50); height: 100%;')
@@ -183,6 +205,7 @@ block content
                 h3 So, What Are You Waiting For? 
                 p 
                     a.btn.btn-primary.btn-lg.btn-cta Buy This Theme Now! 
+
     // CLIENT LIST
     .region.base-greyscale
         section.container

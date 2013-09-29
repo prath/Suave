@@ -10,6 +10,13 @@
 
 /* [Global Typo]
 -------------------------------------------------------------------*/
+.sub-copy {
+    margin: 0px auto 30px;
+    width: 80%;
+    line-height: @line-height-med;
+    font-size: @body-fz-xl;
+    text-align: center;
+}
 .copy-center {
     text-align: center;
     h1, 
@@ -36,8 +43,10 @@
 .heading-alt {
     background-color: fadeout(@invert-background, 5%);
     position: relative;
+    
+    padding: 25px 0px;
 
-    height: 80px;
+    height: auto;
     width: 100%;
     text-align: left;
     h1,
@@ -46,11 +55,14 @@
     h4,
     h5,
     h6 {
-        .inlineDisplay();
+        display: block;
         padding: 0px;
-        margin: 25px 0px;
+        margin: 0px;
         color: @default-accent;
         font-weight: 100;
+        @media screen and (min-width: 768px) {
+            .inlineDisplay();
+        }
     }
     h4, 
     h5,
@@ -58,15 +70,32 @@
         font-weight: 300;
     }
     p.sub-copy {
-        .inlineDisplay();
-
-        margin-top: 31px;
-        margin-left: 20px;
+        display: block;
+        
+        margin: 0px;
 
         color: @invert-text;
+        font-size: @body-fz-df;
+        line-height: @line-height-base;
+        text-align: left;
+        @media screen and (min-width: 768px) {
+            .inlineDisplay();
+            
+            margin-left: 20px;
+            margin-top: 5px;
+        }
     }
     .icon-action {
-        margin-top: 35px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        margin-top: 0px;
+        @media screen and (min-width: 768px) {
+            position: relative;
+            right: 0px;
+            margin-top: 0px;
+        }
+
     }
 }
 
