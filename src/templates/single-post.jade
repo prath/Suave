@@ -1,0 +1,161 @@
+//- 
+    =====================================================================
+    * Index Page
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+extends inc/master
+
+//- title
+block title
+    title Suave - Minimalist Business Theme for Bootstrap | Single Post
+
+//- content
+block content
+    
+    article
+        // PAGE TITLE
+        .page-title(style='background-image: url(assets/images/porto3.jpg); background-attachment: fixed; background-size:cover')
+            div.cover-overlay
+                 header.copy-center.container
+                    ol.breadcrumb
+                        li 
+                            a(href="http://") Home
+                        li 
+                            a(href="http://") Posts
+                        li.active 
+                            a(href="http://") Climb leg rub face ...
+                    h1
+                        | Climb leg rub face on everything give attitude nap all day for under the bed. 
+
+        // POST CONTENT
+        .region.reset-vertical-gap
+            .container.post-content
+                .row
+                    .col-md-9.col-lg-9.col-sm-12.col-xs-12
+                        .post-meta
+                            i.icon-pencil.icon-post-format
+                            span.post-date 1 January, 1st 2013
+                            .post-meta-dot-separator 
+                                | .
+                            span.post-category
+                                i.icon-circle-blank
+                                a(href="http://") Tooklit
+                                a(href="http://") Photography
+                            .post-meta-dot-separator 
+                                | .
+                            span.post-tag
+                                i.icon-tag
+                                a(href="http://") Tooklit
+                                a(href="http://") Photography
+                            .post-meta-dot-separator 
+                                | .
+                            span.post-author
+                                i.icon-user
+                                a(href="http://") John William Doe
+                        img(src="assets/images/blog.jpg", alt="blog image")
+                        span.post-image-caption Grape turnip garlic tomatillo silver beet cauliflower turnip greens chickpea gram.
+                        p 
+                            | Veggies sunt bona vobis, proinde vos postulo esse magis broccoli rabe horseradish bush tomato tigernut seakale salsify spring onion tatsoi gram bok choy. Cress cauliflower black-eyed pea garlic wattle seed parsley cress yarrow spinach squash turnip spring onion sorrel cabbage. Caulie courgette garbanzo corn yarrow peanut bell pepper broccoli sierra leone bologi gumbo. Grape turnip garlic tomatillo silver beet cauliflower turnip greens chickpea gram.
+                        p
+                            | Turnip greens napa cabbage potato taro tatsoi black-eyed pea bamboo shoot chickweed cauliflower turnip radicchio wakame sweet pepper kale rutabaga swiss chard. Broccoli rabe parsnip groundnut salad coriander onion plantain tomatillo gumbo. Kale squash yarrow winter purslane arugula celery swiss chard lentil watercress celtuce. Garlic broccoli rabe summer purslane grape kakadu plum sea lettuce pea bamboo shoot courgette silver beet pumpkin soko catsear kale zucchini prairie turnip lentil radicchio. Cress welsh onion burdock courgette salad jícama lettuce caulie endive mustard kale lotus root beet greens bunya nuts sorrel. Chard kohlrabi radicchio cauliflower garbanzo quandong coriander chickweed zucchini shallot bok choy pumpkin bush tomato salsify burdock water chestnut sea lettuce green bean. Onion pea sprouts corn gram salsify cabbage shallot prairie turnip bitterleaf aubergine ricebean burdock bok choy summer purslane melon. Earthnut pea parsnip ricebean avocado chard salad. Endive artichoke broccoli rabe daikon komatsuna bok choy tomatillo turnip radish rock melon. Mustard fava bean lettuce catsear bunya nuts onion water spinach rock melon scallion kale mustard spinach soybean. Caulie endive rutabaga fava bean sierra leone bologi leek chicory okra cucumber bitterleaf gram lotus root plantain napa cabbage lettuce.
+                        h3 Tomato summer purslane beetroot
+                        p 
+                            | Prairie turnip dulse winter purslane napa cabbage quandong lentil turnip eggplant parsnip pea garlic kakadu plum. Bamboo shoot turnip greens artichoke kale aubergine groundnut komatsuna gram courgette tomatillo salsify bush tomato ricebean prairie turnip sierra leone bologi zucchini. Squash watercress cabbage pea sprouts asparagus courgette kombu daikon broccoli rabe dandelion carrot chicory black-eyed pea bunya nuts grape. Spinach turnip greens tomato komatsuna plantain salsify rutabaga. Carrot lotus root tatsoi azuki bean garbanzo collard greens kombu welsh onion water spinach.
+                        p
+                            | Soybean broccoli maize lotus root pea sprouts fava bean komatsuna onion rock melon. Cauliflower lettuce tigernut caulie azuki bean pumpkin earthnut pea ricebean chicory fennel bitterleaf sea lettuce silver beet water spinach celery artichoke. Kakadu plum courgette avocado shallot okra scallion tatsoi wattle seed salad chickweed.Amaranth cabbage kale turnip greens prairie turnip burdock cress soko tatsoi avocado kohlrabi grape desert raisin garbanzo taro. Horseradish cauliflower kale collard greens water chestnut rock melon sierra leone bologi broccoli fennel prairie turnip parsnip soko. Green bean garlic sorrel prairie turnip avocado salsify arugula silver beet caulie daikon. Tigernut tomato quandong garlic jícama amaranth endive spinach eggplant broccoli water chestnut. Plantain chicory welsh onion chickpea daikon endive peanut.
+                    aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget
+                        section.panel.panel-default.widget
+                            header.panel-heading
+                                i.icon-list.icon-widget-heading
+                                h2.widget-heading Categories
+                            .panel-body
+                                ul.menu
+                                    li
+                                        a(href='#') Web Design
+                                    li
+                                        a(href='#') Technology
+                                    li
+                                        a(href='#') Science &amp; Fiction
+                                    li
+                                        a(href='#') Development
+                                    li
+                                        a(href='#') Augmented Reality
+                                    li
+                                        a(href='#') Interface Design
+                                    li
+                                        a(href='#') Artificial Intelligent
+                        section.panel.panel-default.widget
+                            header.panel-heading
+                                i.icon-search.icon-widget-heading
+                                h2.widget-heading Search
+                            .panel-body
+                                form(id="", method="", action="", role="form")
+                                    .form-group
+                                        label.sr-only(for="search-query") Search
+                                        input.form-control.input-sm(type="text", id="search-query", placeholder="search")
+                                    button.btn.btn-primary.btn-sm.btn-search(type="submit") Search
+
+                        section.panel.panel-default.widget
+                            header.panel-heading
+                                i.icon-tag.icon-widget-heading
+                                h2.widget-heading Tags
+                            .panel-body
+                                a(href="", target="_blank").btn.btn-xs.btn-primary html
+                                a(href="", target="_blank").btn.btn-xs.btn-primary css
+                                a(href="", target="_blank").btn.btn-xs.btn-primary javascript
+                                a(href="", target="_blank").btn.btn-xs.btn-primary WordPress
+                                a(href="", target="_blank").btn.btn-xs.btn-primary PHP
+                                a(href="", target="_blank").btn.btn-xs.btn-primary nodejs
+                                a(href="", target="_blank").btn.btn-xs.btn-primary JAVA
+                                a(href="", target="_blank").btn.btn-xs.btn-primary pearl
+                                a(href="", target="_blank").btn.btn-xs.btn-primary Python
+                                a(href="", target="_blank").btn.btn-xs.btn-primary web design
+                                a(href="", target="_blank").btn.btn-xs.btn-primary web development
+                                a(href="", target="_blank").btn.btn-xs.btn-primary ui/ux design
+                                a(href="", target="_blank").btn.btn-xs.btn-primary mobile app development
+                        section.panel.panel-default.widget
+                            header.panel-heading
+                                i.icon-pencil.icon-widget-heading
+                                h2.widget-heading Popular Post
+                            .panel-body
+                                ul.menu
+                                    li
+                                        article.widget-post
+                                            img(src="assets/images/porto3-thumb.jpg", alt="")
+                                            .widget-post-content
+                                                h3.widget-subheading
+                                                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                                                span.post-date January 1st, 2013
+                                    li
+                                        article.widget-post
+                                            img(src="assets/images/porto3-thumb.jpg", alt="")
+                                            .widget-post-content
+                                                h3.widget-subheading
+                                                    a(href="http://", target="_blank") Turnip greens napa cabbage
+                                                span.post-date January 1st, 2013
+                                    li
+                                        article.widget-post
+                                            img(src="assets/images/porto3-thumb.jpg", alt="")
+                                            .widget-post-content
+                                                h3.widget-subheading
+                                                    a(href="http://", target="_blank") Tomato summer purslane beetroot
+                                                span.post-date January 1st, 2013
+                                    li
+                                        article.widget-post
+                                            img(src="assets/images/porto3-thumb.jpg", alt="")
+                                            .widget-post-content
+                                                h3.widget-subheading
+                                                    a(href="http://", target="_blank") Prairie turnip dulse winter purslane napa
+                                                span.post-date January 1st, 2013
+                                    li
+                                        article.widget-post
+                                            img(src="assets/images/porto3-thumb.jpg", alt="")
+                                            .widget-post-content
+                                                h3.widget-subheading
+                                                    a(href="http://", target="_blank") Soybean broccoli maize lotus root
+                                                span.post-date January 1st, 2013
+
+    // Footer Widgets
+    include inc/footer-widget

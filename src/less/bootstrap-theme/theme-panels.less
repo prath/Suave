@@ -10,72 +10,179 @@
 
 /* [Buttons]
 -------------------------------------------------------------------*/
-
-.footer-widgets {
-    .panel {
-        &.widget {
-            margin-bottom: 0px;
-            background-color: transparent;
+.panel {
+    &.widget {
+        background-color: transparent;
+        border: 0px;
+        border-radius: 0px;
+        box-shadow: none;
+        .panel-heading {
+            padding: 0px;
+            margin: 0px;
             border: 0px;
-            border-radius: 0px;
-            box-shadow: none;
-            .panel-heading {
-                padding: 0px;
-                margin: 0px;
-                margin-bottom: 0px;
-                border-bottom: 1px solid @invert-accent;
-                border-top-right-radius: 0px;
-                border-top-left-radius: 0px;
-                .widget-heading{
-                    margin-bottom: 10px;
-                    text-transform: uppercase;
-                    font-family: @font-1 ;
-                    font-size: @body-fz-df ;
-                    letter-spacing: @ls-nm;
-                    font-weight: 700;
-                }
-                .widget-subheading {
-                    margin-bottom: 10px;
-                    margin-top: 5px;
-                    font-family: @font-1 ;
-                    font-size: @body-fz-xs;
-                    font-weight: 700;
-                    letter-spacing: @ls-nm;
-                    text-transform: uppercase;
-                }
-            }
-            .panel-body {
-                border-top: 1px solid lighten(@invert-background, 20%);
-                padding: 20px 0px 0px 0px;
-                margin-bottom: 20px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            .icon-widget-heading {
+                .inlineDisplay();
+                border-right: 1px solid lighten(@muted-color,20%);
+                font-size: 14px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-right: 15px;
+                margin-right: 10px;
                 margin-top: 1px;
+            }
+            .widget-heading{
+                .inlineDisplay();
+                margin-bottom: 10px;
+                margin-top: 5px;
+                text-transform: uppercase;
+                color: @muted-color;
+                font-family: @font-1 ;
+                font-size: @body-fz-df ;
+                letter-spacing: @ls-nm;
+                font-weight: 700;
+            }
+            .widget-subheading {
+                margin-bottom: 10px;
+                margin-top: 5px;
+                font-family: @font-1 ;
+                font-size: @body-fz-xs;
+                font-weight: 700;
+                letter-spacing: @ls-nm;
+                text-transform: uppercase;
+            }
+        }
+        .panel-body {
+            border-top: 0px;
+            padding: 10px 0px 0px 0px;
+            margin-bottom: 20px;
+            margin-top: 1px;
+            //*-----[Responsive 768++]-----*/
+            @media screen and (min-width: 768px) {
+                margin-bottom: 0px;
+                
+            }
+            address:last-child {
+                margin-bottom: 0px;
 
                 //*-----[Responsive 768++]-----*/
                 @media screen and (min-width: 768px) {
-                    margin-bottom: 0px;
+                    margin-bottom: 20px;
                     
                 }
-                address:last-child {
-                    margin-bottom: 0px;
+            }
+        }
+    }
+}
 
-                    //*-----[Responsive 768++]-----*/
-                    @media screen and (min-width: 768px) {
-                        margin-bottom: 20px;
-                        
+.panel-default {
+    &.widget {
+        border: 0px;
+        .panel-heading {
+            color: #333333;
+            background-color: transparent;
+            // border-color: transparent;
+        }
+    }
+}
+.sidebar-widget {
+    .panel {
+        &.widget {
+            margin-bottom: 30px;
+            .panel-heading {
+                .icon-widget-heading {
+                    color: @default-accent;
+                }
+            }
+            .panel-body {
+                padding-bottom: 15px;
+                ul {
+                    padding: 0px;
+                    margin: 0px;
+                    li {
+                        list-style: none;
+                        margin: 0px;
+                        padding: 0px;
+                        a {
+                            border-bottom: 1px solid lighten(@muted-color,32%);
+                            display: block;
+
+                            padding: 10px 15px;
+
+                            color: @default-text;
+                            transition: background-color .25s ease;
+
+                            &:hover {
+                                background-color: @default-accent;
+                                color: #fff;
+                                border-radius: @base-radius;
+                                border-bottom-color: transparent;
+                            }
+                        }
                     }
+                }
+                .widget-subheading {
+                    font-family: @font-2;
+                    font-size: @body-fz-df;
+                    font-weight: 500;
+                    margin-bottom: 0px;
+                    margin-top: 5px;
+                    a {
+                        background-color: transparent;
+                        border-bottom: 0px;
+                        padding: 0px;
+
+                        color: @default-text;
+                        &:hover {
+                            background-color: transparent;
+                            color: @default-accent;
+                        }
+                    }
+                }
+                .btn-xs {
+                    margin-bottom: 10px;
+                }
+                .widget-post {
+                    .clearfix();
+                    border-bottom: 1px solid lighten(@muted-color,32%);
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                    img {
+                        height: 30px;
+                        width: 30px;
+                        float: left;
+                        margin-right: 10px;
+                        margin-bottom: 0px;
+                    }
+                    .widget-post-content {
+                        position: relative;
+                        width: 100%;
+                        padding-left: 40px;
+                        margin-top: -6px;
+                        .post-date {
+                            .inlineDisplay();
+                            margin-top: 4px;
+                            color: @muted-color;
+                            font-size: @body-fz-sm;
+                            line-height: @line-height-narrow;
+                        }
+                    }
+                }
+                .btn-search {
+                    display: block;
+                    width: 100%;
                 }
             }
         }
     }
 
-    .panel-default {
+    
+}
+.footer-widgets {
+    .panel {
         &.widget {
-            border: 0px;
-            .panel-heading {
-                color: #333333;
-                background-color: transparent;
-                // border-color: transparent;
-            }
+            margin-bottom: 0px;
         }
     }
 }

@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------
+// * [Theme Breadcrumbs]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+.breadcrumb {
+    padding: 0px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    > li {
+        a {
+            color: darken(#fff, 20%);
+            font-size: @body-fz-sm;
+            &:hover{
+                color: #fff;
+            }
+        }
+        &+li:before {
+            content: "\00BB\00a0";
+            color: lighten(@default-accent, 25%);
+            font-size: @body-fz-xs; 
+        }
+    }
+    > .active {
+        a {
+                color: lighten(@default-accent, 15%);
+        }
+    }
+}

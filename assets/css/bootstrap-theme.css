@@ -6,8 +6,9 @@
  3. Buttons
  4. Dropdowns
  5. Navbar
- 6. Thumbnails
- 7. Panels
+ 6. Breadcrumbs
+ 7. Thumbnails
+ 8. Panels
 ------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -54,7 +55,10 @@ h6 {
   font-family: "Roboto Slab";
 }
 
-h1,
+h1 {
+  font-weight: 100;
+}
+
 h2,
 h3,
 h4 {
@@ -138,6 +142,17 @@ blockquote {
 
 .form-inline .form-control {
   margin-top: -2px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 /*------------------------------------------------------------------
@@ -493,6 +508,8 @@ blockquote {
   min-height: 30px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.main-navigation {
@@ -634,6 +651,35 @@ blockquote {
 }
 
 /*------------------------------------------------------------------
+ [6. Breadcrumbs]
+------------------------------------------------------------------*/
+
+.breadcrumb {
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+
+.breadcrumb > li a {
+  color: #cccccc;
+  font-size: 12px;
+}
+
+.breadcrumb > li a:hover {
+  color: #fff;
+}
+
+.breadcrumb > li + li:before {
+  content: "\00BB\00a0";
+  color: #f9d7d4;
+  font-size: 11px;
+}
+
+.breadcrumb > .active a {
+  color: #f4aea7;
+}
+
+/*------------------------------------------------------------------
  [6. Thumbnails]
 ------------------------------------------------------------------*/
 
@@ -690,8 +736,7 @@ blockquote {
 /* [Buttons]
 -------------------------------------------------------------------*/
 
-.footer-widgets .panel.widget {
-  margin-bottom: 0px;
+.panel.widget {
   background-color: transparent;
   border: 0px;
   -webkit-border-radius: 0px;
@@ -700,27 +745,48 @@ blockquote {
   box-shadow: none;
 }
 
-.footer-widgets .panel.widget .panel-heading {
+.panel.widget .panel-heading {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 0px;
-  border-bottom: 1px solid #88aaff;
+  border: 0px;
   -webkit-border-top-right-radius: 0px;
   border-top-right-radius: 0px;
   -webkit-border-top-left-radius: 0px;
   border-top-left-radius: 0px;
 }
 
-.footer-widgets .panel.widget .panel-heading .widget-heading {
+.panel.widget .panel-heading .icon-widget-heading {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  /* Fix for IE7 */
+  border-right: 1px solid #d3d3d3;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-right: 10px;
+  margin-top: 1px;
+}
+
+.panel.widget .panel-heading .widget-heading {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  /* Fix for IE7 */
   margin-bottom: 10px;
+  margin-top: 5px;
   text-transform: uppercase;
+  color: #a0a0a0;
   font-family: "Maven Pro";
   font-size: 13px;
   letter-spacing: 0px;
   font-weight: 700;
 }
 
-.footer-widgets .panel.widget .panel-heading .widget-subheading {
+.panel.widget .panel-heading .widget-subheading {
   margin-bottom: 10px;
   margin-top: 5px;
   font-family: "Maven Pro";
@@ -730,34 +796,165 @@ blockquote {
   text-transform: uppercase;
 }
 
-.footer-widgets .panel.widget .panel-body {
-  border-top: 1px solid #687685;
-  padding: 20px 0px 0px 0px;
+.panel.widget .panel-body {
+  border-top: 0px;
+  padding: 10px 0px 0px 0px;
   margin-bottom: 20px;
   margin-top: 1px;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-widgets .panel.widget .panel-body {
+  .panel.widget .panel-body {
     margin-bottom: 0px;
   }
 }
 
-.footer-widgets .panel.widget .panel-body address:last-child {
+.panel.widget .panel-body address:last-child {
   margin-bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-widgets .panel.widget .panel-body address:last-child {
+  .panel.widget .panel-body address:last-child {
     margin-bottom: 20px;
   }
 }
 
-.footer-widgets .panel-default.widget {
+.panel-default.widget {
   border: 0px;
 }
 
-.footer-widgets .panel-default.widget .panel-heading {
+.panel-default.widget .panel-heading {
   color: #333333;
   background-color: transparent;
+}
+
+.sidebar-widget .panel.widget {
+  margin-bottom: 30px;
+}
+
+.sidebar-widget .panel.widget .panel-heading .icon-widget-heading {
+  color: #eb6f63;
+}
+
+.sidebar-widget .panel.widget .panel-body {
+  padding-bottom: 15px;
+}
+
+.sidebar-widget .panel.widget .panel-body ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.sidebar-widget .panel.widget .panel-body ul li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar-widget .panel.widget .panel-body ul li a {
+  border-bottom: 1px solid #f2f2f2;
+  display: block;
+  padding: 10px 15px;
+  color: #7c7c7c;
+  -webkit-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.sidebar-widget .panel.widget .panel-body ul li a:hover {
+  background-color: #eb6f63;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-bottom-color: transparent;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-subheading {
+  font-family: "Roboto Slab";
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-subheading a {
+  background-color: transparent;
+  border-bottom: 0px;
+  padding: 0px;
+  color: #7c7c7c;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-subheading a:hover {
+  background-color: transparent;
+  color: #eb6f63;
+}
+
+.sidebar-widget .panel.widget .panel-body .btn-xs {
+  margin-bottom: 10px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post {
+  *zoom: 1;
+  border-bottom: 1px solid #f2f2f2;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post:before,
+.sidebar-widget .panel.widget .panel-body .widget-post:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post:after {
+  clear: both;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post:before,
+.sidebar-widget .panel.widget .panel-body .widget-post:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post:after {
+  clear: both;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post img {
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post .widget-post-content {
+  position: relative;
+  width: 100%;
+  padding-left: 40px;
+  margin-top: -6px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post .widget-post-content .post-date {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  /* Fix for IE7 */
+  margin-top: 4px;
+  color: #a0a0a0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.sidebar-widget .panel.widget .panel-body .btn-search {
+  display: block;
+  width: 100%;
+}
+
+.footer-widgets .panel.widget {
+  margin-bottom: 0px;
 }

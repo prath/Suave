@@ -29,7 +29,8 @@ Text Domain: Suave Wordpress
  9. Icon
  10. Dropdown
  11. Image
- 12. Helper
+ 12. Posts
+ 13. Helper
 ------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -70,8 +71,27 @@ a:hover {
   }
 }
 
+.cover-overlay {
+  background-color: rgba(120, 50, 44, 0.7);
+  height: 100%;
+}
+
+.page-title header {
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+.page-title h1 {
+  color: #fff;
+}
+
+.post-content {
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
 body.suave {
-  margin-top: 80px;
+  margin-top: 74px;
 }
 
 .container {
@@ -206,6 +226,7 @@ body.suave {
   color: #d1f2eb;
 }
 
+.base-secondary i,
 .base-secondary .icon-title {
   color: #ffffff;
 }
@@ -237,6 +258,7 @@ body.suave {
   color: #a5c6c9;
 }
 
+.base-tertiary i,
 .base-tertiary .icon-title {
   color: #ffffff;
 }
@@ -268,6 +290,7 @@ body.suave {
   color: #e45b36;
 }
 
+.base-quaternary i,
 .base-quaternary .icon-title {
   color: #ffffff;
 }
@@ -298,6 +321,7 @@ body.suave {
   color: #909ca9;
 }
 
+.base-invert i,
 .base-invert .icon-title {
   color: #ffffff;
 }
@@ -331,7 +355,7 @@ body.suave {
 ------------------------------------------------------------------*/
 
 .headline {
-  margin-top: -80px;
+  margin-top: -74px;
   overflow: hidden;
   background-position: center center;
   background-size: cover;
@@ -516,8 +540,15 @@ footer .footer-menu:after {
 
 .copy-center h1,
 .copy-center h2 {
-  font-weight: 300;
   letter-spacing: -1px;
+}
+
+.copy-center h1 {
+  font-weight: 100;
+}
+
+.copy-center h2 {
+  font-weight: 300;
 }
 
 .copy-center h1,
@@ -1810,6 +1841,17 @@ footer .footer-menu:after {
   font-size: 30px;
 }
 
+/* [Post Format Icons]
+-------------------------------------------------------------------*/
+
+.icon-post-format {
+  background-color: #eb6f63;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  color: #fff;
+}
+
 /*------------------------------------------------------------------
  [10. Dropdown]
 ------------------------------------------------------------------*/
@@ -2027,7 +2069,89 @@ footer .footer-menu:after {
 }
 
 /*------------------------------------------------------------------
- [12. Helper]
+ [12. Posts]
+------------------------------------------------------------------*/
+
+.post-content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.post-meta {
+  display: block;
+  border-bottom: 1px solid #f7c2bd;
+  border-top: 1px solid #f7c2bd;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.post-meta-dot-separator {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  /* Fix for IE7 */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.post-meta span {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  /* Fix for IE7 */
+}
+
+.post-category i,
+.post-tag i,
+.post-author i {
+  font-size: 10px;
+  color: #f7c2bd;
+}
+
+.post-category a:after,
+.post-tag a:after,
+.post-author a:after {
+  content: "\00a0,\00a0";
+}
+
+.post-category a:last-child:after,
+.post-tag a:last-child:after,
+.post-author a:last-child:after {
+  content: "";
+}
+
+.post-author i {
+  color: #d3d3d3;
+}
+
+.post-author a {
+  color: #a0a0a0;
+  font-weight: 500;
+}
+
+.post-image-caption {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  /* Fix for IE7 */
+  color: #a0a0a0;
+  font-size: 12px;
+  font-style: italic;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+/*------------------------------------------------------------------
+ [13. Helper]
 ------------------------------------------------------------------*/
 
 /* [Pad-Margin Classes]
