@@ -20,6 +20,8 @@
             position: absolute;
         }
     }
+
+    //*-----[Responsive 768++]-----*/
     @media screen and (min-width: 768px) {
         min-height: 50px;
         > .container {
@@ -80,8 +82,23 @@
     letter-spacing: @ls-nr;
     line-height: 40px;
     text-shadow: none;
+    > img {
+        height: 30px;
+        width: 28px;
+        margin-right: 10px;
+        margin-top: -5px;
+        vertical-align: middle;
+        
+        //*-----[Responsive 768++]-----*/
+        @media screen and (min-width: 768px) {
+            height: 40px;
+            width: 38px;
+        }
+    }
+
+    //*-----[Responsive 768++]-----*/
     @media screen and (min-width: 768px) {
-        font-size: @heading-2-fz;
+        font-size: @heading-3-fz;
         line-height: @line-height-xwide;
     }
 }

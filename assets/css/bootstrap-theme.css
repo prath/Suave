@@ -562,9 +562,24 @@ blockquote {
   text-shadow: none;
 }
 
+.navbar-brand > img {
+  height: 30px;
+  width: 28px;
+  margin-right: 10px;
+  margin-top: -5px;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-brand > img {
+    height: 40px;
+    width: 38px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navbar-brand {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 48px;
   }
 }

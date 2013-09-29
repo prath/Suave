@@ -15,9 +15,13 @@
     height: 300px;
     width: 100%;
     overflow: hidden;
+
+    //*-----[Responsive 600++]-----*/
     @media screen and (min-width: 600px) {
         height: 200px;
     }
+
+    //*-----[Responsive 768++]-----*/
     @media screen and (min-width: 768px) {
         height: 400px;
     }
@@ -27,35 +31,48 @@
     list-style: none;
     margin: 0px;
     padding: 0px;
+
+    //*-----[Responsive 600++]-----*/
     @media screen and (min-width: 600px) {
         width: 1000%;
     }
+    
     > li.portfolio-item {
         position: relative;
         background-color: @default-accent;
         float: left;
         height: auto;
         width: 100%;
+
+        //*-----[Responsive 600++]-----*/
         @media screen and (min-width: 600px) {
             height: 200px;
             width: 300px;
         }
+
+        //*-----[Responsive 768++]-----*/
         @media screen and (min-width: 768px) {
             height: 400px;
             width: 600px;
         }
+
         img {
             height: auto;
             width: 100%;
             transition: all 1.5s ease;
+
+            //*-----[Responsive 600++]-----*/
             @media screen and (min-width: 600px) {
                 height: 200px;
                 width: 300px
             }
+
+            //*-----[Responsive 768++]-----*/
             @media screen and (min-width: 768px) {
                 height: 400px;
                 width: 600px
             }
+
         }
         &:hover {
             img {
@@ -109,6 +126,8 @@
 
 .thumbnail {
     margin-bottom: 20px;
+
+    //*-----[Responsive 600++]-----*/
     @media screen and (min-width: 600px) {
         margin-bottom: 0px;
     }
@@ -116,6 +135,8 @@
         height: 200px;
         width: 100%;
         overflow: hidden;
+
+        //*-----[Responsive 600++ & --768]-----*/
         @media screen and (min-width: 600px) and (max-width: 767px) {
             display: none;
         }

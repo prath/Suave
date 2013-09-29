@@ -22,19 +22,27 @@
         .logo-big {
             width: 68px;
             margin: 0px auto;
+
+            //*-----[Responsive 600++]-----*/
             @media screen and (min-width: 600px) {
                 width: 38px;
             }
+
+            //*-----[Responsive 768++]-----*/
             @media screen and (min-width: 768px) {
                 width: 93px;
             }
             img {
                 width: 68px;
                 height: 70px; 
+
+                //*-----[Responsive 600++]-----*/
                 @media screen and (min-width: 600px) {
                     width: 38px;
                     height: 40px; 
                 }
+
+                //*-----[Responsive 768++]-----*/
                 @media screen and (min-width: 768px) {
                     width: 93px;
                     height: 100px; 
@@ -48,9 +56,13 @@
             font-weight: 100;
             text-align: center;
             margin: 1em auto 0px;
+
+            //*-----[Responsive 600++]-----*/
             @media screen and (min-width: 600px) {
                 margin: 0.2em auto 0px;
             }
+
+            //*-----[Responsive 768++]-----*/
             @media screen and (min-width: 768px) {
                 font-size: @heading-hero-fz;
                 margin: 1.5em auto 0px;
@@ -66,11 +78,15 @@
             font-size: @body-fz-lg;
             text-align: center;
             line-height: @line-height-med;
+
+            //*-----[Responsive 600++]-----*/
             @media screen and (min-width: 600px) {
                 margin-top: 10px;
                 margin-bottom: 20px;
                 line-height: @line-height-base;
             }
+
+            //*-----[Responsive 768++]-----*/
             @media screen and (min-width: 768px) {
                 margin: 20px auto 40px;
                 font-size: @body-fz-vl;
