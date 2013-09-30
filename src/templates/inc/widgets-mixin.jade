@@ -1,0 +1,297 @@
+//- 
+    =====================================================================
+    * Widgets Mixins
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+//- WIDGET ARCHIVE
+mixin widget-archive
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-folder-open-alt.icon-widget-heading
+            h2.widget-heading Archive
+        .panel-body
+            ul
+                li
+                    a(href='#') January 2013 
+                    span.count 5
+                li
+                    a(href='#') February 2012
+                    span.count 5
+                li
+                    a(href='#') March 2013 
+                    span.count 5
+                li
+                    a(href='#') April 2013 
+                    span.count 5
+                li
+                    a(href='#') May 2013 
+                    span.count 5
+
+//- WIDGET ARCHIVE DROPDOWN
+mixin widget-archive-dropdown
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-folder-close-alt.icon-widget-heading
+            h2.widget-heading Archive Dropdown
+        .panel-body
+            select(name="archive-dropdown")
+                option(value="") Select Month
+                option(value="") January 2013 (5)
+                option(value="") February 2013 (5)
+                option(value="") March 2013 (5)
+                option(value="") April 2013 (5)
+                option(value="") May 2013 (5)
+
+//- WIDGET CATEGORIES
+mixin widget-categories
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-list.icon-widget-heading
+            h2.widget-heading Categories
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        i.icon-desktop.icon-widget-heading
+                        | Web Design
+                    span.count 5
+                li
+                    a(href='#') 
+                        i.icon-circle-blank.icon-widget-heading
+                        | Technology
+                li
+                    a(href='#') 
+                        i.icon-circle-blank.icon-widget-heading
+                        | Science &amp; Fiction
+                li
+                    a(href='#') 
+                        i.icon-paste.icon-widget-heading
+                        | Development
+                    ul.children 
+                        li 
+                            a(href='#') 
+                                i.icon-double-angle-up.icon-widget-heading
+                                | Web Development
+                        li 
+                            a(href='#') 
+                                i.icon-screenshot.icon-widget-heading
+                                | App Development
+                li
+                    a(href='#') 
+                        i.icon-file-text-alt.icon-widget-heading
+                        | Augmented Reality
+                li
+                    a(href='#') 
+                        i.icon-circle-blank.icon-widget-heading
+                        | Interface Design
+                li
+                    a(href='#') 
+                        i.icon-circle-blank.icon-widget-heading
+                        | Artificial Intelligent
+
+//- WIDGET CATEGORIES
+mixin widget-link
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-list.icon-widget-heading
+            h2.widget-heading Link
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        | Web Design
+                li
+                    a(href='#') 
+                        | Technology
+                li
+                    a(href='#') 
+                        | Science &amp; Fiction
+                li
+                    a(href='#') 
+                        | Development
+                    ul.children 
+                        li 
+                            a(href='#') 
+                                | Web Development
+                        li 
+                            a(href='#') 
+                                | App Development
+
+//- WIDGET CATEGORIES
+mixin widget-link-icons
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-list.icon-widget-heading
+            h2.widget-heading Link
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        i.icon-circle-blank.icon-widget-heading
+                        | Web Design
+                li
+                    a(href='#') 
+                        i.icon-circle-blank.icon-widget-heading
+                        | Development
+                    ul.children 
+                        li 
+                            a(href='#') 
+                                i.icon-circle-blank.icon-widget-heading
+                                | Web Development
+                        li 
+                            a(href='#') 
+                                i.icon-circle-blank.icon-widget-heading
+                                | App Development
+                li
+                    a(href='#') 
+                        i.icon-circle-blank.icon-widget-heading
+                        | Technology
+                li
+                    a(href='#') 
+                        i.icon-circle-blank.icon-widget-heading
+                        | Science &amp; Fiction
+
+
+//- WIDGET SEARCH
+mixin widget-search
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-search.icon-widget-heading
+            h2.widget-heading Search
+        .panel-body
+            form(id="", method="", action="", role="form")
+                .form-group
+                    label.sr-only(for="search-query") Search
+                    input.form-control.input-sm(type="text", id="search-query", placeholder="search")
+                button.btn.btn-primary.btn-sm.btn-search(type="submit") Search
+
+//- WIDGET TAGS
+mixin widget-tags
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-tag.icon-widget-heading
+            h2.widget-heading Tags
+        .panel-body
+            a(href="", target="_blank").btn.btn-xs.btn-primary html
+            a(href="", target="_blank").btn.btn-xs.btn-primary css
+            a(href="", target="_blank").btn.btn-xs.btn-primary javascript
+            a(href="", target="_blank").btn.btn-xs.btn-primary WordPress
+            a(href="", target="_blank").btn.btn-xs.btn-primary PHP
+            a(href="", target="_blank").btn.btn-xs.btn-primary nodejs
+            a(href="", target="_blank").btn.btn-xs.btn-primary JAVA
+            a(href="", target="_blank").btn.btn-xs.btn-primary pearl
+            a(href="", target="_blank").btn.btn-xs.btn-primary Python
+            a(href="", target="_blank").btn.btn-xs.btn-primary web design
+            a(href="", target="_blank").btn.btn-xs.btn-primary web development
+            a(href="", target="_blank").btn.btn-xs.btn-primary ui/ux design
+            a(href="", target="_blank").btn.btn-xs.btn-primary mobile app development
+
+//- WIDGET POPULAR POSTS
+mixin widget-popular-post
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-pencil.icon-widget-heading
+            h2.widget-heading Popular Post
+        .panel-body
+            ul  
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                            span.post-date January 1st, 2013
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Turnip greens napa cabbage
+                            span.post-date January 1st, 2013
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Tomato summer purslane beetroot
+                            span.post-date January 1st, 2013
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Prairie turnip dulse winter purslane napa
+                            span.post-date January 1st, 2013
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Soybean broccoli maize lotus root
+                            span.post-date January 1st, 2013
+
+//- WIDGET RECENT POSTS
+mixin widget-recent-post
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-pencil.icon-widget-heading
+            h2.widget-heading Recent Posts
+        .panel-body
+            ul
+                li 
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                    span.post-date January 1st, 2013
+
+                li
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                    span.post-date February 1st, 2013
+                li
+                    a(href="http://", target="_blank") Turnip greens napa cabbage
+                    span.post-date March 1st, 2013
+                li
+                    a(href="http://", target="_blank") Tomato summer purslane beetroot
+                    span.post-date April 1st, 2013
+                li
+                    a(href="http://", target="_blank") Prairie turnip dulse winter purslane napa
+                    span.post-date May 1st, 2013
+                li
+                    a(href="http://", target="_blank") Soybean broccoli maize lotus root
+                    span.post-date June 1st, 2013
+
+//- WIDGET ABOUT
+mixin widget-about
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-info.icon-widget-heading
+            h2.widget-heading About Us
+        .panel-body
+            p
+                | Suave is a Minimalist Business Theme for Bootstrap.
+                | Built with simplicity and flexibility in mind.
+                | Perfect for various business needs.
+            address
+                strong Twitter, Inc.
+                br
+                | 795 Folsom Ave, Suite 600
+                br
+                | San Francisco, CA 94107
+                br
+                abbr(title='Phone') Ph:
+                a(href='tel:123-4567890') 123-4567890
+            address
+                strong Full Name
+                br
+                a(href='mailto:#') first.last@example.com
+ 
+//- WIDGET NEWSLETTER       
+mixin widget-newsletter
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-envelope-alt.icon-widget-heading
+            h2.widget-heading Join Our Newsletter
+        .panel-body
+            p
+                | Get our monthly newsletter, Latest news &amp; buzz.
+            p
+                form.form-inline(id="", method="", action="", role="form")
+                    .form-group
+                        label.sr-only(for="subscribe-form") Email Address
+                        input.form-control(type="email", placeholder="Type your email here", id="subscribe-form")
+                    button.btn.btn-primary(type="submit") Submit

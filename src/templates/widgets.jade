@@ -1,0 +1,54 @@
+//- 
+    =====================================================================
+    * Index Page
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+extends inc/master
+
+//- title
+block title
+    title Suave - Minimalist Business Theme for Bootstrap | Single Post
+
+//- content
+block content
+    
+    article
+        // PAGE TITLE
+        mixin page-title("Widgets")
+
+        // POST CONTENT
+        .region.reset-vertical-gap
+            .container.post-content
+                .row
+                    aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget
+                        .sidebar-widget
+                            mixin widget-categories
+                            mixin widget-archive
+                    aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget
+                        .sidebar-widget
+                            mixin widget-search
+                            mixin widget-archive-dropdown
+                            mixin widget-recent-post
+                    aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget
+                        .sidebar-widget
+                            mixin widget-popular-post
+                            mixin widget-link-icons
+                    aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget
+                        .sidebar-widget
+                            mixin widget-tags
+                            mixin widget-newsletter
+
+    // Footer Widgets
+    aside.region.footer-widgets.base-invert
+        .container
+            .row
+                .col-md-4.col-lg-4.col-sm-12.col-xs-12
+                    mixin widget-about
+                .col-md-2.col-lg-2.col-sm-6.col-xs-6
+                    mixin widget-link
+                .col-md-2.col-lg-2.col-sm-6.col-xs-6
+                    mixin widget-link
+                .col-md-4.col-lg-4.col-sm-12.col-xs-12
+                    mixin widget-newsletter 

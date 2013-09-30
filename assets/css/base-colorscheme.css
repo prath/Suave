@@ -10,7 +10,6 @@ License URI: assets/license.txt
 Tags: some, tags, here
 Text Domain: Suave Wordpress
 */
-
 /*------------------------------------------------------------------
  [Table of contents]
 --------------------------------------------------------------------
@@ -18,28 +17,22 @@ Text Domain: Suave Wordpress
  2. Button Colors
  3. Form Colors
 ------------------------------------------------------------------*/
-
 /*------------------------------------------------------------------
  [1. Base]
 ------------------------------------------------------------------*/
-
 /* [Secondary]
 -------------------------------------------------------------------*/
-
 .base-secondary {
   background-color: #47c9af;
   color: #ffffff;
 }
-
 .base-secondary a {
   color: #044639;
 }
-
 .base-secondary a:hover {
   color: #088e74;
   text-decoration: none;
 }
-
 .base-secondary h1,
 .base-secondary h2,
 .base-secondary h3,
@@ -49,29 +42,23 @@ Text Domain: Suave Wordpress
 .base-secondary p.sub-copy {
   color: #d1f2eb;
 }
-
 .base-secondary i,
 .base-secondary .icon-title {
   color: #ffffff;
 }
-
 /* [Tertiary]
 -------------------------------------------------------------------*/
-
 .base-tertiary {
   background-color: #467175;
   color: #e4f3f4;
 }
-
 .base-tertiary a {
   color: #46ede2;
 }
-
 .base-tertiary a:hover {
   color: #12bbb0;
   text-decoration: none;
 }
-
 .base-tertiary h1,
 .base-tertiary h2,
 .base-tertiary h3,
@@ -81,29 +68,23 @@ Text Domain: Suave Wordpress
 .base-tertiary p.sub-copy {
   color: #a5c6c9;
 }
-
 .base-tertiary i,
 .base-tertiary .icon-title {
   color: #ffffff;
 }
-
 /* [quaternary]
 -------------------------------------------------------------------*/
-
 .base-quaternary {
   background-color: #ffe5cd;
   color: #917052;
 }
-
 .base-quaternary a {
   color: #e45b36;
 }
-
 .base-quaternary a:hover {
   color: #eb7e5c;
   text-decoration: none;
 }
-
 .base-quaternary h1,
 .base-quaternary h2,
 .base-quaternary h3,
@@ -113,28 +94,22 @@ Text Domain: Suave Wordpress
 .base-quaternary p.sub-copy {
   color: #e45b36;
 }
-
 .base-quaternary i,
 .base-quaternary .icon-title {
   color: #ffffff;
 }
-
 /* [Invert]
 -------------------------------------------------------------------*/
-
 .base-invert {
   background-color: #3b434c;
   color: #c3ccd7;
 }
-
 .base-invert a {
   color: #88aaff;
 }
-
 .base-invert a:hover {
   color: #7590d2;
 }
-
 .base-invert h1,
 .base-invert h2,
 .base-invert h3,
@@ -144,52 +119,40 @@ Text Domain: Suave Wordpress
 .base-invert p.sub-copy {
   color: #909ca9;
 }
-
 .base-invert i,
 .base-invert .icon-title {
   color: #ffffff;
 }
-
 /* [Greyscale]
 -------------------------------------------------------------------*/
-
 .base-greyscale {
   background-color: #f8f8f8;
   color: #7c7c7c;
 }
-
 .base-greyscale a {
   color: #444444;
 }
-
 .base-greyscale a:hover {
   color: #717171;
 }
-
 .base-greyscale .icon-title {
   color: #ffffff;
 }
-
 /*------------------------------------------------------------------
  [2. Buttons]
 ------------------------------------------------------------------*/
-
 /* [Buttons on secondary base]
 -------------------------------------------------------------------*/
-
 .base-secondary .btn {
   border: 1px solid #044639;
   color: #044639;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn:focus,
 .base-secondary .btn.focus,
 .base-secondary .btn:active,
@@ -197,20 +160,16 @@ Text Domain: Suave Wordpress
   border-color: #088e74;
   color: #088e74;
 }
-
 .base-secondary .btn.btn-default {
   border: 1px solid #044639;
   color: #044639;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-default:focus,
 .base-secondary .btn.btn-default.focus,
 .base-secondary .btn.btn-default:active,
@@ -218,20 +177,16 @@ Text Domain: Suave Wordpress
   border-color: #088e74;
   color: #088e74;
 }
-
 .base-secondary .btn.btn-primary {
   border: 1px solid #044639;
   color: #044639;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-primary:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-primary:focus,
 .base-secondary .btn.btn-primary.focus,
 .base-secondary .btn.btn-primary:active,
@@ -239,20 +194,16 @@ Text Domain: Suave Wordpress
   border-color: #088e74;
   color: #088e74;
 }
-
 .base-secondary .btn.btn-success {
   border: 1px solid #94f871;
   color: #94f871;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-success:hover {
   border-color: #010400;
   color: #010400;
 }
-
 .base-secondary .btn.btn-success:focus,
 .base-secondary .btn.btn-success.focus,
 .base-secondary .btn.btn-success:active,
@@ -260,20 +211,16 @@ Text Domain: Suave Wordpress
   border-color: #cbfcba;
   color: #cbfcba;
 }
-
 .base-secondary .btn.btn-info {
   border: 1px solid #037fb2;
   color: #037fb2;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-info:focus,
 .base-secondary .btn.btn-info.focus,
 .base-secondary .btn.btn-info:active,
@@ -281,20 +228,16 @@ Text Domain: Suave Wordpress
   border-color: #07b4fb;
   color: #07b4fb;
 }
-
 .base-secondary .btn.btn-warning {
   border: 1px solid #fee4a6;
   color: #fee4a6;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-warning:hover {
   border-color: #3e2c01;
   color: #3e2c01;
 }
-
 .base-secondary .btn.btn-warning:focus,
 .base-secondary .btn.btn-warning.focus,
 .base-secondary .btn.btn-warning:active,
@@ -302,20 +245,16 @@ Text Domain: Suave Wordpress
   border-color: #fffbf2;
   color: #fffbf2;
 }
-
 .base-secondary .btn.btn-danger {
   border: 1px solid #a32323;
   color: #a32323;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-danger:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-danger:focus,
 .base-secondary .btn.btn-danger.focus,
 .base-secondary .btn.btn-danger:active,
@@ -323,21 +262,17 @@ Text Domain: Suave Wordpress
   border-color: #d53d3d;
   color: #d53d3d;
 }
-
 .base-secondary .btn.btn-link {
   border: 1px solid #044639;
   color: #044639;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .base-secondary .btn.btn-link:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-secondary .btn.btn-link:focus,
 .base-secondary .btn.btn-link.focus,
 .base-secondary .btn.btn-link:active,
@@ -345,24 +280,19 @@ Text Domain: Suave Wordpress
   border-color: #088e74;
   color: #088e74;
 }
-
 .base-secondary .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .base-secondary .btn.btn-inverse {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-inverse:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-secondary .btn.btn-inverse:focus,
 .base-secondary .btn.btn-inverse.focus,
 .base-secondary .btn.btn-inverse:active,
@@ -370,20 +300,16 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-secondary .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-secondary .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-secondary .btn.btn-white:focus,
 .base-secondary .btn.btn-white.focus,
 .base-secondary .btn.btn-white:active,
@@ -391,12 +317,10 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-secondary .btn.btn-cta {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border-left: 1px solid #ff7755;
   padding: 0 30px;
@@ -405,12 +329,10 @@ Text Domain: Suave Wordpress
   line-height: 48px;
   text-transform: uppercase;
 }
-
 .base-secondary .btn.btn-cta:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-secondary .btn.btn-cta:focus,
 .base-secondary .btn.btn-cta.focus,
 .base-secondary .btn.btn-cta:active,
@@ -418,29 +340,23 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-secondary .btn.btn-cta:hover {
   background-color: transparent;
   border: 1px solid #ff7755;
   color: #ff7755;
 }
-
 /* [Buttons on tertiary base]
 -------------------------------------------------------------------*/
-
 .base-tertiary .btn {
   border: 1px solid #081011;
   color: #081011;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn:focus,
 .base-tertiary .btn.focus,
 .base-tertiary .btn:active,
@@ -448,20 +364,16 @@ Text Domain: Suave Wordpress
   border-color: #204145;
   color: #204145;
 }
-
 .base-tertiary .btn.btn-default {
   border: 1px solid #081011;
   color: #081011;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-default:focus,
 .base-tertiary .btn.btn-default.focus,
 .base-tertiary .btn.btn-default:active,
@@ -469,20 +381,16 @@ Text Domain: Suave Wordpress
   border-color: #204145;
   color: #204145;
 }
-
 .base-tertiary .btn.btn-primary {
   border: 1px solid #46ede2;
   color: #46ede2;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-primary:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-primary:focus,
 .base-tertiary .btn.btn-primary.focus,
 .base-tertiary .btn.btn-primary:active,
@@ -490,20 +398,16 @@ Text Domain: Suave Wordpress
   border-color: #8cf4ed;
   color: #8cf4ed;
 }
-
 .base-tertiary .btn.btn-success {
   border: 1px solid #48c064;
   color: #48c064;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-success:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-success:focus,
 .base-tertiary .btn.btn-success.focus,
 .base-tertiary .btn.btn-success:active,
@@ -511,20 +415,16 @@ Text Domain: Suave Wordpress
   border-color: #81d494;
   color: #81d494;
 }
-
 .base-tertiary .btn.btn-info {
   border: 1px solid #42b0e9;
   color: #42b0e9;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-info:focus,
 .base-tertiary .btn.btn-info.focus,
 .base-tertiary .btn.btn-info:active,
@@ -532,20 +432,16 @@ Text Domain: Suave Wordpress
   border-color: #87cdf1;
   color: #87cdf1;
 }
-
 .base-tertiary .btn.btn-warning {
   border: 1px solid #f5ca65;
   color: #f5ca65;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-warning:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-warning:focus,
 .base-tertiary .btn.btn-warning.focus,
 .base-tertiary .btn.btn-warning:active,
@@ -553,20 +449,16 @@ Text Domain: Suave Wordpress
   border-color: #fae3ad;
   color: #fae3ad;
 }
-
 .base-tertiary .btn.btn-danger {
   border: 1px solid #fa8383;
   color: #fa8383;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-danger:hover {
   border-color: #170101;
   color: #170101;
 }
-
 .base-tertiary .btn.btn-danger:focus,
 .base-tertiary .btn.btn-danger.focus,
 .base-tertiary .btn.btn-danger:active,
@@ -574,21 +466,17 @@ Text Domain: Suave Wordpress
   border-color: #fdcdcd;
   color: #fdcdcd;
 }
-
 .base-tertiary .btn.btn-link {
   border: 1px solid #46ede2;
   color: #46ede2;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .base-tertiary .btn.btn-link:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-tertiary .btn.btn-link:focus,
 .base-tertiary .btn.btn-link.focus,
 .base-tertiary .btn.btn-link:active,
@@ -596,24 +484,19 @@ Text Domain: Suave Wordpress
   border-color: #8cf4ed;
   color: #8cf4ed;
 }
-
 .base-tertiary .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .base-tertiary .btn.btn-inverse {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-inverse:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-tertiary .btn.btn-inverse:focus,
 .base-tertiary .btn.btn-inverse.focus,
 .base-tertiary .btn.btn-inverse:active,
@@ -621,20 +504,16 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-tertiary .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-tertiary .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-tertiary .btn.btn-white:focus,
 .base-tertiary .btn.btn-white.focus,
 .base-tertiary .btn.btn-white:active,
@@ -642,12 +521,10 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-tertiary .btn.btn-cta {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border-left: 1px solid #ff7755;
   padding: 0 30px;
@@ -656,12 +533,10 @@ Text Domain: Suave Wordpress
   line-height: 48px;
   text-transform: uppercase;
 }
-
 .base-tertiary .btn.btn-cta:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-tertiary .btn.btn-cta:focus,
 .base-tertiary .btn.btn-cta.focus,
 .base-tertiary .btn.btn-cta:active,
@@ -669,29 +544,23 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-tertiary .btn.btn-cta:hover {
   background-color: transparent;
   border: 1px solid #ff7755;
   color: #ff7755;
 }
-
 /* [Buttons on quaternary base]
 -------------------------------------------------------------------*/
-
 .base-quaternary .btn {
   border: 1px solid #a19080;
   color: #a19080;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn:focus,
 .base-quaternary .btn.focus,
 .base-quaternary .btn:active,
@@ -699,20 +568,16 @@ Text Domain: Suave Wordpress
   border-color: #c2b6ac;
   color: #c2b6ac;
 }
-
 .base-quaternary .btn.btn-default {
   border: 1px solid #a19080;
   color: #a19080;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-default:focus,
 .base-quaternary .btn.btn-default.focus,
 .base-quaternary .btn.btn-default:active,
@@ -720,20 +585,16 @@ Text Domain: Suave Wordpress
   border-color: #c2b6ac;
   color: #c2b6ac;
 }
-
 .base-quaternary .btn.btn-primary {
   border: 1px solid #e45b36;
   color: #e45b36;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-primary:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-primary:focus,
 .base-quaternary .btn.btn-primary.focus,
 .base-quaternary .btn.btn-primary:active,
@@ -741,20 +602,16 @@ Text Domain: Suave Wordpress
   border-color: #ed9279;
   color: #ed9279;
 }
-
 .base-quaternary .btn.btn-success {
   border: 1px solid #84b010;
   color: #84b010;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-success:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-success:focus,
 .base-quaternary .btn.btn-success.focus,
 .base-quaternary .btn.btn-success:active,
@@ -762,20 +619,16 @@ Text Domain: Suave Wordpress
   border-color: #b4eb22;
   color: #b4eb22;
 }
-
 .base-quaternary .btn.btn-info {
   border: 1px solid #1d8ad7;
   color: #1d8ad7;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-info:focus,
 .base-quaternary .btn.btn-info.focus,
 .base-quaternary .btn.btn-info:active,
@@ -783,20 +636,16 @@ Text Domain: Suave Wordpress
   border-color: #58ade8;
   color: #58ade8;
 }
-
 .base-quaternary .btn.btn-warning {
   border: 1px solid #c98000;
   color: #c98000;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-warning:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-warning:focus,
 .base-quaternary .btn.btn-warning.focus,
 .base-quaternary .btn.btn-warning:active,
@@ -804,20 +653,16 @@ Text Domain: Suave Wordpress
   border-color: #ffab17;
   color: #ffab17;
 }
-
 .base-quaternary .btn.btn-danger {
   border: 1px solid #fc0507;
   color: #fc0507;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-danger:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-danger:focus,
 .base-quaternary .btn.btn-danger.focus,
 .base-quaternary .btn.btn-danger:active,
@@ -825,21 +670,17 @@ Text Domain: Suave Wordpress
   border-color: #fd5152;
   color: #fd5152;
 }
-
 .base-quaternary .btn.btn-link {
   border: 1px solid #e45b36;
   color: #e45b36;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .base-quaternary .btn.btn-link:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-link:focus,
 .base-quaternary .btn.btn-link.focus,
 .base-quaternary .btn.btn-link:active,
@@ -847,24 +688,19 @@ Text Domain: Suave Wordpress
   border-color: #ed9279;
   color: #ed9279;
 }
-
 .base-quaternary .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .base-quaternary .btn.btn-inverse {
   border: 1px solid #a5a5a5;
   color: #a5a5a5;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-inverse:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-quaternary .btn.btn-inverse:focus,
 .base-quaternary .btn.btn-inverse.focus,
 .base-quaternary .btn.btn-inverse:active,
@@ -872,20 +708,16 @@ Text Domain: Suave Wordpress
   border-color: #cbcbcb;
   color: #cbcbcb;
 }
-
 .base-quaternary .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-quaternary .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-quaternary .btn.btn-white:focus,
 .base-quaternary .btn.btn-white.focus,
 .base-quaternary .btn.btn-white:active,
@@ -893,12 +725,10 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-quaternary .btn.btn-cta {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border-left: 1px solid #ff7755;
   padding: 0 30px;
@@ -907,12 +737,10 @@ Text Domain: Suave Wordpress
   line-height: 48px;
   text-transform: uppercase;
 }
-
 .base-quaternary .btn.btn-cta:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-quaternary .btn.btn-cta:focus,
 .base-quaternary .btn.btn-cta.focus,
 .base-quaternary .btn.btn-cta:active,
@@ -920,29 +748,23 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-quaternary .btn.btn-cta:hover {
   background-color: transparent;
   border: 1px solid #ff7755;
   color: #ff7755;
 }
-
 /* [Buttons on invert base]
 -------------------------------------------------------------------*/
-
 .base-invert .btn {
   border: 1px solid #818e9d;
   color: #818e9d;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn:focus,
 .base-invert .btn.focus,
 .base-invert .btn:active,
@@ -950,20 +772,16 @@ Text Domain: Suave Wordpress
   border-color: #acb5be;
   color: #acb5be;
 }
-
 .base-invert .btn.btn-default {
   border: 1px solid #818e9d;
   color: #818e9d;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-default:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-default:focus,
 .base-invert .btn.btn-default.focus,
 .base-invert .btn.btn-default:active,
@@ -971,20 +789,16 @@ Text Domain: Suave Wordpress
   border-color: #acb5be;
   color: #acb5be;
 }
-
 .base-invert .btn.btn-primary {
   border: 1px solid #88aaff;
   color: #88aaff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-primary:hover {
   border-color: #000a22;
   color: #000a22;
 }
-
 .base-invert .btn.btn-primary:focus,
 .base-invert .btn.btn-primary.focus,
 .base-invert .btn.btn-primary:active,
@@ -992,20 +806,16 @@ Text Domain: Suave Wordpress
   border-color: #d5e1ff;
   color: #d5e1ff;
 }
-
 .base-invert .btn.btn-success {
   border: 1px solid #84b010;
   color: #84b010;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-success:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-success:focus,
 .base-invert .btn.btn-success.focus,
 .base-invert .btn.btn-success:active,
@@ -1013,20 +823,16 @@ Text Domain: Suave Wordpress
   border-color: #b4eb22;
   color: #b4eb22;
 }
-
 .base-invert .btn.btn-info {
   border: 1px solid #1d8ad7;
   color: #1d8ad7;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-info:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-info:focus,
 .base-invert .btn.btn-info.focus,
 .base-invert .btn.btn-info:active,
@@ -1034,20 +840,16 @@ Text Domain: Suave Wordpress
   border-color: #58ade8;
   color: #58ade8;
 }
-
 .base-invert .btn.btn-warning {
   border: 1px solid #c98000;
   color: #c98000;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-warning:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-warning:focus,
 .base-invert .btn.btn-warning.focus,
 .base-invert .btn.btn-warning:active,
@@ -1055,20 +857,16 @@ Text Domain: Suave Wordpress
   border-color: #ffab17;
   color: #ffab17;
 }
-
 .base-invert .btn.btn-danger {
   border: 1px solid #fc0507;
   color: #fc0507;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-danger:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-danger:focus,
 .base-invert .btn.btn-danger.focus,
 .base-invert .btn.btn-danger:active,
@@ -1076,21 +874,17 @@ Text Domain: Suave Wordpress
   border-color: #fd5152;
   color: #fd5152;
 }
-
 .base-invert .btn.btn-link {
   border: 1px solid #88aaff;
   color: #88aaff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
-
 .base-invert .btn.btn-link:hover {
   border-color: #000a22;
   color: #000a22;
 }
-
 .base-invert .btn.btn-link:focus,
 .base-invert .btn.btn-link.focus,
 .base-invert .btn.btn-link:active,
@@ -1098,24 +892,19 @@ Text Domain: Suave Wordpress
   border-color: #d5e1ff;
   color: #d5e1ff;
 }
-
 .base-invert .btn.btn-link:hover {
   text-decoration: none;
 }
-
 .base-invert .btn.btn-inverse {
   border: 1px solid #101316;
   color: #101316;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-inverse:hover {
   border-color: #000000;
   color: #000000;
 }
-
 .base-invert .btn.btn-inverse:focus,
 .base-invert .btn.btn-inverse.focus,
 .base-invert .btn.btn-inverse:active,
@@ -1123,20 +912,16 @@ Text Domain: Suave Wordpress
   border-color: #303942;
   color: #303942;
 }
-
 .base-invert .btn.btn-white {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
 .base-invert .btn.btn-white:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-invert .btn.btn-white:focus,
 .base-invert .btn.btn-white.focus,
 .base-invert .btn.btn-white:active,
@@ -1144,12 +929,10 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-invert .btn.btn-cta {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border-left: 1px solid #ff7755;
   padding: 0 30px;
@@ -1158,12 +941,10 @@ Text Domain: Suave Wordpress
   line-height: 48px;
   text-transform: uppercase;
 }
-
 .base-invert .btn.btn-cta:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-
 .base-invert .btn.btn-cta:focus,
 .base-invert .btn.btn-cta.focus,
 .base-invert .btn.btn-cta:active,
@@ -1171,113 +952,87 @@ Text Domain: Suave Wordpress
   border-color: #ffffff;
   color: #ffffff;
 }
-
 .base-invert .btn.btn-cta:hover {
   background-color: transparent;
   border: 1px solid #ff7755;
   color: #ff7755;
 }
-
 /*------------------------------------------------------------------
  [3. Forms]
 ------------------------------------------------------------------*/
-
 .base-secondary .form-control {
   border-color: #088e74;
   color: #ffffff;
 }
-
 .base-secondary .form-control:-moz-placeholder {
   color: #d1f2eb;
 }
-
 .base-secondary .form-control::-moz-placeholder {
   color: #d1f2eb;
 }
-
 .base-secondary .form-control:-ms-input-placeholder {
   color: #d1f2eb;
 }
-
 .base-secondary .form-control::-webkit-input-placeholder {
   color: #d1f2eb;
 }
-
 .base-secondary .form-control:focus {
   border-color: #3d9fe4;
 }
-
 .base-tertiary .form-control {
   border-color: #12bbb0;
   color: #e4f3f4;
 }
-
 .base-tertiary .form-control:-moz-placeholder {
   color: #a5c6c9;
 }
-
 .base-tertiary .form-control::-moz-placeholder {
   color: #a5c6c9;
 }
-
 .base-tertiary .form-control:-ms-input-placeholder {
   color: #a5c6c9;
 }
-
 .base-tertiary .form-control::-webkit-input-placeholder {
   color: #a5c6c9;
 }
-
 .base-tertiary .form-control:focus {
   border-color: #3d9fe4;
 }
-
 .base-quaternary .form-control {
   border-color: #f0a490;
   color: #917052;
 }
-
 .base-quaternary .form-control:-moz-placeholder {
   color: #cc411b;
 }
-
 .base-quaternary .form-control::-moz-placeholder {
   color: #cc411b;
 }
-
 .base-quaternary .form-control:-ms-input-placeholder {
   color: #cc411b;
 }
-
 .base-quaternary .form-control::-webkit-input-placeholder {
   color: #cc411b;
 }
-
 .base-quaternary .form-control:focus {
   border-color: #3d9fe4;
 }
-
 .base-invert .form-control {
   border-color: #818e9d;
   color: #c3ccd7;
 }
-
 .base-invert .form-control:-moz-placeholder {
   color: #748293;
 }
-
 .base-invert .form-control::-moz-placeholder {
   color: #748293;
 }
-
 .base-invert .form-control:-ms-input-placeholder {
   color: #748293;
 }
-
 .base-invert .form-control::-webkit-input-placeholder {
   color: #748293;
 }
-
 .base-invert .form-control:focus {
   border-color: #3d9fe4;
 }
