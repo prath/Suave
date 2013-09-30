@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------
+// * [Base Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+body{
+    background-color: @default-background;
+
+    color: @default-text;
+    font-family: @font-1;
+    font-size: @body-fz-df;
+    font-weight: 400;
+    line-height: @line-height-base;
+    text-rendering: optimizeLegibility;
+    
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+body.suave{
+    margin-top: 74px;
+}
+
+a{
+    color: @default-accent;
+    &:hover{
+        color: darken(@default-accent, 30%);
+        text-decoration: none;
+    }
+}
+
+.container {
+    position: relative;
+}
+
+.container-full {
+    max-width: 100%;
+    overflow: hidden;
+
+    padding: 0px;
+    text-align: center;
+}
+
+.region{
+    position: relative;    
+
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    //*-----[Responsive 768++]-----*/
+    @media screen and (min-width: 768px) {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+}
+
+.cover-overlay {
+    background-color: rgba(120,50,44, 0.70); 
+    height: 100%;
+}
+
+.page-title {
+    header {
+        padding-bottom: 30px;
+        padding-top: 50px;
+    }
+    h1 {
+        color: #fff;
+    }
+}

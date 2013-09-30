@@ -9,9 +9,10 @@
 // -----------------------------------------------------------------
 
 .breadcrumb {
+    background-color: transparent;
+
     padding: 0px;
     margin-bottom: 0px;
-    background-color: transparent;
     > li {
         a {
             color: darken(#fff, 20%);
@@ -22,6 +23,7 @@
         }
         &+li:before {
             content: "\00BB\00a0";
+            
             color: lighten(@default-accent, 25%);
             font-size: @body-fz-xs; 
         }

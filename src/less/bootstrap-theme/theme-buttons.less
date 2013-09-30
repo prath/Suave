@@ -11,27 +11,27 @@
 /* [Buttons]
 -------------------------------------------------------------------*/
 .btn{
-    background-color    : transparent;
+    background-color: transparent;
+    
+    padding: 3px 15px;
+    margin-top: -2px;
 
-    margin-top          : -2px;
-    padding             : 3px 15px;
+    font-size: @body-fz-md;
+    font-weight: 500;
+    letter-spacing: @ls-wd;
+    line-height: @line-height-wide;
 
-    font-size           : @body-fz-md;
-    font-weight         : 500;
-    letter-spacing      : @ls-wd;
-    line-height         : @line-height-wide;
-
-    transition          : all .8s ease;
+    transition: all .8s ease;
     &:hover {
-        background-color    : transparent;
+        background-color: transparent;
 
-        transition          : all .8s ease;
+        transition: all .8s ease;
     }
     &:focus, &.focus,
     &:active, &.active{
-        margin-top          : 0px;
+        margin-top: 0px;
 
-        box-shadow          : none;
+        box-shadow: none;
     }
     .button-colorscheme(@btn-default, @btn-default);
 

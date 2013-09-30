@@ -1,0 +1,143 @@
+// -----------------------------------------------------------------
+// * [Portfolio Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Full Page Portfolio Slide Images]
+-------------------------------------------------------------------*/
+/*-----[Slider Container]-----*/
+.slider {
+    overflow: hidden;
+
+    position: relative;
+
+    height: 300px;
+    width: 100%;
+
+    //*-----[Responsive 600++]-----*/
+    @media screen and (min-width: 600px) {
+        height: 200px;
+    }
+
+    //*-----[Responsive 768++]-----*/
+    @media screen and (min-width: 768px) {
+        height: 400px;
+    }
+}
+
+/*-----[Slider Item Container]-----*/
+.portfolio-slider-full {
+    list-style: none;
+
+    padding: 0px;
+    margin: 0px;
+
+    //*-----[Responsive 600++]-----*/
+    @media screen and (min-width: 600px) {
+        width: 1000%;
+    }
+    
+    > li.portfolio-item {
+        background-color: @default-accent;
+        float: left;
+
+        position: relative;
+
+        height: auto;
+        width: 100%;
+
+        //*-----[Responsive 600++]-----*/
+        @media screen and (min-width: 600px) {
+            height: 200px;
+            width: 300px;
+        }
+
+        //*-----[Responsive 768++]-----*/
+        @media screen and (min-width: 768px) {
+            height: 400px;
+            width: 600px;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+
+            transition: all 1.5s ease;
+
+            //*-----[Responsive 600++]-----*/
+            @media screen and (min-width: 600px) {
+                height: 200px;
+                width: 300px
+            }
+
+            //*-----[Responsive 768++]-----*/
+            @media screen and (min-width: 768px) {
+                height: 400px;
+                width: 600px
+            }
+
+        }
+        &:hover {
+            img {
+                opacity: 0.2;
+            }
+            .portfolio-info {
+                display: block;
+
+                top: 30%;
+
+                transition: top .6s ease;
+            }
+        }
+        .portfolio-info {
+            display: block;
+
+            position: absolute;
+            top: 600px;
+
+            height: 100%;
+            width: 100%;
+
+            text-align: center;
+
+            transition: top .6s ease;
+            h4 {
+                color: @default-background;
+            }
+            a {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+/*-----[Slider nav]-----*/
+.portfolio-slider-nav {
+    .clearfix();
+
+    bottom: 0px;
+    position: absolute;
+
+    width: 100%;
+    a {
+        .inlineDisplay();
+        background-color: darken(@invert-background, 10%);
+
+        height: 30px;
+        width: 30px;
+        i {
+            line-height: 30px;
+        }
+    }
+    &-prev {
+        float: left;
+    }
+    &-next {
+        float: right;
+    }
+}

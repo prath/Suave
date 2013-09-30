@@ -1,7 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900);
-
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
-
 /*
 Theme Name: Suave
 Theme URI: http://aestik.com/
@@ -18,27 +14,29 @@ Text Domain: Suave Wordpress
 /*------------------------------------------------------------------
  [Table of contents]
 --------------------------------------------------------------------
- 1. Global Styles
- 2. Base Colorscheme
- 3. Navbar
- 4. Headline
- 5. Footer
- 6. Typography
- 7. Form
- 8. Button
- 9. Icon
- 10. Dropdown
- 11. Image
- 12. Posts
- 13. Helper
+ 1. Base
+ 2. Typography
+ 3. Icon
+ 4. Form
+ 5. Button
+ 6. Image
+ 7. Header
+ 8. Footer
+ 9. Headline
+ 10. Widget
+ 11. Post
+ 12. Portfolio
+ 13. Testimonial
+ 14. Subscribe
+ 15. Marketing
+ 16. Client
+ 17. Helper
+ 18. Base Colorscheme
 ------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
- [1. Global Styles]
+ [1. Base Styles]
 ------------------------------------------------------------------*/
-
-/* [Body Classes]
--------------------------------------------------------------------*/
 
 body {
   background-color: #ffffff;
@@ -47,6 +45,13 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body.suave {
+  margin-top: 74px;
 }
 
 a {
@@ -58,16 +63,27 @@ a:hover {
   text-decoration: none;
 }
 
-.region {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.container {
   position: relative;
+}
+
+.container-full {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0px;
+  text-align: center;
+}
+
+.region {
+  position: relative;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .region {
-    padding-top: 100px;
     padding-bottom: 100px;
+    padding-top: 100px;
   }
 }
 
@@ -85,452 +101,18 @@ a:hover {
   color: #fff;
 }
 
-.post-content {
-  padding-bottom: 70px;
-  padding-top: 70px;
-}
-
-body.suave {
-  margin-top: 74px;
-}
-
-.container {
-  position: relative;
-}
-
-.container-full {
-  position: relative;
-  padding: 0px;
-  overflow: hidden;
-  text-align: center;
-  max-width: 100%;
-}
-
-.services article {
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 600px) {
-  .services article {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .services article {
-    margin-bottom: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.subscribe {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-.subscribe h4 {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  /* Fix for IE7 */
-  margin-bottom: 20px;
-  margin-top: 5px;
-}
-
-@media screen and (min-width: 768px) {
-  .subscribe h4 {
-    margin-bottom: 0px;
-  }
-}
-
-.subscribe div form {
-  margin-bottom: 0px;
-}
-
-.subscribe div form input[type="text"] {
-  margin-top: -1px;
-}
-
-.foot-marketing {
-  font-family: "Roboto Slab";
-  font-size: 24px;
-  text-align: center;
-}
-
-.foot-marketing h3 {
-  color: #ffffff !important;
-  font-weight: 100;
-}
-
-.client-list a {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  /* Fix for IE7 */
-  margin-bottom: 20px;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
-@media screen and (min-width: 768px) {
-  .client-list a {
-    margin-bottom: 0px;
-  }
-}
-
-.client-list a img {
-  height: 48px;
-  width: 48px;
-  opacity: 0.5;
-  -webkit-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-}
-
-.client-list a:hover img {
-  opacity: 1;
-}
-
 /*------------------------------------------------------------------
- [2. Base Colorscheme]
-------------------------------------------------------------------*/
-
-/* [Secondary]
--------------------------------------------------------------------*/
-
-.base-secondary {
-  background-color: #47c9af;
-  color: #ffffff;
-}
-
-.base-secondary a {
-  color: #044639;
-}
-
-.base-secondary a:hover {
-  color: #088e74;
-  text-decoration: none;
-}
-
-.base-secondary h1,
-.base-secondary h2,
-.base-secondary h3,
-.base-secondary h4,
-.base-secondary h5,
-.base-secondary h6,
-.base-secondary p.sub-copy {
-  color: #d1f2eb;
-}
-
-.base-secondary i,
-.base-secondary .icon-title {
-  color: #ffffff;
-}
-
-/* [Tertiary]
--------------------------------------------------------------------*/
-
-.base-tertiary {
-  background-color: #467175;
-  color: #e4f3f4;
-}
-
-.base-tertiary a {
-  color: #46ede2;
-}
-
-.base-tertiary a:hover {
-  color: #12bbb0;
-  text-decoration: none;
-}
-
-.base-tertiary h1,
-.base-tertiary h2,
-.base-tertiary h3,
-.base-tertiary h4,
-.base-tertiary h5,
-.base-tertiary h6,
-.base-tertiary p.sub-copy {
-  color: #a5c6c9;
-}
-
-.base-tertiary i,
-.base-tertiary .icon-title {
-  color: #ffffff;
-}
-
-/* [quaternary]
--------------------------------------------------------------------*/
-
-.base-quaternary {
-  background-color: #ffe5cd;
-  color: #917052;
-}
-
-.base-quaternary a {
-  color: #e45b36;
-}
-
-.base-quaternary a:hover {
-  color: #eb7e5c;
-  text-decoration: none;
-}
-
-.base-quaternary h1,
-.base-quaternary h2,
-.base-quaternary h3,
-.base-quaternary h4,
-.base-quaternary h5,
-.base-quaternary h6,
-.base-quaternary p.sub-copy {
-  color: #e45b36;
-}
-
-.base-quaternary i,
-.base-quaternary .icon-title {
-  color: #ffffff;
-}
-
-/* [Invert]
--------------------------------------------------------------------*/
-
-.base-invert {
-  background-color: #3b434c;
-  color: #c3ccd7;
-}
-
-.base-invert a {
-  color: #88aaff;
-}
-
-.base-invert a:hover {
-  color: #7590d2;
-}
-
-.base-invert h1,
-.base-invert h2,
-.base-invert h3,
-.base-invert h4,
-.base-invert h5,
-.base-invert h6,
-.base-invert p.sub-copy {
-  color: #909ca9;
-}
-
-.base-invert i,
-.base-invert .icon-title {
-  color: #ffffff;
-}
-
-/* [Greyscale]
--------------------------------------------------------------------*/
-
-.base-greyscale {
-  background-color: #f8f8f8;
-  color: #7c7c7c;
-}
-
-.base-greyscale a {
-  color: #444444;
-}
-
-.base-greyscale a:hover {
-  color: #717171;
-}
-
-.base-greyscale .icon-title {
-  color: #ffffff;
-}
-
-/*------------------------------------------------------------------
- [3. Navbar]
-------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
- [4. Headline]
-------------------------------------------------------------------*/
-
-.headline {
-  margin-top: -74px;
-  overflow: hidden;
-  background-position: center center;
-  background-size: cover;
-}
-
-.headline .hero-unit {
-  background: none;
-  padding: 0;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-
-.headline .hero-unit .logo-big {
-  width: 68px;
-  margin: 0px auto;
-}
-
-@media screen and (min-width: 600px) {
-  .headline .hero-unit .logo-big {
-    width: 38px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .headline .hero-unit .logo-big {
-    width: 93px;
-  }
-}
-
-.headline .hero-unit .logo-big img {
-  width: 68px;
-  height: 70px;
-}
-
-@media screen and (min-width: 600px) {
-  .headline .hero-unit .logo-big img {
-    width: 38px;
-    height: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .headline .hero-unit .logo-big img {
-    width: 93px;
-    height: 100px;
-  }
-}
-
-.headline .hero-unit h1 {
-  font-family: "Roboto Slab";
-  font-size: 42.35294117647059px;
-  font-weight: 100;
-  text-align: center;
-  margin: 1em auto 0px;
-}
-
-@media screen and (min-width: 600px) {
-  .headline .hero-unit h1 {
-    margin: 0.2em auto 0px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .headline .hero-unit h1 {
-    font-size: 72px;
-    margin: 1.5em auto 0px;
-  }
-}
-
-.headline .hero-unit p {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  color: #eb6f63;
-  font-family: "Maven Pro";
-  font-weight: 300;
-  font-size: 16px;
-  text-align: center;
-  line-height: 25px;
-}
-
-@media screen and (min-width: 600px) {
-  .headline .hero-unit p {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    line-height: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .headline .hero-unit p {
-    margin: 20px auto 40px;
-    font-size: 20px;
-    line-height: 25px;
-    width: 70%;
-  }
-}
-
-/*------------------------------------------------------------------
- [5. Footer]
-------------------------------------------------------------------*/
-
-.footer-widgets {
-  padding-bottom: 20px;
-  padding-top: 30px;
-  font-size: 12px;
-}
-
-.footer-widgets ul.menu {
-  display: block;
-  padding: 0px;
-  margin: 0;
-}
-
-.footer-widgets ul.menu li {
-  display: block;
-  padding: 0px;
-  margin: 0;
-}
-
-footer {
-  font-size: 11px;
-}
-
-footer .footer-container {
-  border-top: 1px solid #687685;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-footer .footer-menu {
-  margin: 0px;
-  padding: 0px;
-  *zoom: 1;
-}
-
-footer .footer-menu li {
-  float: left;
-  list-style: none;
-}
-
-footer .footer-menu li a {
-  margin-left: 0px;
-  margin-right: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  footer .footer-menu li a {
-    margin-left: 10px;
-    margin-right: 0px;
-  }
-}
-
-footer .footer-menu:before,
-footer .footer-menu:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-footer .footer-menu:after {
-  clear: both;
-}
-
-/*------------------------------------------------------------------
- [6. Typography]
+ [2. Typography]
 ------------------------------------------------------------------*/
 
 /* [Global Typo]
 -------------------------------------------------------------------*/
 
 .sub-copy {
-  margin: 0px auto 30px;
   width: 80%;
-  line-height: 25px;
+  margin: 0px auto 30px;
   font-size: 18px;
+  line-height: 25px;
   text-align: center;
 }
 
@@ -565,19 +147,12 @@ footer .footer-menu:after {
   transition: all .8s ease;
 }
 
-.copy-center .sub-copy {
-  width: 80%;
-  line-height: 25px;
-  font-size: 18px;
-  margin: 0px auto 30px;
-}
-
 .heading-alt {
   background-color: rgba(59, 67, 76, 0.95);
   position: relative;
-  padding: 25px 0px;
   height: auto;
   width: 100%;
+  padding: 25px 0px;
   text-align: left;
 }
 
@@ -602,10 +177,10 @@ footer .footer-menu:after {
   .heading-alt h5,
   .heading-alt h6 {
     display: inline-block;
-    vertical-align: top;
-    zoom: 1;
     *display: inline;
+    zoom: 1;
     /* Fix for IE7 */
+    vertical-align: top;
   }
 }
 
@@ -627,10 +202,10 @@ footer .footer-menu:after {
 @media screen and (min-width: 768px) {
   .heading-alt p.sub-copy {
     display: inline-block;
-    vertical-align: top;
-    zoom: 1;
     *display: inline;
+    zoom: 1;
     /* Fix for IE7 */
+    vertical-align: top;
     margin-left: 20px;
     margin-top: 5px;
   }
@@ -651,1148 +226,27 @@ footer .footer-menu:after {
   }
 }
 
-/* [Headline Typo]
--------------------------------------------------------------------*/
-
-.hero-unit h1 {
-  color: #ffffff;
-  letter-spacing: -2px;
-}
-
-/* [Testimonial Typo]
+/* [Quotes]
 -------------------------------------------------------------------*/
 
 .copy-quote {
-  line-height: 25px;
+  color: #eb6f63;
   font-family: "Roboto Slab";
   font-size: 16px;
+  line-height: 25px;
 }
 
 .copy-quote span {
   display: block;
   margin-top: 30px;
+  color: #7c7c7c;
   font-family: "Maven Pro";
   font-size: 13px;
+  line-height: 20px;
 }
 
 /*------------------------------------------------------------------
- [7. Form]
-------------------------------------------------------------------*/
-
-.subscribe .form-control {
-  width: 300px;
-}
-
-.base-secondary .form-control {
-  border-color: #088e74;
-  color: #ffffff;
-}
-
-.base-secondary .form-control:-moz-placeholder {
-  color: #d1f2eb;
-}
-
-.base-secondary .form-control::-moz-placeholder {
-  color: #d1f2eb;
-}
-
-.base-secondary .form-control:-ms-input-placeholder {
-  color: #d1f2eb;
-}
-
-.base-secondary .form-control::-webkit-input-placeholder {
-  color: #d1f2eb;
-}
-
-.base-secondary .form-control:focus {
-  border-color: #3d9fe4;
-}
-
-.base-tertiary .form-control {
-  border-color: #12bbb0;
-  color: #e4f3f4;
-}
-
-.base-tertiary .form-control:-moz-placeholder {
-  color: #a5c6c9;
-}
-
-.base-tertiary .form-control::-moz-placeholder {
-  color: #a5c6c9;
-}
-
-.base-tertiary .form-control:-ms-input-placeholder {
-  color: #a5c6c9;
-}
-
-.base-tertiary .form-control::-webkit-input-placeholder {
-  color: #a5c6c9;
-}
-
-.base-tertiary .form-control:focus {
-  border-color: #3d9fe4;
-}
-
-.base-quaternary .form-control {
-  border-color: #f0a490;
-  color: #917052;
-}
-
-.base-quaternary .form-control:-moz-placeholder {
-  color: #cc411b;
-}
-
-.base-quaternary .form-control::-moz-placeholder {
-  color: #cc411b;
-}
-
-.base-quaternary .form-control:-ms-input-placeholder {
-  color: #cc411b;
-}
-
-.base-quaternary .form-control::-webkit-input-placeholder {
-  color: #cc411b;
-}
-
-.base-quaternary .form-control:focus {
-  border-color: #3d9fe4;
-}
-
-.base-invert .form-control {
-  border-color: #818e9d;
-  color: #c3ccd7;
-}
-
-.base-invert .form-control:-moz-placeholder {
-  color: #748293;
-}
-
-.base-invert .form-control::-moz-placeholder {
-  color: #748293;
-}
-
-.base-invert .form-control:-ms-input-placeholder {
-  color: #748293;
-}
-
-.base-invert .form-control::-webkit-input-placeholder {
-  color: #748293;
-}
-
-.base-invert .form-control:focus {
-  border-color: #3d9fe4;
-}
-
-/*------------------------------------------------------------------
- [8. Button]
-------------------------------------------------------------------*/
-
-/* [Buttons on secondary base]
--------------------------------------------------------------------*/
-
-.base-secondary .btn {
-  border: 1px solid #044639;
-  color: #044639;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-secondary .btn:focus,
-.base-secondary .btn.focus,
-.base-secondary .btn:active,
-.base-secondary .btn.active {
-  border-color: #088e74;
-  color: #088e74;
-}
-
-.base-secondary .btn.btn-default {
-  border: 1px solid #044639;
-  color: #044639;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn.btn-default:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-secondary .btn.btn-default:focus,
-.base-secondary .btn.btn-default.focus,
-.base-secondary .btn.btn-default:active,
-.base-secondary .btn.btn-default.active {
-  border-color: #088e74;
-  color: #088e74;
-}
-
-.base-secondary .btn.btn-primary {
-  border: 1px solid #044639;
-  color: #044639;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn.btn-primary:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-secondary .btn.btn-primary:focus,
-.base-secondary .btn.btn-primary.focus,
-.base-secondary .btn.btn-primary:active,
-.base-secondary .btn.btn-primary.active {
-  border-color: #088e74;
-  color: #088e74;
-}
-
-.base-secondary .btn.btn-success {
-  border: 1px solid #94f871;
-  color: #94f871;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn.btn-success:hover {
-  border-color: #010400;
-  color: #010400;
-}
-
-.base-secondary .btn.btn-success:focus,
-.base-secondary .btn.btn-success.focus,
-.base-secondary .btn.btn-success:active,
-.base-secondary .btn.btn-success.active {
-  border-color: #cbfcba;
-  color: #cbfcba;
-}
-
-.base-secondary .btn.btn-info {
-  border: 1px solid #037fb2;
-  color: #037fb2;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn.btn-info:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-secondary .btn.btn-info:focus,
-.base-secondary .btn.btn-info.focus,
-.base-secondary .btn.btn-info:active,
-.base-secondary .btn.btn-info.active {
-  border-color: #07b4fb;
-  color: #07b4fb;
-}
-
-.base-secondary .btn.btn-warning {
-  border: 1px solid #fee4a6;
-  color: #fee4a6;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn.btn-warning:hover {
-  border-color: #3e2c01;
-  color: #3e2c01;
-}
-
-.base-secondary .btn.btn-warning:focus,
-.base-secondary .btn.btn-warning.focus,
-.base-secondary .btn.btn-warning:active,
-.base-secondary .btn.btn-warning.active {
-  border-color: #fffbf2;
-  color: #fffbf2;
-}
-
-.base-secondary .btn.btn-danger {
-  border: 1px solid #a32323;
-  color: #a32323;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn.btn-danger:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-secondary .btn.btn-danger:focus,
-.base-secondary .btn.btn-danger.focus,
-.base-secondary .btn.btn-danger:active,
-.base-secondary .btn.btn-danger.active {
-  border-color: #d53d3d;
-  color: #d53d3d;
-}
-
-.base-secondary .btn.btn-link {
-  border: 1px solid #044639;
-  color: #044639;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: none;
-}
-
-.base-secondary .btn.btn-link:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-secondary .btn.btn-link:focus,
-.base-secondary .btn.btn-link.focus,
-.base-secondary .btn.btn-link:active,
-.base-secondary .btn.btn-link.active {
-  border-color: #088e74;
-  color: #088e74;
-}
-
-.base-secondary .btn.btn-link:hover {
-  text-decoration: none;
-}
-
-.base-secondary .btn.btn-inverse {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn.btn-inverse:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-secondary .btn.btn-inverse:focus,
-.base-secondary .btn.btn-inverse.focus,
-.base-secondary .btn.btn-inverse:active,
-.base-secondary .btn.btn-inverse.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-secondary .btn.btn-white {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-secondary .btn.btn-white:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-secondary .btn.btn-white:focus,
-.base-secondary .btn.btn-white.focus,
-.base-secondary .btn.btn-white:active,
-.base-secondary .btn.btn-white.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-secondary .btn.btn-cta {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border-left: 1px solid #ff7755;
-  padding: 0 30px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 48px;
-  text-transform: uppercase;
-}
-
-.base-secondary .btn.btn-cta:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-secondary .btn.btn-cta:focus,
-.base-secondary .btn.btn-cta.focus,
-.base-secondary .btn.btn-cta:active,
-.base-secondary .btn.btn-cta.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-secondary .btn.btn-cta:hover {
-  background-color: transparent;
-  border: 1px solid #ff7755;
-  color: #ff7755;
-}
-
-/* [Buttons on tertiary base]
--------------------------------------------------------------------*/
-
-.base-tertiary .btn {
-  border: 1px solid #081011;
-  color: #081011;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-tertiary .btn:focus,
-.base-tertiary .btn.focus,
-.base-tertiary .btn:active,
-.base-tertiary .btn.active {
-  border-color: #204145;
-  color: #204145;
-}
-
-.base-tertiary .btn.btn-default {
-  border: 1px solid #081011;
-  color: #081011;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn.btn-default:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-tertiary .btn.btn-default:focus,
-.base-tertiary .btn.btn-default.focus,
-.base-tertiary .btn.btn-default:active,
-.base-tertiary .btn.btn-default.active {
-  border-color: #204145;
-  color: #204145;
-}
-
-.base-tertiary .btn.btn-primary {
-  border: 1px solid #46ede2;
-  color: #46ede2;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn.btn-primary:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-tertiary .btn.btn-primary:focus,
-.base-tertiary .btn.btn-primary.focus,
-.base-tertiary .btn.btn-primary:active,
-.base-tertiary .btn.btn-primary.active {
-  border-color: #8cf4ed;
-  color: #8cf4ed;
-}
-
-.base-tertiary .btn.btn-success {
-  border: 1px solid #48c064;
-  color: #48c064;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn.btn-success:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-tertiary .btn.btn-success:focus,
-.base-tertiary .btn.btn-success.focus,
-.base-tertiary .btn.btn-success:active,
-.base-tertiary .btn.btn-success.active {
-  border-color: #81d494;
-  color: #81d494;
-}
-
-.base-tertiary .btn.btn-info {
-  border: 1px solid #42b0e9;
-  color: #42b0e9;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn.btn-info:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-tertiary .btn.btn-info:focus,
-.base-tertiary .btn.btn-info.focus,
-.base-tertiary .btn.btn-info:active,
-.base-tertiary .btn.btn-info.active {
-  border-color: #87cdf1;
-  color: #87cdf1;
-}
-
-.base-tertiary .btn.btn-warning {
-  border: 1px solid #f5ca65;
-  color: #f5ca65;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn.btn-warning:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-tertiary .btn.btn-warning:focus,
-.base-tertiary .btn.btn-warning.focus,
-.base-tertiary .btn.btn-warning:active,
-.base-tertiary .btn.btn-warning.active {
-  border-color: #fae3ad;
-  color: #fae3ad;
-}
-
-.base-tertiary .btn.btn-danger {
-  border: 1px solid #fa8383;
-  color: #fa8383;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn.btn-danger:hover {
-  border-color: #170101;
-  color: #170101;
-}
-
-.base-tertiary .btn.btn-danger:focus,
-.base-tertiary .btn.btn-danger.focus,
-.base-tertiary .btn.btn-danger:active,
-.base-tertiary .btn.btn-danger.active {
-  border-color: #fdcdcd;
-  color: #fdcdcd;
-}
-
-.base-tertiary .btn.btn-link {
-  border: 1px solid #46ede2;
-  color: #46ede2;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: none;
-}
-
-.base-tertiary .btn.btn-link:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-tertiary .btn.btn-link:focus,
-.base-tertiary .btn.btn-link.focus,
-.base-tertiary .btn.btn-link:active,
-.base-tertiary .btn.btn-link.active {
-  border-color: #8cf4ed;
-  color: #8cf4ed;
-}
-
-.base-tertiary .btn.btn-link:hover {
-  text-decoration: none;
-}
-
-.base-tertiary .btn.btn-inverse {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn.btn-inverse:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-tertiary .btn.btn-inverse:focus,
-.base-tertiary .btn.btn-inverse.focus,
-.base-tertiary .btn.btn-inverse:active,
-.base-tertiary .btn.btn-inverse.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-tertiary .btn.btn-white {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-tertiary .btn.btn-white:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-tertiary .btn.btn-white:focus,
-.base-tertiary .btn.btn-white.focus,
-.base-tertiary .btn.btn-white:active,
-.base-tertiary .btn.btn-white.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-tertiary .btn.btn-cta {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border-left: 1px solid #ff7755;
-  padding: 0 30px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 48px;
-  text-transform: uppercase;
-}
-
-.base-tertiary .btn.btn-cta:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-tertiary .btn.btn-cta:focus,
-.base-tertiary .btn.btn-cta.focus,
-.base-tertiary .btn.btn-cta:active,
-.base-tertiary .btn.btn-cta.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-tertiary .btn.btn-cta:hover {
-  background-color: transparent;
-  border: 1px solid #ff7755;
-  color: #ff7755;
-}
-
-/* [Buttons on quaternary base]
--------------------------------------------------------------------*/
-
-.base-quaternary .btn {
-  border: 1px solid #a19080;
-  color: #a19080;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn:focus,
-.base-quaternary .btn.focus,
-.base-quaternary .btn:active,
-.base-quaternary .btn.active {
-  border-color: #c2b6ac;
-  color: #c2b6ac;
-}
-
-.base-quaternary .btn.btn-default {
-  border: 1px solid #a19080;
-  color: #a19080;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn.btn-default:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn.btn-default:focus,
-.base-quaternary .btn.btn-default.focus,
-.base-quaternary .btn.btn-default:active,
-.base-quaternary .btn.btn-default.active {
-  border-color: #c2b6ac;
-  color: #c2b6ac;
-}
-
-.base-quaternary .btn.btn-primary {
-  border: 1px solid #e45b36;
-  color: #e45b36;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn.btn-primary:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn.btn-primary:focus,
-.base-quaternary .btn.btn-primary.focus,
-.base-quaternary .btn.btn-primary:active,
-.base-quaternary .btn.btn-primary.active {
-  border-color: #ed9279;
-  color: #ed9279;
-}
-
-.base-quaternary .btn.btn-success {
-  border: 1px solid #84b010;
-  color: #84b010;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn.btn-success:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn.btn-success:focus,
-.base-quaternary .btn.btn-success.focus,
-.base-quaternary .btn.btn-success:active,
-.base-quaternary .btn.btn-success.active {
-  border-color: #b4eb22;
-  color: #b4eb22;
-}
-
-.base-quaternary .btn.btn-info {
-  border: 1px solid #1d8ad7;
-  color: #1d8ad7;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn.btn-info:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn.btn-info:focus,
-.base-quaternary .btn.btn-info.focus,
-.base-quaternary .btn.btn-info:active,
-.base-quaternary .btn.btn-info.active {
-  border-color: #58ade8;
-  color: #58ade8;
-}
-
-.base-quaternary .btn.btn-warning {
-  border: 1px solid #c98000;
-  color: #c98000;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn.btn-warning:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn.btn-warning:focus,
-.base-quaternary .btn.btn-warning.focus,
-.base-quaternary .btn.btn-warning:active,
-.base-quaternary .btn.btn-warning.active {
-  border-color: #ffab17;
-  color: #ffab17;
-}
-
-.base-quaternary .btn.btn-danger {
-  border: 1px solid #fc0507;
-  color: #fc0507;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn.btn-danger:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn.btn-danger:focus,
-.base-quaternary .btn.btn-danger.focus,
-.base-quaternary .btn.btn-danger:active,
-.base-quaternary .btn.btn-danger.active {
-  border-color: #fd5152;
-  color: #fd5152;
-}
-
-.base-quaternary .btn.btn-link {
-  border: 1px solid #e45b36;
-  color: #e45b36;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: none;
-}
-
-.base-quaternary .btn.btn-link:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn.btn-link:focus,
-.base-quaternary .btn.btn-link.focus,
-.base-quaternary .btn.btn-link:active,
-.base-quaternary .btn.btn-link.active {
-  border-color: #ed9279;
-  color: #ed9279;
-}
-
-.base-quaternary .btn.btn-link:hover {
-  text-decoration: none;
-}
-
-.base-quaternary .btn.btn-inverse {
-  border: 1px solid #a5a5a5;
-  color: #a5a5a5;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn.btn-inverse:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-quaternary .btn.btn-inverse:focus,
-.base-quaternary .btn.btn-inverse.focus,
-.base-quaternary .btn.btn-inverse:active,
-.base-quaternary .btn.btn-inverse.active {
-  border-color: #cbcbcb;
-  color: #cbcbcb;
-}
-
-.base-quaternary .btn.btn-white {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-quaternary .btn.btn-white:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-quaternary .btn.btn-white:focus,
-.base-quaternary .btn.btn-white.focus,
-.base-quaternary .btn.btn-white:active,
-.base-quaternary .btn.btn-white.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-quaternary .btn.btn-cta {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border-left: 1px solid #ff7755;
-  padding: 0 30px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 48px;
-  text-transform: uppercase;
-}
-
-.base-quaternary .btn.btn-cta:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-quaternary .btn.btn-cta:focus,
-.base-quaternary .btn.btn-cta.focus,
-.base-quaternary .btn.btn-cta:active,
-.base-quaternary .btn.btn-cta.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-quaternary .btn.btn-cta:hover {
-  background-color: transparent;
-  border: 1px solid #ff7755;
-  color: #ff7755;
-}
-
-/* [Buttons on invert base]
--------------------------------------------------------------------*/
-
-.base-invert .btn {
-  border: 1px solid #818e9d;
-  color: #818e9d;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-invert .btn:focus,
-.base-invert .btn.focus,
-.base-invert .btn:active,
-.base-invert .btn.active {
-  border-color: #acb5be;
-  color: #acb5be;
-}
-
-.base-invert .btn.btn-default {
-  border: 1px solid #818e9d;
-  color: #818e9d;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn.btn-default:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-invert .btn.btn-default:focus,
-.base-invert .btn.btn-default.focus,
-.base-invert .btn.btn-default:active,
-.base-invert .btn.btn-default.active {
-  border-color: #acb5be;
-  color: #acb5be;
-}
-
-.base-invert .btn.btn-primary {
-  border: 1px solid #88aaff;
-  color: #88aaff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn.btn-primary:hover {
-  border-color: #000a22;
-  color: #000a22;
-}
-
-.base-invert .btn.btn-primary:focus,
-.base-invert .btn.btn-primary.focus,
-.base-invert .btn.btn-primary:active,
-.base-invert .btn.btn-primary.active {
-  border-color: #d5e1ff;
-  color: #d5e1ff;
-}
-
-.base-invert .btn.btn-success {
-  border: 1px solid #84b010;
-  color: #84b010;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn.btn-success:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-invert .btn.btn-success:focus,
-.base-invert .btn.btn-success.focus,
-.base-invert .btn.btn-success:active,
-.base-invert .btn.btn-success.active {
-  border-color: #b4eb22;
-  color: #b4eb22;
-}
-
-.base-invert .btn.btn-info {
-  border: 1px solid #1d8ad7;
-  color: #1d8ad7;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn.btn-info:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-invert .btn.btn-info:focus,
-.base-invert .btn.btn-info.focus,
-.base-invert .btn.btn-info:active,
-.base-invert .btn.btn-info.active {
-  border-color: #58ade8;
-  color: #58ade8;
-}
-
-.base-invert .btn.btn-warning {
-  border: 1px solid #c98000;
-  color: #c98000;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn.btn-warning:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-invert .btn.btn-warning:focus,
-.base-invert .btn.btn-warning.focus,
-.base-invert .btn.btn-warning:active,
-.base-invert .btn.btn-warning.active {
-  border-color: #ffab17;
-  color: #ffab17;
-}
-
-.base-invert .btn.btn-danger {
-  border: 1px solid #fc0507;
-  color: #fc0507;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn.btn-danger:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-invert .btn.btn-danger:focus,
-.base-invert .btn.btn-danger.focus,
-.base-invert .btn.btn-danger:active,
-.base-invert .btn.btn-danger.active {
-  border-color: #fd5152;
-  color: #fd5152;
-}
-
-.base-invert .btn.btn-link {
-  border: 1px solid #88aaff;
-  color: #88aaff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: none;
-}
-
-.base-invert .btn.btn-link:hover {
-  border-color: #000a22;
-  color: #000a22;
-}
-
-.base-invert .btn.btn-link:focus,
-.base-invert .btn.btn-link.focus,
-.base-invert .btn.btn-link:active,
-.base-invert .btn.btn-link.active {
-  border-color: #d5e1ff;
-  color: #d5e1ff;
-}
-
-.base-invert .btn.btn-link:hover {
-  text-decoration: none;
-}
-
-.base-invert .btn.btn-inverse {
-  border: 1px solid #101316;
-  color: #101316;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn.btn-inverse:hover {
-  border-color: #000000;
-  color: #000000;
-}
-
-.base-invert .btn.btn-inverse:focus,
-.base-invert .btn.btn-inverse.focus,
-.base-invert .btn.btn-inverse:active,
-.base-invert .btn.btn-inverse.active {
-  border-color: #303942;
-  color: #303942;
-}
-
-.base-invert .btn.btn-white {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.base-invert .btn.btn-white:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-invert .btn.btn-white:focus,
-.base-invert .btn.btn-white.focus,
-.base-invert .btn.btn-white:active,
-.base-invert .btn.btn-white.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-invert .btn.btn-cta {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: "Maven Pro";
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border-left: 1px solid #ff7755;
-  padding: 0 30px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 48px;
-  text-transform: uppercase;
-}
-
-.base-invert .btn.btn-cta:hover {
-  border-color: #4d4d4d;
-  color: #4d4d4d;
-}
-
-.base-invert .btn.btn-cta:focus,
-.base-invert .btn.btn-cta.focus,
-.base-invert .btn.btn-cta:active,
-.base-invert .btn.btn-cta.active {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.base-invert .btn.btn-cta:hover {
-  background-color: transparent;
-  border: 1px solid #ff7755;
-  color: #ff7755;
-}
-
-/*------------------------------------------------------------------
- [9. Icon]
+ [3. Icon]
 ------------------------------------------------------------------*/
 
 /* [Global Icons]
@@ -1824,25 +278,529 @@ footer .footer-menu:after {
 
 .icon-title {
   display: inline-block;
-  vertical-align: top;
-  zoom: 1;
   *display: inline;
+  zoom: 1;
   /* Fix for IE7 */
-  padding: 10px;
+  vertical-align: top;
   position: relative;
   top: -25px;
+  padding: 10px;
   color: #a0a0a0;
 }
 
-/* [Testimonial Icons]
--------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ [4. Form]
+------------------------------------------------------------------*/
 
-.testimonial i.icon-title {
-  font-size: 30px;
+/*------------------------------------------------------------------
+ [5. Button]
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ [6. Image]
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ [7. Header]
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ [8. Footer]
+------------------------------------------------------------------*/
+
+footer {
+  font-size: 11px;
 }
 
-/* [Post Format Icons]
+footer .footer-container {
+  border-top: 1px solid #687685;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+footer .footer-menu {
+  padding: 0px;
+  margin: 0px;
+  *zoom: 1;
+}
+
+footer .footer-menu li {
+  float: left;
+  list-style: none;
+}
+
+footer .footer-menu li a {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-menu li a {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+
+footer .footer-menu:before,
+footer .footer-menu:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+footer .footer-menu:after {
+  clear: both;
+}
+
+/*------------------------------------------------------------------
+ [9. Headline]
+------------------------------------------------------------------*/
+
+/* [Headline Typo]
 -------------------------------------------------------------------*/
+
+.headline {
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  margin-top: -74px;
+}
+
+.logo-big {
+  width: 68px;
+  margin: 0px auto;
+}
+
+@media screen and (min-width: 600px) {
+  .logo-big {
+    width: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-big {
+    width: 93px;
+  }
+}
+
+.logo-big img {
+  height: 70px;
+  width: 68px;
+}
+
+@media screen and (min-width: 600px) {
+  .logo-big img {
+    height: 40px;
+    width: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-big img {
+    height: 100px;
+    width: 93px;
+  }
+}
+
+.hero-unit {
+  background: none;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.hero-unit h1 {
+  margin: 1em auto 0px;
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-size: 42.35294117647059px;
+  font-weight: 100;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .hero-unit h1 {
+    margin: 0.2em auto 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-unit h1 {
+    margin: 1.5em auto 0px;
+    font-size: 72px;
+  }
+}
+
+.hero-unit p {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color: #eb6f63;
+  font-family: "Maven Pro";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .hero-unit p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-unit p {
+    width: 70%;
+    margin: 20px auto 40px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+/*------------------------------------------------------------------
+ [10. Widget]
+------------------------------------------------------------------*/
+
+/* [Default Widget]
+-------------------------------------------------------------------*/
+
+.panel.widget {
+  background-color: transparent;
+  border: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.panel.widget .panel-heading {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.panel.widget .panel-heading .icon-widget-heading {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  border-right: 1px solid #d3d3d3;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-top: 5px;
+  margin-right: 10px;
+  margin-top: 1px;
+  font-size: 14px;
+}
+
+.panel.widget .panel-heading .widget-heading {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: #a0a0a0;
+  font-family: "Maven Pro";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.panel.widget .panel-heading .widget-subheading {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-family: "Maven Pro";
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.panel.widget .panel-body {
+  border-top: 0px;
+  padding: 10px 0px 0px 0px;
+  margin-bottom: 20px;
+  margin-top: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .panel.widget .panel-body {
+    margin-bottom: 0px;
+  }
+}
+
+.panel.widget .panel-body address:last-child {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .panel.widget .panel-body address:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.panel-default.widget {
+  border: 0px;
+}
+
+.panel-default.widget .panel-heading {
+  background-color: transparent;
+  color: #333333;
+}
+
+/* [Sidebar Widget]
+-------------------------------------------------------------------*/
+
+.sidebar-widget .panel.widget {
+  margin-bottom: 30px;
+}
+
+.sidebar-widget .panel.widget .panel-heading .icon-widget-heading {
+  color: #eb6f63;
+}
+
+.sidebar-widget .panel.widget .panel-body {
+  padding-bottom: 15px;
+}
+
+.sidebar-widget .panel.widget .panel-body ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.sidebar-widget .panel.widget .panel-body ul li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sidebar-widget .panel.widget .panel-body ul li a {
+  border-bottom: 1px solid #f2f2f2;
+  display: block;
+  padding: 10px 15px;
+  color: #7c7c7c;
+  -webkit-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.sidebar-widget .panel.widget .panel-body ul li a:hover {
+  background-color: #eb6f63;
+  border-bottom-color: transparent;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-subheading {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-family: "Roboto Slab";
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-subheading a {
+  background-color: transparent;
+  border-bottom: 0px;
+  padding: 0px;
+  color: #7c7c7c;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-subheading a:hover {
+  background-color: transparent;
+  color: #eb6f63;
+}
+
+.sidebar-widget .panel.widget .panel-body .btn-xs {
+  margin-bottom: 10px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post {
+  *zoom: 1;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post:before,
+.sidebar-widget .panel.widget .panel-body .widget-post:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post:after {
+  clear: both;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post img {
+  float: left;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post .widget-post-content {
+  position: relative;
+  width: 100%;
+  padding-left: 40px;
+  margin-top: -6px;
+}
+
+.sidebar-widget .panel.widget .panel-body .widget-post .widget-post-content .post-date {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-top: 4px;
+  color: #a0a0a0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.sidebar-widget .panel.widget .panel-body .btn-search {
+  display: block;
+  width: 100%;
+}
+
+/* [Footer Widget]
+-------------------------------------------------------------------*/
+
+.footer-widgets {
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-size: 12px;
+}
+
+.footer-widgets ul.menu {
+  display: block;
+  padding: 0px;
+  margin: 0;
+}
+
+.footer-widgets ul.menu li {
+  display: block;
+  padding: 0px;
+  margin: 0;
+}
+
+.footer-widgets .panel.widget {
+  margin-bottom: 0px;
+}
+
+/*------------------------------------------------------------------
+ [11. Post]
+------------------------------------------------------------------*/
+
+/* [Single Post]
+-------------------------------------------------------------------*/
+
+.post-content {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.post-content img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/*-----[Post Meta]-----*/
+
+.post-meta {
+  border-bottom: 1px solid #f7c2bd;
+  border-top: 1px solid #f7c2bd;
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.post-meta-dot-separator {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.post-meta span {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+}
+
+/*-----[Post Meta Category, Tag, Comment and Author]-----*/
+
+.post-category i,
+.post-tag i,
+.post-author i {
+  color: #f7c2bd;
+  font-size: 10px;
+}
+
+.post-category a:after,
+.post-tag a:after,
+.post-author a:after {
+  content: "\00a0,\00a0";
+}
+
+.post-category a:last-child:after,
+.post-tag a:last-child:after,
+.post-author a:last-child:after {
+  content: "";
+}
+
+/*-----[Post Meta Author]-----*/
+
+.post-author i {
+  color: #d3d3d3;
+}
+
+.post-author a {
+  color: #a0a0a0;
+  font-weight: 500;
+}
+
+/*-----[Post Image Caption]-----*/
+
+.post-image-caption {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-left: 20px;
+  margin-top: -10px;
+  color: #a0a0a0;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/*-----[Post Format Icon]-----*/
 
 .icon-post-format {
   background-color: #eb6f63;
@@ -1852,22 +810,85 @@ footer .footer-menu:after {
   color: #fff;
 }
 
-/*------------------------------------------------------------------
- [10. Dropdown]
-------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
- [11. Image]
-------------------------------------------------------------------*/
-
-/* [Portfolio Images]
+/* [Post Thumbnails]
 -------------------------------------------------------------------*/
 
+.post-thumbnail {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .post-thumbnail {
+    margin-bottom: 0px;
+  }
+}
+
+.post-thumbnail-image {
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .post-thumbnail-image {
+    display: none;
+  }
+}
+
+.post-thumbnail-image > img {
+  height: auto;
+  width: 100%;
+}
+
+.post-thumbnail h1,
+.post-thumbnail h2,
+.post-thumbnail h3,
+.post-thumbnail h4,
+.post-thumbnail h5,
+.post-thumbnail h6 {
+  margin-bottom: 0px;
+}
+
+.post-thumbnail .post-date {
+  border-bottom: 1px solid #f7c2bd;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.post-thumbnail .caption {
+  display: block;
+  color: #7c7c7c;
+}
+
+.post-thumbnail:before,
+.post-thumbnail:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.post-thumbnail:after {
+  clear: both;
+}
+
+/*------------------------------------------------------------------
+ [12. Portfolio]
+------------------------------------------------------------------*/
+
+/* [Full Page Portfolio Slide Images]
+-------------------------------------------------------------------*/
+
+/*-----[Slider Container]-----*/
+
 .slider {
+  overflow: hidden;
   position: relative;
   height: 300px;
   width: 100%;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 600px) {
@@ -1882,10 +903,12 @@ footer .footer-menu:after {
   }
 }
 
+/*-----[Slider Item Container]-----*/
+
 .portfolio-slider-full {
   list-style: none;
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 @media screen and (min-width: 600px) {
@@ -1895,9 +918,9 @@ footer .footer-menu:after {
 }
 
 .portfolio-slider-full > li.portfolio-item {
-  position: relative;
   background-color: #eb6f63;
   float: left;
+  position: relative;
   height: auto;
   width: 100%;
 }
@@ -1953,9 +976,9 @@ footer .footer-menu:after {
 .portfolio-slider-full > li.portfolio-item .portfolio-info {
   display: block;
   position: absolute;
+  top: 600px;
   height: 100%;
   width: 100%;
-  top: 600px;
   text-align: center;
   -webkit-transition: top .6s ease;
   -o-transition: top .6s ease;
@@ -1970,17 +993,19 @@ footer .footer-menu:after {
   margin-top: 30px;
 }
 
+/*-----[Slider nav]-----*/
+
 .portfolio-slider-nav {
   *zoom: 1;
-  position: absolute;
   bottom: 0px;
+  position: absolute;
   width: 100%;
 }
 
 .portfolio-slider-nav:before,
 .portfolio-slider-nav:after {
-  display: table;
   content: "";
+  display: table;
   line-height: 0;
 }
 
@@ -1990,10 +1015,10 @@ footer .footer-menu:after {
 
 .portfolio-slider-nav a {
   display: inline-block;
-  vertical-align: top;
-  zoom: 1;
   *display: inline;
+  zoom: 1;
   /* Fix for IE7 */
+  vertical-align: top;
   background-color: #252a2f;
   height: 30px;
   width: 30px;
@@ -2011,147 +1036,131 @@ footer .footer-menu:after {
   float: right;
 }
 
-.thumbnail {
-  margin-bottom: 20px;
-  *zoom: 1;
+/*------------------------------------------------------------------
+ [13. Testimonial]
+------------------------------------------------------------------*/
+
+/* [Testimonial Icons]
+-------------------------------------------------------------------*/
+
+.testimonial i.icon-title {
+  font-size: 30px;
 }
 
-@media screen and (min-width: 600px) {
-  .thumbnail {
+/*------------------------------------------------------------------
+ [14. Subscribe]
+------------------------------------------------------------------*/
+
+.subscribe {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.subscribe h4 {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe h4 {
     margin-bottom: 0px;
   }
 }
 
-.thumbnail-image {
-  height: 200px;
-  width: 100%;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 600px) and (max-width: 767px) {
-  .thumbnail-image {
-    display: none;
-  }
-}
-
-.thumbnail-image > img {
-  width: 100%;
-  height: auto;
-}
-
-.thumbnail h1,
-.thumbnail h2,
-.thumbnail h3,
-.thumbnail h4,
-.thumbnail h5,
-.thumbnail h6 {
+.subscribe div form {
   margin-bottom: 0px;
 }
 
-.thumbnail .post-date {
-  display: block;
-  border-bottom: 1px solid #f7c2bd;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  color: #a0a0a0;
-  font-size: 12px;
+.subscribe div form input[type="text"] {
+  margin-top: -1px;
 }
 
-.thumbnail:before,
-.thumbnail:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
+/* [Subscribe Form]
+-------------------------------------------------------------------*/
 
-.thumbnail:after {
-  clear: both;
+.subscribe .form-control {
+  width: 300px;
 }
 
 /*------------------------------------------------------------------
- [12. Posts]
+ [15. Services]
 ------------------------------------------------------------------*/
 
-.post-content img {
-  width: 100%;
-  height: auto;
+.services article {
   margin-bottom: 20px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 }
 
-.post-meta {
-  display: block;
-  border-bottom: 1px solid #f7c2bd;
-  border-top: 1px solid #f7c2bd;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-bottom: 20px;
-  color: #a0a0a0;
-  font-size: 12px;
+@media screen and (min-width: 600px) {
+  .services article {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
-.post-meta-dot-separator {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  /* Fix for IE7 */
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.post-meta span {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  /* Fix for IE7 */
-}
-
-.post-category i,
-.post-tag i,
-.post-author i {
-  font-size: 10px;
-  color: #f7c2bd;
-}
-
-.post-category a:after,
-.post-tag a:after,
-.post-author a:after {
-  content: "\00a0,\00a0";
-}
-
-.post-category a:last-child:after,
-.post-tag a:last-child:after,
-.post-author a:last-child:after {
-  content: "";
-}
-
-.post-author i {
-  color: #d3d3d3;
-}
-
-.post-author a {
-  color: #a0a0a0;
-  font-weight: 500;
-}
-
-.post-image-caption {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  /* Fix for IE7 */
-  color: #a0a0a0;
-  font-size: 12px;
-  font-style: italic;
-  margin-left: 20px;
-  margin-top: -10px;
+@media screen and (min-width: 768px) {
+  .services article {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+  }
 }
 
 /*------------------------------------------------------------------
- [13. Helper]
+ [16. Marketing]
+------------------------------------------------------------------*/
+
+.marketing {
+  font-family: "Roboto Slab";
+  font-size: 24px;
+  text-align: center;
+}
+
+.marketing h3 {
+  color: #ffffff !important;
+  font-weight: 100;
+}
+
+/*------------------------------------------------------------------
+ [17. client]
+------------------------------------------------------------------*/
+
+.client-list a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .client-list a {
+    margin-bottom: 0px;
+  }
+}
+
+.client-list a img {
+  opacity: 0.5;
+  height: 48px;
+  width: 48px;
+  -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.client-list a:hover img {
+  opacity: 1;
+}
+
+/*------------------------------------------------------------------
+ [18. Helper]
 ------------------------------------------------------------------*/
 
 /* [Pad-Margin Classes]
@@ -2166,8 +1175,8 @@ footer .footer-menu:after {
 }
 
 .widen-vertical-outergap {
-  margin-top: 40px;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .widen-top-gap {
@@ -2179,8 +1188,8 @@ footer .footer-menu:after {
 }
 
 .widen-vertical-gap {
-  padding-top: 40px;
   padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .reset-vertical-outergap {

@@ -14,8 +14,8 @@
     *zoom: 1;
     &:before,
     &:after {
-        display: table;
         content: "";
+        display: table;
         line-height: 0;
     }
     &:after {
@@ -25,9 +25,10 @@
 
 .inlineDisplay() {
     display: inline-block;
-    vertical-align: top;
-    zoom: 1; /* Fix for IE7 */
     *display: inline; /* Fix for IE7 */
+    zoom: 1; /* Fix for IE7 */
+
+    vertical-align: top;
 }
 
 // [CSS3 Properties]
@@ -185,8 +186,37 @@
 // [Forms Mixins]
 // ------------------------------------------------------------------
 .placeholder(@color: @input-color-placeholder) {
-  &:-moz-placeholder            { color: @color; } // Firefox 4-18
-  &::-moz-placeholder           { color: @color; } // Firefox 19+
-  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+    &:-moz-placeholder { 
+        color: @color; 
+    } // Firefox 4-18
+    &::-moz-placeholder {
+        color: @color; 
+    } // Firefox 19+
+    &:-ms-input-placeholder {
+        color: @color; 
+    } // Internet Explorer 10+
+    &::-webkit-input-placeholder {
+        color: @color;
+    } // Safari and Chrome
+}
+
+// [Typography Mixins]
+// ------------------------------------------------------------------
+
+//*-----[Quotes. use in testimonials and other quotes]-----*/
+.quotes(@quoteColor, @authorColor, @quoteFont, @authorFont, @quoteSize, @authorSize, @quoteLineHeight, @authorLineHeight, @gap: 30px) {
+    color: @quoteColor;
+    font-family: @quoteFont;
+    font-size: @quoteSize;
+    line-height: @quoteLineHeight;
+    span {
+        display: block;
+
+        margin-top: @gap;
+        
+        color: @authorColor;
+        font-family: @authorFont;
+        font-size: @authorSize;
+        line-height: @authorLineHeight;
+    }
 }

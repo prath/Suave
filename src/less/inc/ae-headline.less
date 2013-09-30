@@ -8,92 +8,107 @@
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
 
+/* [Headline Typo]
+-------------------------------------------------------------------*/
+
 .headline{
-    margin-top: -74px;
-    overflow: hidden;
     background-position: center center;
     background-size: cover;
-    .hero-unit{
-        background: none;
-        padding: 0;
-        font-weight: normal;
-        margin-bottom: 0;
+    overflow: hidden;
 
-        .logo-big {
-            width: 68px;
-            margin: 0px auto;
+    margin-top: -74px;
+}
 
-            //*-----[Responsive 600++]-----*/
-            @media screen and (min-width: 600px) {
-                width: 38px;
-            }
+.logo-big {
+    width: 68px;
 
-            //*-----[Responsive 768++]-----*/
-            @media screen and (min-width: 768px) {
-                width: 93px;
-            }
-            img {
-                width: 68px;
-                height: 70px; 
+    margin: 0px auto;
 
-                //*-----[Responsive 600++]-----*/
-                @media screen and (min-width: 600px) {
-                    width: 38px;
-                    height: 40px; 
-                }
+    //*-----[Responsive 600++]-----*/
+    @media screen and (min-width: 600px) {
+        width: 38px;
+    }
 
-                //*-----[Responsive 768++]-----*/
-                @media screen and (min-width: 768px) {
-                    width: 93px;
-                    height: 100px; 
-                }
-            }
+    //*-----[Responsive 768++]-----*/
+    @media screen and (min-width: 768px) {
+        width: 93px;
+    }
+    img {
+        height: 70px; 
+        width: 68px;
+
+        //*-----[Responsive 600++]-----*/
+        @media screen and (min-width: 600px) {
+            height: 40px; 
+            width: 38px;
         }
 
-        h1{
-            font-family: @font-2;
-            font-size: @heading-hero-fz/1.7;
-            font-weight: 100;
-            text-align: center;
-            margin: 1em auto 0px;
+        //*-----[Responsive 768++]-----*/
+        @media screen and (min-width: 768px) {
+            height: 100px; 
+            width: 93px;
+        }
+    }
+}
 
-            //*-----[Responsive 600++]-----*/
-            @media screen and (min-width: 600px) {
-                margin: 0.2em auto 0px;
-            }
+.hero-unit{
+    background: none;
 
-            //*-----[Responsive 768++]-----*/
-            @media screen and (min-width: 768px) {
-                font-size: @heading-hero-fz;
-                margin: 1.5em auto 0px;
-            }
+    padding: 0;
+    margin-bottom: 0;
+
+    font-weight: normal;
+
+    h1{
+        margin: 1em auto 0px;
+        
+        color: @default-background;
+        font-family: @font-2;
+        font-size: @heading-hero-fz/1.7;
+        font-weight: 100;
+        letter-spacing: @ls-xn;
+        text-align: center;
+
+        //*-----[Responsive 600++]-----*/
+        @media screen and (min-width: 600px) {
+            margin: 0.2em auto 0px;
         }
 
-        p{
-            margin-top: 20px;
-            margin-bottom: 40px;
-            color: @default-accent;
-            font-family: @font-1;
-            font-weight: 300;
-            font-size: @body-fz-lg;
-            text-align: center;
-            line-height: @line-height-med;
+        //*-----[Responsive 768++]-----*/
+        @media screen and (min-width: 768px) {
+            margin: 1.5em auto 0px;
 
-            //*-----[Responsive 600++]-----*/
-            @media screen and (min-width: 600px) {
-                margin-top: 10px;
-                margin-bottom: 20px;
-                line-height: @line-height-base;
-            }
-
-            //*-----[Responsive 768++]-----*/
-            @media screen and (min-width: 768px) {
-                margin: 20px auto 40px;
-                font-size: @body-fz-vl;
-                line-height: @line-height-med;
-                width: 70%;
-            }
+            font-size: @heading-hero-fz;
         }
     }
 
+    p{
+        margin-bottom: 40px;
+        margin-top: 20px;
+
+        color: @default-accent;
+        font-family: @font-1;
+        font-weight: 300;
+        font-size: @body-fz-lg;
+        line-height: @line-height-med;
+        text-align: center;
+
+        //*-----[Responsive 600++]-----*/
+        @media screen and (min-width: 600px) {
+            margin-bottom: 20px;
+            margin-top: 10px;
+
+            line-height: @line-height-base;
+        }
+
+        //*-----[Responsive 768++]-----*/
+        @media screen and (min-width: 768px) {
+            width: 70%;
+            
+            margin: 20px auto 40px;
+
+            font-size: @body-fz-vl;
+            line-height: @line-height-med;
+        }
+    }
 }

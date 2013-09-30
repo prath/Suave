@@ -1,0 +1,156 @@
+// -----------------------------------------------------------------
+// * [Posts Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Single Post]
+-------------------------------------------------------------------*/
+.post-content {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    img {
+        height: auto;
+        width: 100%;
+
+        margin-bottom: 20px;
+
+        border-radius: @base-radius;
+    }
+}
+
+/*-----[Post Meta]-----*/
+.post-meta {
+    border-bottom: 1px solid lighten(@default-accent, 20%);
+    border-top: 1px solid lighten(@default-accent, 20%);
+    display: block;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    
+    color: @muted-color;
+    font-size: @body-fz-sm;
+    &-dot-separator {
+        .inlineDisplay();
+    
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    span {
+        .inlineDisplay();
+    }
+}
+
+/*-----[Post Meta Category, Tag, Comment and Author]-----*/
+.post-category,
+.post-tag,
+.post-author {
+    i {
+        color: lighten(@default-accent, 20%);
+        font-size: @body-fz-us;
+    }
+    a {
+        &:after {
+            content: "\00a0,\00a0";
+        }
+        &:last-child {
+           &:after {
+                content: "";
+            } 
+        }
+    }
+}
+
+/*-----[Post Meta Author]-----*/
+.post-author {
+    i {
+        color: lighten(@muted-color, 20%);
+    }
+    a {
+        color: @muted-color;
+        font-weight: 500;
+    }
+}
+
+/*-----[Post Image Caption]-----*/
+.post-image-caption {
+    .inlineDisplay();
+
+    margin-left: 20px;
+    margin-top: -10px;
+
+    color: @muted-color;
+    font-size: @body-fz-sm;
+    font-style: italic;
+}
+
+/*-----[Post Format Icon]-----*/
+.icon-post-format {
+    background-color: @default-accent;
+    border-radius: @base-radius;
+
+    padding: 10px;
+    
+    color: #fff;
+}
+
+/* [Post Thumbnails]
+-------------------------------------------------------------------*/
+.post-thumbnail {
+    margin-bottom: 20px;
+
+    //*-----[Responsive 600++]-----*/
+    @media screen and (min-width: 600px) {
+        margin-bottom: 0px;
+    }
+
+    &-image {
+        overflow: hidden;
+
+        height: 200px;
+        width: 100%;
+
+        //*-----[Responsive 600++ & --768]-----*/
+        @media screen and (min-width: 600px) and (max-width: 767px) {
+            display: none;
+        }
+        > img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0px;
+        a {
+            &:hover {
+            }
+        }
+    }
+    .post-date {
+        border-bottom: 1px solid lighten(@default-accent, 20%);
+        display: block;
+
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        
+        color: @muted-color;
+        font-size: @body-fz-sm;
+    }
+    .caption {
+        display: block;
+
+        color: @default-text;
+    }
+    .clearfix();
+}

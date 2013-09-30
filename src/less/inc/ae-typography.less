@@ -11,10 +11,12 @@
 /* [Global Typo]
 -------------------------------------------------------------------*/
 .sub-copy {
-    margin: 0px auto 30px;
     width: 80%;
-    line-height: @line-height-med;
+
+    margin: 0px auto 30px;
+
     font-size: @body-fz-xl;
+    line-height: @line-height-med;
     text-align: center;
 }
 .copy-center {
@@ -33,26 +35,24 @@
     h2, 
     h3 {
         width: 90%;
+
         margin: 0px auto 30px;
+        
         transform: translate3d(0, 0, 0);
         transition: all .8s ease;
-    }
-    .sub-copy {
-        width: 80%;
-        line-height: @line-height-med;
-        font-size: @body-fz-xl;
-        margin: 0px auto 30px;
     }
 }
 
 .heading-alt {
     background-color: fadeout(@invert-background, 5%);
+
     position: relative;
-    
-    padding: 25px 0px;
 
     height: auto;
     width: 100%;
+    
+    padding: 25px 0px;
+
     text-align: left;
     h1,
     h2,
@@ -61,8 +61,10 @@
     h5,
     h6 {
         display: block;
+
         padding: 0px;
         margin: 0px;
+        
         color: @default-accent;
         font-weight: 100;
 
@@ -98,37 +100,22 @@
         position: absolute;
         right: 20px;
         top: 10px;
+
         margin-top: 0px;
 
         //*-----[Responsive 768++]-----*/
         @media screen and (min-width: 768px) {
             position: relative;
             right: 0px;
+
             margin-top: 0px;
         }
 
     }
 }
 
-/* [Headline Typo]
--------------------------------------------------------------------*/
-.hero-unit {
-    h1 {
-        color: @default-background;
-        letter-spacing: @ls-xn;
-    }
-}
-
-/* [Testimonial Typo]
+/* [Quotes]
 -------------------------------------------------------------------*/
 .copy-quote {
-    line-height: @line-height-med;
-    font-family: @font-2;
-    font-size: @body-fz-lg;
-    span {
-        display: block;
-        margin-top: 30px;
-        font-family: @font-1;
-        font-size: @body-fz-df;
-    }
+    .quotes(@default-accent, @default-text, @font-2, @font-1, @body-fz-lg, @body-fz-df, @line-height-med, @line-height-base);
 }

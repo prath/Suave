@@ -11,6 +11,7 @@
 .form-control {
     background-color: transparent;
     border-color: lighten(@default-text, 15%);
+
     height: 38px;
 
     color: @default-text;
@@ -20,11 +21,12 @@
 
     border-radius: @base-radius;
     box-shadow: none;
-    // transition: border-color ease-in-out .15s;
+
     .placeholder(@color: @default-text);
     &:focus {
-        box-shadow: none;
         border-color: @btn-info;
+
+        box-shadow: none;
     }
 }
 
@@ -40,7 +42,9 @@
 
 .input-sm {
     height: 30px;
+
     padding: 5px 10px;
+    
     font-size: @body-fz-sm;
     line-height: @line-height-narrow;
 }
