@@ -17,6 +17,7 @@
     border-radius: 0px;
     box-shadow: none;
 
+    //*-----[Widget Heading]-----*/
     .panel-heading {
         .clearfix();
         background-color: transparent;
@@ -27,19 +28,19 @@
         padding: 0px;
         margin: 0px;
 
-        color: #333333;
+        color: @default-text;
 
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        // border-color: transparent;
     }
     
+    //*-----[Widget Body]-----*/
     .panel-body {
         padding: 10px 0px 0px 0px;
         margin-bottom: 20px;
         margin-top: 1px;
     }
-
+    
     address:last-child {
         margin-bottom: 0px;
 
@@ -49,7 +50,8 @@
             
         }
     }
-
+    
+    //*-----[Global UL]-----*/
     ul {
         list-style: none;
 
@@ -57,7 +59,7 @@
         margin: 0px;
 
         li {
-            border-bottom: 1px solid lighten(@muted-color,32%);
+            border-bottom: 1px solid lighten(@muted-color,30%);
 
             position: relative;
 
@@ -73,7 +75,7 @@
             padding: 0px 0px 0px 15px;
             margin-left: -15px;
             
-            color: inherit;
+            color: @default-text;
 
             &:hover {
                 color: @default-accent;
@@ -110,6 +112,7 @@
         }
     }
     
+    //*-----[Used in Post and Rss widget]-----*/
     .post-date, 
     .rss-date {
         display: block;
@@ -123,13 +126,14 @@
         
     }
     
+    //*-----[Rss widget]-----*/
     .rssSummary {
         margin-top: 10px;
         margin-bottom: 5px;
 
         font-size: @body-fz-sm;
     }
-
+    
     cite {
         font-size: @body-fz-sm;
         font-style: italic;
@@ -138,7 +142,8 @@
     select {
         width: 100%;
     }
-
+    
+    //*-----[Custom Widget for post]-----*/
     .widget-post {
         .clearfix();
         img {
@@ -176,10 +181,13 @@
             }
         }
     }
+
+    //*-----[Button used for tags]-----*/
     .btn-xs {
         margin-bottom: 10px;
     }
-
+    
+    //*-----[Image Caption]-----*/
     .wp-caption-text {
         position: relative;
 
@@ -191,6 +199,7 @@
     }
 }
 
+//*-----[Widget Heading]-----*/
 .widget-heading {
     .inlineDisplay();
     
@@ -206,6 +215,7 @@
     text-transform: uppercase;
 }
 
+//*-----[Icon Widget Heading]-----*/
 .icon-widget-heading {
     .inlineDisplay();
     border-right: 1px solid lighten(@muted-color,20%);
@@ -223,7 +233,7 @@
     font-size: 14px;
 }
 
-
+/*-----[Special Widget Styles On Some Widgets]-----*/
 .widget {
     &.widget_pages,
     &.widget_archive,
@@ -321,6 +331,7 @@
     }
 }
 
+/*-----[Special Widget Styles for Layered nav]-----*/
 .widget {
     &.widget_layered_nav_filters {
         ul {
@@ -470,6 +481,7 @@
         margin-bottom: 5px;
     }
     
+    //*-----[Woocommerce styles]-----*/
     .woocommerce {
         .product_list_widget {
             li {
@@ -514,7 +526,8 @@
             color: @invert-accent;
         }
     }
-
+    
+    //*-----[Special Woocommerce Styles]-----*/
     .woocommerce{
         &.widget_recent_reviews,
         &.widget_top_rated_products {
@@ -679,6 +692,7 @@
     }
 }
 
+//*-----[Special Woocommerce Styles]-----*/
 .woocommerce{
     &.widget_recent_reviews,
     &.widget_top_rated_products {
@@ -747,6 +761,7 @@
     }
 }
 
+//*-----[Special Woocommerce Styles]-----*/
 .woocommerce{
     &.widget_shopping_cart {
         .product_list_widget {
@@ -757,6 +772,8 @@
             }
         }
     }
+
+    
     // &.widget_price_filter {
     //     .price_slider_wrapper {
     //         .ui-widget-content {

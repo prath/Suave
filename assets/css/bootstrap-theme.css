@@ -2,13 +2,14 @@
  [Table of contents]
 --------------------------------------------------------------------
  1. Type
- 2. Forms
- 3. Buttons
- 4. Dropdowns
- 5. Navbar
- 6. Breadcrumbs
- 7. Thumbnails
- 8. Panels
+ 2. Tables
+ 3. Forms
+ 4. Buttons
+ 5. Dropdowns
+ 6. Navbar
+ 7. Breadcrumbs
+ 8. Thumbnails
+ 9. Panels
 ------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -16,22 +17,22 @@
 ------------------------------------------------------------------*/
 
 h1 {
-  font-size: 32px;
+  font-size: 28px;
   letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 23px;
   letter-spacing: 0px;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 0px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0px;
 }
 
@@ -59,9 +60,12 @@ h1 {
   font-weight: 100;
 }
 
-h2,
-h3,
-h4 {
+h2 {
+  font-weight: 300;
+}
+
+h4,
+h3 {
   font-weight: 400;
 }
 
@@ -71,12 +75,8 @@ h6 {
 }
 
 h1,
-h2 {
-  margin-bottom: 30px;
-}
-
-h3,
-h4 {
+h2,
+h3 {
   margin-bottom: 20px;
 }
 
@@ -84,8 +84,73 @@ blockquote {
   border-left: 0px;
 }
 
+dl {
+  margin: 0px 20px 20px;
+}
+
+dl dd {
+  margin-bottom: 10px;
+}
+
 /*------------------------------------------------------------------
- [2. Forms]
+ [2. Tables]
+------------------------------------------------------------------*/
+
+th,
+td {
+  padding: 10px;
+}
+
+.table-bordered {
+  border: 1px solid #ededed;
+}
+
+.table-bordered thead > tr > th,
+.table-bordered tbody > tr > th,
+.table-bordered tfoot > tr > th,
+.table-bordered thead > tr > td,
+.table-bordered tbody > tr > td,
+.table-bordered tfoot > tr > td {
+  border: 1px solid #ededed;
+}
+
+table thead > tr > th,
+.table thead > tr > th,
+table thead > tr > td,
+.table thead > tr > td {
+  border-bottom: 2px solid #f7c2bd;
+}
+
+table tbody > tr > th,
+.table tbody > tr > th,
+table tfoot > tr > th,
+.table tfoot > tr > th,
+table tbody > tr > td,
+.table tbody > tr > td,
+table tfoot > tr > td,
+.table tfoot > tr > td {
+  border-top: 1px solid #ededed;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #fef9f8;
+}
+
+.table-striped tbody > tr > th,
+.table-striped tfoot > tr > th,
+.table-striped tbody > tr > td,
+.table-striped tfoot > tr > td {
+  border-top: 1px solid #fceceb;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #fef9f8;
+}
+
+/*------------------------------------------------------------------
+ [3. Forms]
 ------------------------------------------------------------------*/
 
 .form-control {
@@ -156,7 +221,7 @@ blockquote {
 }
 
 /*------------------------------------------------------------------
- [3. Buttons]
+ [4. Buttons]
 ------------------------------------------------------------------*/
 
 /* [Buttons]
@@ -463,7 +528,7 @@ blockquote {
 }
 
 /*------------------------------------------------------------------
- [4. Dropdowns]
+ [5. Dropdowns]
 ------------------------------------------------------------------*/
 
 .dropdown-menu {
@@ -501,7 +566,7 @@ blockquote {
 }
 
 /*------------------------------------------------------------------
- [5. Navbar]
+ [6. Navbar]
 ------------------------------------------------------------------*/
 
 .navbar {
@@ -572,7 +637,7 @@ blockquote {
   padding-top: 0;
   padding-bottom: 0;
   font-family: "Maven Pro";
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 40px;
@@ -596,7 +661,7 @@ blockquote {
 
 @media screen and (min-width: 768px) {
   .navbar-brand {
-    font-size: 22px;
+    font-size: 21px;
     line-height: 48px;
   }
 }
@@ -651,7 +716,7 @@ blockquote {
 }
 
 /*------------------------------------------------------------------
- [6. Breadcrumbs]
+ [7. Breadcrumbs]
 ------------------------------------------------------------------*/
 
 .breadcrumb {
@@ -680,7 +745,7 @@ blockquote {
 }
 
 /*------------------------------------------------------------------
- [6. Thumbnails]
+ [8. Thumbnails]
 ------------------------------------------------------------------*/
 
 .thumbnail,
@@ -730,5 +795,5 @@ blockquote {
 }
 
 /*------------------------------------------------------------------
- [7. Panels]
+ [9. Panels]
 ------------------------------------------------------------------*/

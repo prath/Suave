@@ -120,6 +120,36 @@ a:hover {
   text-align: center;
 }
 
+.copy-center h1 {
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.copy-center h2 {
+  font-size: 28px;
+  letter-spacing: 0px;
+}
+
+.copy-center h3 {
+  font-size: 21px;
+  letter-spacing: 0px;
+}
+
+.copy-center h4 {
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+.copy-center h5 {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.copy-center h6 {
+  font-size: 13px;
+  letter-spacing: 0px;
+}
+
 .copy-center h1,
 .copy-center h2 {
   letter-spacing: -1px;
@@ -154,6 +184,36 @@ a:hover {
   width: 100%;
   padding: 25px 0px;
   text-align: left;
+}
+
+.heading-alt h1 {
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.heading-alt h2 {
+  font-size: 28px;
+  letter-spacing: 0px;
+}
+
+.heading-alt h3 {
+  font-size: 21px;
+  letter-spacing: 0px;
+}
+
+.heading-alt h4 {
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+.heading-alt h5 {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.heading-alt h6 {
+  font-size: 13px;
+  letter-spacing: 0px;
 }
 
 .heading-alt h1,
@@ -229,19 +289,41 @@ a:hover {
 /* [Quotes]
 -------------------------------------------------------------------*/
 
-.copy-quote {
+.copy-quote p {
   color: #eb6f63;
   font-family: "Roboto Slab";
   font-size: 16px;
+  font-style: normal;
   line-height: 25px;
 }
 
-.copy-quote span {
+.copy-quote p span,
+.copy-quote p cite {
   display: block;
   margin-top: 30px;
   color: #7c7c7c;
   font-family: "Maven Pro";
   font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+blockquote p {
+  color: #7c7c7c;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-style: italic;
+  line-height: 25px;
+}
+
+blockquote p span,
+blockquote p cite {
+  display: block;
+  margin-top: 10px;
+  color: #7c7c7c;
+  font-family: "Maven Pro";
+  font-size: 13px;
+  font-weight: 500;
   line-height: 20px;
 }
 
@@ -483,7 +565,7 @@ footer .footer-menu:after {
   position: relative;
   padding: 0px;
   margin: 0px;
-  color: #333333;
+  color: #7c7c7c;
   -webkit-border-top-left-radius: 0px;
   border-top-left-radius: 0px;
   -webkit-border-top-right-radius: 0px;
@@ -524,7 +606,7 @@ footer .footer-menu:after {
 }
 
 .widget ul li {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #ededed;
   position: relative;
   padding: 0px 0px 15px 15px;
   margin: 0px 0px 15px 0px;
@@ -535,7 +617,7 @@ footer .footer-menu:after {
   display: inline;
   padding: 0px 0px 0px 15px;
   margin-left: -15px;
-  color: inherit;
+  color: #7c7c7c;
 }
 
 .widget ul a:hover {
@@ -689,6 +771,8 @@ footer .footer-menu:after {
   font-size: 14px;
 }
 
+/*-----[Special Widget Styles On Some Widgets]-----*/
+
 .widget.widget_pages ul li,
 .widget.widget_archive ul li,
 .widget.widget_categories ul li,
@@ -836,6 +920,8 @@ footer .footer-menu:after {
 .widget.widget_layered_nav ul ul.children li:first-child {
   border-top: 0px;
 }
+
+/*-----[Special Widget Styles for Layered nav]-----*/
 
 .widget.widget_layered_nav_filters ul li.chosen {
   display: inline-block;

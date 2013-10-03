@@ -135,6 +135,14 @@ Text Domain: Suave Wordpress
   color: #7590d2;
 }
 
+.base-invert .widget li a {
+  color: #c3ccd7;
+}
+
+.base-invert .widget li a:hover {
+  color: #88aaff;
+}
+
 .base-invert h1,
 .base-invert h2,
 .base-invert h3,

@@ -21,6 +21,32 @@
 }
 .copy-center {
     text-align: center;
+
+    h1 {
+        font-size: @heading2-1-fz;
+        letter-spacing: @ls-nr;
+    }
+    h2 {
+        font-size: @heading2-2-fz;
+        letter-spacing: @ls-nm;
+    }
+    h3 {
+        font-size: @heading2-3-fz;
+        letter-spacing: @ls-nm;
+    }
+    h4 {
+        font-size: @heading2-4-fz;
+        letter-spacing: @ls-nm;
+    }
+    h5 {
+        font-size: @heading2-5-fz;
+        letter-spacing: @ls-nm;
+    }
+    h6 {
+        font-size: @heading2-6-fz;
+        letter-spacing: @ls-nm;
+    }
+
     h1, 
     h2 {
         letter-spacing: @ls-nr;
@@ -54,6 +80,31 @@
     padding: 25px 0px;
 
     text-align: left;
+    h1 {
+        font-size: @heading2-1-fz;
+        letter-spacing: @ls-nr;
+    }
+    h2 {
+        font-size: @heading2-2-fz;
+        letter-spacing: @ls-nm;
+    }
+    h3 {
+        font-size: @heading2-3-fz;
+        letter-spacing: @ls-nm;
+    }
+    h4 {
+        font-size: @heading2-4-fz;
+        letter-spacing: @ls-nm;
+    }
+    h5 {
+        font-size: @heading2-5-fz;
+        letter-spacing: @ls-nm;
+    }
+    h6 {
+        font-size: @heading2-6-fz;
+        letter-spacing: @ls-nm;
+    }
+
     h1,
     h2,
     h3,
@@ -117,5 +168,13 @@
 /* [Quotes]
 -------------------------------------------------------------------*/
 .copy-quote {
-    .quotes(@default-accent, @default-text, @font-2, @font-1, @body-fz-lg, @body-fz-df, @line-height-med, @line-height-base);
+    p {
+        .quotes(@default-accent, @default-text, @font-2, @font-1, @body-fz-lg, @body-fz-df, @line-height-med, @line-height-base, 30px, normal);
+    }
+}
+
+blockquote {
+    p {
+        .quotes(@default-text, @default-text, @font-2, @font-1, @body-fz-md, @body-fz-df, @line-height-med, @line-height-base, 10px, italic);
+    }
 }
