@@ -14,17 +14,19 @@ block title
 //- content
 block content
     
-    article
-        // PAGE TITLE
-        mixin page-title("Climb leg rub face on everything give attitude nap all day for under the bed.")
+    // PAGE TITLE
+    mixin page-title("Climb leg rub face on everything give attitude nap all day for under the bed.")
 
-        // POST CONTENT
-        .region.reset-vertical-gap
-            .container.post-content
-                .row
-                    .col-md-9.col-lg-9.col-sm-12.col-xs-12
+    section#main-content-area.region.reset-vertical-gap
+        .container.site-content
+            .row
+                // THE POST
+                section#main-content(role="main").col-md-9.col-lg-9.col-sm-12.col-xs-12
+                    // POST META
+                    article
                         .post-meta
-                            i.icon-pencil.icon-post-format
+                            .post-format
+                                i.icon-pencil.icon-post-format
                             span.post-date 1 January, 1st 2013
                             .post-meta-dot-separator 
                                 | .
@@ -44,7 +46,8 @@ block content
                                 i.icon-user
                                 a(href="http://") John William Doe
                         
-                        .entry-content
+                        // POST ENTRY
+                        .post-content
                             img(src="assets/images/blog.jpg", alt="blog image")
                             span.post-image-caption Grape turnip garlic tomatillo silver beet cauliflower turnip greens chickpea gram.
                             p 
@@ -278,17 +281,17 @@ block content
                             p 
                                 | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
 
-                    aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget
-                        .sidebar-widget
-                            mixin widget-categories
-                            mixin widget-search
-                            mixin widget-popular-post
-                            mixin widget-tags
-                            mixin widget-woo-featured-products
-                            mixin widget-recent-comments
+                // SIDEBAR WIDGETS
+                aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget(role="complementary")
+                    mixin widget-categories
+                    mixin widget-search
+                    mixin widget-popular-post
+                    mixin widget-tags
+                    mixin widget-woo-featured-products
+                    mixin widget-recent-comments
 
-    /// Footer Widgets
-    aside.region.footer-widgets.base-invert
+    // FOOTER WIDGETS
+    aside.region.footer-widgets.base-invert(role="complementary")
         .container
             .row
                 .col-md-4.col-lg-4.col-sm-12.col-xs-12

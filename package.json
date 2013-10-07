@@ -29,7 +29,8 @@
     "grunt-contrib-less": "~0.5.2",
     "autoprefixer": "~0.4.20130603",
     "grunt-autoprefixer": "~0.1.20130615",
-    "grunt-prettify": "~0.1.5"
+    "grunt-prettify": "~0.1.5",
+    "grunt-devtools": "*"
   },
   "keywords": []
 }

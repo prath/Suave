@@ -20,6 +20,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-dom-munger');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-prettify');
+    grunt.loadNpmTasks('grunt-devtools');
 
     grunt.initConfig({
 
@@ -67,7 +68,8 @@ module.exports = function(grunt) {
         less: {
             compile: {
                 options: {
-                    paths: ['src/less', 'src/less/inc', 'src/less/bootstrap-less', 'src/less/bootstrap-theme']
+                    paths: ['src/less', 'src/less/inc', 'src/less/bootstrap-less', 'src/less/bootstrap-theme'],
+                    dumpLineNumbers: true
                 },
                 files: [{
                     expand: true,

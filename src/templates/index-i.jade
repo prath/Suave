@@ -29,13 +29,14 @@ block content
                 // CTA
                 p
                     a.btn.btn-primary.btn-lg.btn-cta Buy Now 
+
     // INTRO
-    .region.reset-bottom-gap
+    .region(style='background-image: url(assets/images/pattern1.jpg); background-attachment: fixed;')
          section.copy-center.container
             h2
                 | Suave is Multipurpose WordPress Theme.
             p.sub-copy
-                | Collaboratively <a href="">administrate</a>&nbsp;empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
+                | Collaboratively <a href="">administrate</a>&nbsp;empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
             // CTA
             p
                 a.btn.btn-primary.btn-lg Buy Theme 
@@ -43,55 +44,43 @@ block content
                 a.btn.btn-link.btn-lg See Features
 
     // OUR SERVICES
-    section.region.services.two-column.reset-top-gap
+    section.region.services.reset-top-gap
+        header.heading-alt
+            .container
+                h3 Our Services
+                .pull-right.icon-action
+                    a(href="")
+                        i.icon-external-link
+
         // SERVICES
         .container.widen-top-gap
-            //- p.sub-copy
+            p.sub-copy
                 | Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service.
             .row.widen-top-outergap
-                article.col-md-4.col-lg-4.col-sm-4.col-xs-12
-                    img.service-images.pull-left(src="assets/images/feature-1.jpg", alt="")
-                    .service-content
-                        header
-                            //- i.icon-html5.icon-6x.icon-simple-red
-                            h4 Web Design
-                        div
-                            p.
-                                Here's the story of a lovely lady who was bringing up three very lovely girls. Just sit right back and you'll hear a tale a tale.
-                            a.btn.btn-primary.btn-xs Learn more
-                article.col-md-4.col-lg-4.col-sm-4.col-xs-12
-                    img.service-images.pull-left(src="assets/images/feature-2.jpg", alt="")
-                    .service-content
-                        header
-                            //- i.icon-code.icon-6x.icon-simple-green
-                            h4 Web Development
-                        div
-                            p.
-                                Said Californ'y is the place you ought to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.
-                            a.btn.btn-primary.btn-xs Learn more
-                article.col-md-4.col-lg-4.col-sm-4.col-xs-12
-                    img.service-images.pull-left(src="assets/images/feature-3.jpg", alt="")
-                    .service-content
-                        header
-                            //- i.icon-mobile-phone.icon-6x.icon-simple-yellow
-                            h4 Mobile App Development
-                        div
-                            p.
-                                The movie star the professor and Mary Ann here on Gilligans Isle. We're gonna do it. On your mark get set and go now professor. 
-                            a.btn.btn-primary.btn-xs Learn more
-
-    
-
-    //- // SUBSCRIBE FORM
-    //- .region.base-quaternary.subscribe
-    //-     section.container 
-    //-         h4.
-    //-             Get the latest news and updates. We promise, we won't spam you.
-    //-         form.form-inline(id="", method="", action="", role="form").pull-right
-    //-             .form-group
-    //-                 label.sr-only(for="subscribe-form") Email Address
-    //-                 input.form-control(type="email", placeholder="Type your email here", id="subscribe-form")
-    //-             button.btn.btn-primary(type="submit") Submit
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    header
+                        i.icon-html5.icon-6x.icon-simple-red
+                        h4 Web Design
+                    div
+                        p.
+                            Here's the story of a lovely lady who was bringing up three very lovely girls. Just sit right back and you'll hear a tale a tale.
+                        a.btn.btn-primary.btn-xs Learn more
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    header
+                        i.icon-code.icon-6x.icon-simple-green
+                        h4 Web Development
+                    div
+                        p.
+                            Said Californ'y is the place you ought to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.
+                        a.btn.btn-primary.btn-xs Learn more
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    header
+                        i.icon-mobile-phone.icon-6x.icon-simple-yellow
+                        h4 Mobile App Development
+                    div
+                        p.
+                            The movie star the professor and Mary Ann here on Gilligans Isle. We're gonna do it. On your mark get set and go now professor. 
+                        a.btn.btn-primary.btn-xs Learn more
 
     // PORTFOLIO
     section.region.reset-vertical-gap.container.container-full
@@ -129,6 +118,33 @@ block content
                 a.images-slider-nav-next(href="")
                     i.icon-chevron-right
 
+    // TESTIMONIAL
+    .region.testimonial.container
+        .copy-center
+            i.icon-bullhorn.icon-muted.icon-title
+            blockquote.copy-quote
+                p 
+                    | "Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but media information without cross-media value quickly maximize timely deliverables."
+                    cite.name − <strong>John William Doe</strong>, Aestik
+            .testimonial-slider-nav
+                a(href="") 
+                    i.icon-circle-blank
+                a(href="") 
+                    i.icon-circle-blank
+                a(href="") 
+                    i.icon-circle-blank
+
+    // SUBSCRIBE FORM
+    .region.base-quaternary.subscribe
+        section.container 
+            h4.
+                Get the latest news and updates. We promise, we won't spam you.
+            form.form-inline(id="", method="", action="", role="form").pull-right
+                .form-group
+                    label.sr-only(for="subscribe-form") Email Address
+                    input.form-control(type="email", placeholder="Type your email here", id="subscribe-form")
+                button.btn.btn-primary(type="submit") Submit
+
     // RECENT POST
     section.region.reset-vertical-gap
         // HEADING ALTERNATIVE
@@ -141,10 +157,10 @@ block content
                     a(href="")
                         i.icon-external-link
         .container
-            .row.blog-posts.no-image.widen-vertical-outergap
+            .row.blog-posts.widen-vertical-outergap
                 .col-md-4.col-lg-4.col-sm-4
                     article.thumbnail.post-thumbnail
-                        //- .post-thumbnail-image
+                        .post-thumbnail-image
                             img(src="assets/images/porto2.jpg", alt="")
                         .caption
                             h4 
@@ -157,7 +173,7 @@ block content
                                 i.icon-angle-right
                 .col-md-4.col-lg-4.col-sm-4
                     article.thumbnail.post-thumbnail
-                        //- .post-thumbnail-image
+                        .post-thumbnail-image
                             img(src="assets/images/porto1.jpg", alt="")
                         .caption
                             h4 
@@ -170,7 +186,7 @@ block content
                                 i.icon-angle-right
                 .col-md-4.col-lg-4.col-sm-4
                     article.thumbnail.post-thumbnail
-                        //- .post-thumbnail-image
+                        .post-thumbnail-image
                             img(src="assets/images/porto3.jpg", alt="")
                         .caption
                             h4 
@@ -182,22 +198,6 @@ block content
                             a(href="").pull-right Read more&nbsp;
                                 i.icon-angle-right
 
-    // TESTIMONIAL
-    .region.testimonial.container.reset-vertical-gap.widen-vertical-gap
-        .copy-center
-            i.icon-bullhorn.icon-muted.icon-title
-            blockquote.copy-quote
-                p.sub-copy 
-                    | "Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but media information without cross-media value quickly maximize timely deliverables."
-                    cite.name − <strong>John William Doe</strong>, Aestik
-            .testimonial-slider-nav
-                a(href="") 
-                    i.icon-circle-blank
-                a(href="") 
-                    i.icon-circle-blank
-                a(href="") 
-                    i.icon-circle-blank
-
     // FOOT CTA
     .region.base-invert.reset-vertical-gap(style='background-image: url(assets/images/cta-foot-blur.jpg); background-attachment: fixed;')
         div(style='background-color: rgba(0,0,0, 0.50); height: 100%;')
@@ -207,7 +207,7 @@ block content
                     a.btn.btn-primary.btn-lg.btn-cta Buy This Theme Now! 
 
     // CLIENT LIST
-    .region.base-greyscale.reset-vertical-gap.widen-vertical-gap
+    .region.base-greyscale
         section.container
             header.copy-center
                 h3 Our Clients

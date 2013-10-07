@@ -11,133 +11,93 @@
 /* [Full Page Portfolio Slide Images]
 -------------------------------------------------------------------*/
 /*-----[Slider Container]-----*/
-.slider {
-    overflow: hidden;
+.portfolio-slider-full {
+    border-radius: 0px;
 
-    position: relative;
-
-    height: 300px;
-    width: 100%;
-
-    //*-----[Responsive 600++]-----*/
-    @media screen and (min-width: 600px) {
-        height: 200px;
-    }
+    margin-bottom: 0px;
 
     //*-----[Responsive 768++]-----*/
     @media screen and (min-width: 768px) {
         height: 400px;
     }
-}
-
-/*-----[Slider Item Container]-----*/
-.portfolio-slider-full {
-    list-style: none;
-
-    padding: 0px;
-    margin: 0px;
-
-    //*-----[Responsive 600++]-----*/
-    @media screen and (min-width: 600px) {
-        width: 1000%;
+    .images-slider-nav {
+        &-prev {
+            border-bottom-left-radius: 0px;
+        }
+        &-next {
+            border-bottom-right-radius: 0px;
+        }
     }
-    
-    > li.portfolio-item {
-        background-color: @default-accent;
-        float: left;
-
-        position: relative;
-
-        height: auto;
-        width: 100%;
-
+    ul {
         //*-----[Responsive 600++]-----*/
         @media screen and (min-width: 600px) {
-            height: 200px;
-            width: 300px;
+            width: 1000%;
         }
-
-        //*-----[Responsive 768++]-----*/
-        @media screen and (min-width: 768px) {
-            height: 400px;
-            width: 600px;
-        }
-
-        img {
-            height: auto;
-            width: 100%;
-
-            transition: all 1.5s ease;
-
+        
+        > li {
             //*-----[Responsive 600++]-----*/
             @media screen and (min-width: 600px) {
                 height: 200px;
-                width: 300px
+                width: 300px;
             }
 
             //*-----[Responsive 768++]-----*/
             @media screen and (min-width: 768px) {
                 height: 400px;
-                width: 600px
+                width: 600px;
             }
 
-        }
-        &:hover {
             img {
-                opacity: 0.2;
+                transition: all 1.5s ease;
+
+                //*-----[Responsive 600++]-----*/
+                @media screen and (min-width: 600px) {
+                    height: 200px;
+                    width: 300px
+                }
+
+                //*-----[Responsive 768++]-----*/
+                @media screen and (min-width: 768px) {
+                    height: 400px;
+                    width: 600px
+                }
+
             }
-            .portfolio-info {
-                display: block;
-
-                top: 30%;
-
-                transition: top .6s ease;
+            &:hover {
+                img {
+                    opacity: 0.2;
+                }
             }
-        }
-        .portfolio-info {
-            display: block;
 
-            position: absolute;
-            top: 600px;
+            &:hover {
+                .portfolio-info {
+                    display: block;
 
-            height: 100%;
-            width: 100%;
+                    top: 30%;
 
-            text-align: center;
-
-            transition: top .6s ease;
-            h4 {
-                color: @default-background;
-            }
-            a {
-                margin-top: 30px;
+                    transition: top .6s ease;
+                }
             }
         }
     }
 }
 
-/*-----[Slider nav]-----*/
-.portfolio-slider-nav {
-    .clearfix();
+.portfolio-info {
+    display: block;
 
-    bottom: 0px;
     position: absolute;
+    top: 600px;
 
+    height: 100%;
     width: 100%;
-    a {
-        .inlineDisplay();
-        background-color: darken(@invert-background, 10%);
 
-        height: 30px;
-        width: 30px;
-        i {
-            line-height: 30px;
-        }
+    text-align: center;
+
+    transition: top .6s ease;
+    h4 {
+        color: @default-background;
     }
-    &-prev {
-        float: left;
-    }
-    &-next {
-        float: right;
+    a {
+        margin-top: 30px;
     }
 }
