@@ -14,8 +14,17 @@ block title
 //- content
 block content
     
-    // PAGE TITLE
-    mixin page-title("Blog")
+    //- // PAGE TITLE
+    //- mixin page-title("Blog")
+    section#breadcrumbs.region.reset-vertical-gap.widen-top-gap
+        .container
+            ol.breadcrumb
+                li 
+                    a(href="http://") Home
+                li 
+                    a(href="http://") Posts
+                li.active 
+                    a(href="http://") Climb leg rub face
 
     section#main-content-area.region.reset-vertical-gap
         .container.site-content

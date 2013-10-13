@@ -11,39 +11,39 @@
 /* [Global Typo]
 -------------------------------------------------------------------*/
 .sub-copy {
-    width: 80%;
-
-    margin: 0px auto 30px;
-
-    font-size: @body-fz-xl;
-    line-height: @line-height-med;
+    margin-bottom: 50px;
+    
+    font-family: @font-2;
+    font-size: @body-fz-lg;
+    font-weight: 300;
+    line-height: @line-height-base;
     text-align: center;
 }
 .copy-center {
     text-align: center;
 
     h1 {
-        font-size: @heading2-1-fz;
+        font-size: @heading-1-fz;
         letter-spacing: @ls-nr;
     }
     h2 {
-        font-size: @heading2-2-fz;
+        font-size: @heading-2-fz;
         letter-spacing: @ls-nm;
     }
     h3 {
-        font-size: @heading2-3-fz;
+        font-size: @heading-3-fz;
         letter-spacing: @ls-nm;
     }
     h4 {
-        font-size: @heading2-4-fz;
+        font-size: @heading-4-fz;
         letter-spacing: @ls-nm;
     }
     h5 {
-        font-size: @heading2-5-fz;
+        font-size: @heading-5-fz;
         letter-spacing: @ls-nm;
     }
     h6 {
-        font-size: @heading2-6-fz;
+        font-size: @heading-6-fz;
         letter-spacing: @ls-nm;
     }
 
@@ -51,12 +51,7 @@
     h2 {
         letter-spacing: @ls-nr;
     }
-    h1 {
-        font-weight: 100;
-    }
-    h2 {
-        font-weight: 300;
-    }
+
     h1,
     h2, 
     h3 {
@@ -66,6 +61,25 @@
         
         transform: translate3d(0, 0, 0);
         transition: all .8s ease;
+    }
+
+    .stretched {
+        font-size: @body-fz-sm;
+        font-weight: 700;
+        letter-spacing: 10px; 
+    }
+
+    .half-stretched {
+        font-size: @body-fz-sm;
+        font-weight: 700;
+        letter-spacing: 10px; 
+    }
+
+    .capitalized {
+        font-family: @font-3;
+        font-size: @heading-6-fz;
+        font-weight: 500;
+        text-transform: uppercase; 
     }
 }
 
@@ -77,32 +91,20 @@
     height: auto;
     width: 100%;
     
-    padding: 25px 0px;
+    padding: 25px 0px 20px;
 
     text-align: left;
-    h1 {
-        font-size: @heading2-1-fz;
-        letter-spacing: @ls-nr;
-    }
-    h2 {
-        font-size: @heading2-2-fz;
-        letter-spacing: @ls-nm;
-    }
-    h3 {
-        font-size: @heading2-3-fz;
-        letter-spacing: @ls-nm;
-    }
-    h4 {
-        font-size: @heading2-4-fz;
-        letter-spacing: @ls-nm;
-    }
-    h5 {
-        font-size: @heading2-5-fz;
-        letter-spacing: @ls-nm;
-    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
     h6 {
-        font-size: @heading2-6-fz;
-        letter-spacing: @ls-nm;
+        font-family: @font-3;
+        font-size: @heading-5-fz;
+        font-weight: 400;
+        letter-spacing: @ls-uw;
+        text-transform: uppercase;
     }
 
     h1,
@@ -135,7 +137,8 @@
         margin: 0px;
 
         color: @invert-text;
-        font-size: @body-fz-df;
+        font-family: @font-1;
+        font-size: @body-fz-sm;
         line-height: @line-height-base;
         text-align: left;
 
@@ -144,7 +147,6 @@
             .inlineDisplay();
             
             margin-left: 20px;
-            margin-top: 5px;
         }
     }
     .icon-action {
@@ -159,22 +161,78 @@
             position: relative;
             right: 0px;
 
-            margin-top: 0px;
+            margin-top: -7px;
         }
 
     }
+}
+
+/* [Devider]
+-------------------------------------------------------------------*/
+.content-divider {
+    border-bottom: 1px solid lighten(@muted-color,20%);
+
+    position: relative;
+
+    height: 1px;
+
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+    text-align: center;
+
+    .stretched,
+    .half-stretched,
+    * {
+        .inlineDisplay();
+        
+        background-color: @default-background;
+        
+        position: relative;
+        top: -43px;
+        
+        padding: 5px 10px 5px 20px;
+        
+        color: @default-accent;
+        text-align: center;
+    }
+}
+
+/* [Modofiers]
+-------------------------------------------------------------------*/
+.stretched,
+.half-stretched {
+    font-family: @font-3;
+    font-size: @body-fz-sm;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.stretched {
+    letter-spacing: 10px; 
+}
+
+.half-stretched {
+    letter-spacing: 5px; 
+}
+
+.capitalized {
+    font-family: @font-3;
+    font-size: @heading-6-fz;
+    text-transform: uppercase; 
 }
 
 /* [Quotes]
 -------------------------------------------------------------------*/
 .copy-quote {
     p {
-        .quotes(@default-accent, @default-text, @font-2, @font-1, @body-fz-lg, @body-fz-df, @line-height-med, @line-height-base, 30px, normal);
+        .quotes(@default-text, @default-text, @font-2, @font-1, @body-fz-lg, @body-fz-df, @line-height-med, @line-height-base, 30px, normal);
     }
 }
 
 blockquote {
     p {
-        .quotes(@default-text, @default-text, @font-2, @font-1, @body-fz-md, @body-fz-df, @line-height-med, @line-height-base, 10px, italic);
+        .quotes(@default-text, @default-text, @font-2, @font-1, @body-fz-lg, @body-fz-df, @line-height-med, @line-height-base, 10px, italic);
     }
 }

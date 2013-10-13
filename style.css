@@ -38,13 +38,11 @@ Text Domain: Suave Wordpress
 body {
   background-color: #ffffff;
   color: #7c7c7c;
-  font-family: "Maven Pro";
+  font-family: "Noto Sans";
   font-size: 13px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.875em;
   text-rendering: optimizeLegibility;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 body.suave {
   margin-top: 74px;
@@ -58,6 +56,9 @@ a:hover {
 }
 .container {
   position: relative;
+}
+.container.narrow {
+  max-width: 1040px;
 }
 .container-full {
   max-width: 100%;
@@ -81,11 +82,24 @@ a:hover {
   height: 100%;
 }
 .page-title header {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   padding-top: 50px;
 }
 .page-title h1 {
   color: #fff;
+}
+.site-content {
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+.site-content img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+#main-content {
+  padding-right: 30px;
 }
 /*------------------------------------------------------------------
  [2. Typography]
@@ -93,21 +107,22 @@ a:hover {
 /* [Global Typo]
 -------------------------------------------------------------------*/
 .sub-copy {
-  width: 80%;
-  margin: 0px auto 30px;
-  font-size: 18px;
-  line-height: 25px;
+  margin-bottom: 50px;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
   text-align: center;
 }
 .copy-center {
   text-align: center;
 }
 .copy-center h1 {
-  font-size: 32px;
+  font-size: 48px;
   letter-spacing: -1px;
 }
 .copy-center h2 {
-  font-size: 28px;
+  font-size: 30px;
   letter-spacing: 0px;
 }
 .copy-center h3 {
@@ -119,22 +134,16 @@ a:hover {
   letter-spacing: 0px;
 }
 .copy-center h5 {
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0px;
 }
 .copy-center h6 {
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0px;
 }
 .copy-center h1,
 .copy-center h2 {
   letter-spacing: -1px;
-}
-.copy-center h1 {
-  font-weight: 100;
-}
-.copy-center h2 {
-  font-weight: 300;
 }
 .copy-center h1,
 .copy-center h2,
@@ -144,37 +153,41 @@ a:hover {
   transform: translate3d(0, 0, 0);
   transition: all .8s ease;
 }
+.copy-center .stretched {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+.copy-center .half-stretched {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+.copy-center .capitalized {
+  font-family: "Maven Pro";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 .heading-alt {
   background-color: rgba(59, 67, 76, 0.95);
   position: relative;
   height: auto;
   width: 100%;
-  padding: 25px 0px;
+  padding: 25px 0px 20px;
   text-align: left;
 }
-.heading-alt h1 {
-  font-size: 32px;
-  letter-spacing: -1px;
-}
-.heading-alt h2 {
-  font-size: 28px;
-  letter-spacing: 0px;
-}
-.heading-alt h3 {
-  font-size: 21px;
-  letter-spacing: 0px;
-}
-.heading-alt h4 {
-  font-size: 18px;
-  letter-spacing: 0px;
-}
-.heading-alt h5 {
-  font-size: 14px;
-  letter-spacing: 0px;
-}
+.heading-alt h1,
+.heading-alt h2,
+.heading-alt h3,
+.heading-alt h4,
+.heading-alt h5,
 .heading-alt h6 {
-  font-size: 13px;
-  letter-spacing: 0px;
+  font-family: "Maven Pro";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .heading-alt h1,
 .heading-alt h2,
@@ -212,7 +225,8 @@ a:hover {
   display: block;
   margin: 0px;
   color: #c3ccd7;
-  font-size: 13px;
+  font-family: "Noto Sans";
+  font-size: 12px;
   line-height: 20px;
   text-align: left;
 }
@@ -225,7 +239,6 @@ a:hover {
   
     vertical-align: top;
     margin-left: 20px;
-    margin-top: 5px;
   }
 }
 .heading-alt .icon-action {
@@ -238,16 +251,63 @@ a:hover {
   .heading-alt .icon-action {
     position: relative;
     right: 0px;
-    margin-top: 0px;
+    margin-top: -7px;
   }
+}
+/* [Devider]
+-------------------------------------------------------------------*/
+.content-divider {
+  border-bottom: 1px solid #d3d3d3;
+  position: relative;
+  height: 1px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+}
+.content-divider .stretched,
+.content-divider .half-stretched,
+.content-divider * {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+
+  vertical-align: top;
+  background-color: #ffffff;
+  position: relative;
+  top: -43px;
+  padding: 5px 10px 5px 20px;
+  color: #eb6f63;
+  text-align: center;
+}
+/* [Modofiers]
+-------------------------------------------------------------------*/
+.stretched,
+.half-stretched {
+  font-family: "Maven Pro";
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.stretched {
+  letter-spacing: 10px;
+}
+.half-stretched {
+  letter-spacing: 5px;
+}
+.capitalized {
+  font-family: "Maven Pro";
+  font-size: 14px;
+  text-transform: uppercase;
 }
 /* [Quotes]
 -------------------------------------------------------------------*/
 .copy-quote p {
-  color: #eb6f63;
+  color: #7c7c7c;
   font-family: "Roboto Slab";
   font-size: 16px;
-  font-style: normal;
+  font-weight: 300;
   line-height: 25px;
 }
 .copy-quote p span,
@@ -255,7 +315,7 @@ a:hover {
   display: block;
   margin-top: 30px;
   color: #7c7c7c;
-  font-family: "Maven Pro";
+  font-family: "Noto Sans";
   font-size: 13px;
   font-weight: 500;
   line-height: 20px;
@@ -263,8 +323,8 @@ a:hover {
 blockquote p {
   color: #7c7c7c;
   font-family: "Roboto Slab";
-  font-size: 14px;
-  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 25px;
 }
 blockquote p span,
@@ -272,7 +332,7 @@ blockquote p cite {
   display: block;
   margin-top: 10px;
   color: #7c7c7c;
-  font-family: "Maven Pro";
+  font-family: "Noto Sans";
   font-size: 13px;
   font-weight: 500;
   line-height: 20px;
@@ -544,12 +604,12 @@ footer .footer-menu:after {
   font-weight: normal;
 }
 .hero-unit h1 {
-  margin: 1em auto 0px;
+  margin: 1em 2em 0px;
+  padding-top: 30px;
   color: #ffffff;
   font-family: "Roboto Slab";
   font-size: 42.35294117647059px;
-  font-weight: 100;
-  letter-spacing: -2px;
+  font-weight: 400;
   text-align: center;
 }
 @media screen and (min-width: 600px) {
@@ -559,7 +619,7 @@ footer .footer-menu:after {
 }
 @media screen and (min-width: 768px) {
   .hero-unit h1 {
-    margin: 1.5em auto 0px;
+    margin: 1.5em 3em 0px;
     font-size: 72px;
   }
 }
@@ -596,6 +656,9 @@ footer .footer-menu:after {
 .widget {
   background-color: transparent;
   border: 0px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 20px;
   border-radius: 0px;
   box-shadow: none;
 }
@@ -605,7 +668,7 @@ footer .footer-menu:after {
   border: 0px;
   position: relative;
   padding: 0px;
-  margin: 0px;
+  margin: 0px 0px 10px;
   color: #7c7c7c;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -786,6 +849,7 @@ footer .footer-menu:after {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0px;
+  line-height: 15px;
   text-transform: uppercase;
 }
 .icon-widget-heading {
@@ -966,8 +1030,8 @@ footer .footer-menu:after {
 /* [Footer Widget]
 -------------------------------------------------------------------*/
 .footer-widgets {
-  padding-bottom: 20px;
-  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 .footer-widgets .widget {
   font-size: 12px;
@@ -1317,17 +1381,8 @@ footer .footer-menu:after {
 /*------------------------------------------------------------------
  [11. Post]
 ------------------------------------------------------------------*/
-/* [Single Post]
--------------------------------------------------------------------*/
-.site-content {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-.site-content img {
-  height: auto;
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 3px;
+.post header h1 {
+  margin-top: -10px;
 }
 /*-----[Post Meta]-----*/
 .post-meta {
@@ -1338,7 +1393,7 @@ footer .footer-menu:after {
   padding-top: 10px;
   margin-bottom: 20px;
   color: #a0a0a0;
-  font-size: 12px;
+  font-size: 11px;
 }
 .post-meta-dot-separator {
   display: inline-block;
@@ -1363,7 +1418,7 @@ footer .footer-menu:after {
 .post-tag i,
 .post-author i {
   color: #f7c2bd;
-  font-size: 10px;
+  font-size: 11px;
 }
 .post-category a:after,
 .post-tag a:after,
@@ -1394,7 +1449,7 @@ footer .footer-menu:after {
   margin-left: 20px;
   margin-top: -10px;
   color: #a0a0a0;
-  font-size: 12px;
+  font-size: 11px;
   font-style: italic;
 }
 /*-----[Post Format Icon]-----*/
@@ -1454,7 +1509,7 @@ footer .footer-menu:after {
   padding-bottom: 10px;
   margin-bottom: 10px;
   color: #a0a0a0;
-  font-size: 12px;
+  font-size: 11px;
 }
 .post-thumbnail .caption {
   display: block;
@@ -1486,7 +1541,7 @@ footer .footer-menu:after {
   padding-right: 0px;
 }
 .post-2-column {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .post-2-column .post-meta {
   border: 0px;
@@ -1514,22 +1569,25 @@ footer .footer-menu:after {
   border-bottom: 1px solid #ededed;
   padding-bottom: 5px;
   color: #eb6f63;
-  font-size: 18px;
+  font-size: 21px;
 }
 .post-2-column .post-month {
   border-bottom: 1px solid #ededed;
   color: #444444;
 }
-.post-2-column .post-excerpt {
+.post-2-column .post-excerpt,
+.post-2-column .post-content {
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 25px;
   text-align: left;
 }
-.post-2-column .post-excerpt img {
+.post-2-column .post-excerpt img,
+.post-2-column .post-content img {
   margin-bottom: 20px;
 }
 .post-2-column .post-header {
   margin-top: 0px;
-  font-size: 18px;
 }
 .post-2-column .post-header a {
   color: #444444;
@@ -1537,7 +1595,8 @@ footer .footer-menu:after {
 .post-2-column .post-header a:hover {
   color: #a02115;
 }
-.post-2-column .post-excerpt + .post-meta {
+.post-2-column .post-excerpt + .post-meta,
+.post-2-column .post-content + .post-meta {
   border-bottom: 1px solid #f7c2bd;
   border-top: 1px solid #f7c2bd;
   padding-top: 10px;
@@ -1623,11 +1682,7 @@ footer .footer-menu:after {
  [13. Testimonial]
 ------------------------------------------------------------------*/
 /* [Testimonial Icons]
--------------------------------------------------------------------*/
-.testimonial i.icon-title {
-  font-size: 30px;
-}
-/*------------------------------------------------------------------
+-------------------------------------------------------------------*//*------------------------------------------------------------------
  [14. Subscribe]
 ------------------------------------------------------------------*/
 .subscribe {
@@ -1679,16 +1734,22 @@ footer .footer-menu:after {
     margin-bottom: 0px;
   }
 }
-.services.two-column .service-images {
-  height: 100px;
-  width: 100px;
-  border-radius: 100px;
+.services img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+  border-radius: 200px;
 }
-.services.two-column .service-content {
-  margin-left: 120px;
+.services .service-content p {
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 20px;
 }
-.services.two-column .service-content h4 {
-  margin-top: 0px;
+.services .copy-stretched {
+  margin-bottom: 30px;
+}
+.services .sub-copy {
+  margin-bottom: 100px;
 }
 /*------------------------------------------------------------------
  [16. Marketing]
@@ -1700,7 +1761,6 @@ footer .footer-menu:after {
 }
 .marketing h3 {
   color: #ffffff !important;
-  font-weight: 100;
 }
 /*------------------------------------------------------------------
  [17. client]
@@ -1729,6 +1789,9 @@ footer .footer-menu:after {
 }
 .client-list a:hover img {
   opacity: 1;
+}
+.client-list h4 {
+  margin-bottom: 30px;
 }
 /*------------------------------------------------------------------
  [18. Helper]
@@ -1790,4 +1853,9 @@ footer .footer-menu:after {
   .pull-left {
     float: left !important;
   }
+}
+.shrunk {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }

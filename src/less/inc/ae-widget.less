@@ -10,9 +10,17 @@
 
 /* [Default Widget]
 -------------------------------------------------------------------*/
+.sidebar-widget {
+    // padding-left: 50px;
+}
 .widget {
     background-color: transparent;
     border: 0px;
+
+    margin-bottom: 30px;
+
+    font-size: @body-fz-sm;
+    line-height: @line-height-base;
 
     border-radius: 0px;
     box-shadow: none;
@@ -26,7 +34,7 @@
         position: relative;
 
         padding: 0px;
-        margin: 0px;
+        margin: 0px 0px 10px;
 
         color: @default-text;
 
@@ -208,10 +216,11 @@
     margin-top: 5px;
 
     color: darken(@muted-color, 25%);
-    font-family: @font-1 ;
+    font-family: @font-3;
     font-size: @body-fz-df ;
     font-weight: 500;
     letter-spacing: @ls-nm;
+    line-height: @line-height-narrow;
     text-transform: uppercase;
 }
 
@@ -367,8 +376,8 @@
 -------------------------------------------------------------------*/
 
 .footer-widgets {
-    padding-bottom: 20px;
-    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     .widget {
         font-size: @body-fz-sm;
         ul{

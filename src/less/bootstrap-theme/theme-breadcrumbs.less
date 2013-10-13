@@ -15,10 +15,10 @@
     margin-bottom: 0px;
     > li {
         a {
-            color: darken(#fff, 20%);
+            color: @muted-color;
             font-size: @body-fz-sm;
             &:hover{
-                color: #fff;
+                color: @default-accent;
             }
         }
         &+li:before {
@@ -30,7 +30,10 @@
     }
     > .active {
         a {
-                color: lighten(@default-accent, 15%);
+            color: @default-accent;
+            &:hover {
+                color: @muted-color;
+            }
         }
     }
 }

@@ -15,11 +15,8 @@ body{
     font-family: @font-1;
     font-size: @body-fz-df;
     font-weight: 400;
-    line-height: @line-height-base;
+    line-height: 1.875em;
     text-rendering: optimizeLegibility;
-    
-    -ms-text-size-adjust: 100%; 
-    -webkit-text-size-adjust: 100%;
 }
 
 body.suave{
@@ -36,6 +33,9 @@ a{
 
 .container {
     position: relative;
+    &.narrow {
+        max-width: 1040px;
+    }
 }
 
 .container-full {
@@ -66,10 +66,27 @@ a{
 
 .page-title {
     header {
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         padding-top: 50px;
     }
     h1 {
         color: #fff;
     }
+}
+
+.site-content {
+    padding-bottom: 100px;
+    padding-top: 70px;
+    img {
+        height: auto;
+        width: 100%;
+
+        margin-bottom: 20px;
+
+        border-radius: @base-radius;
+    }
+}
+
+#main-content {
+    padding-right: 30px;
 }

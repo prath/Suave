@@ -13,47 +13,40 @@ block title
 
 //- content
 block content
-    
-    // PAGE TITLE
-    mixin page-title("Climb leg rub face on everything give attitude nap all day for under the bed.")
-
+    section#breadcrumbs.region.reset-vertical-gap.widen-top-gap
+        .container
+            ol.breadcrumb
+                li 
+                    a(href="http://") Home
+                li 
+                    a(href="http://") Posts
+                li.active 
+                    a(href="http://") Climb leg rub face
     section#main-content-area.region.reset-vertical-gap
         .container.site-content
             .row
                 // THE POST
                 section#main-content(role="main").col-md-9.col-lg-9.col-sm-12.col-xs-12
                     // POST META
-                    article
-                        .post-meta
-                            .post-format
-                                i.icon-pencil.icon-post-format
-                            span.post-date 1 January, 1st 2013
-                            .post-meta-dot-separator 
-                                | .
-                            span.post-category
-                                i.icon-circle-blank
-                                a(href="http://") Tooklit
-                                a(href="http://") Photography
-                            .post-meta-dot-separator 
-                                | .
-                            span.post-tag
-                                i.icon-tag
-                                a(href="http://") Tooklit
-                                a(href="http://") Photography
-                            .post-meta-dot-separator 
-                                | .
-                            span.post-author
-                                i.icon-user
-                                a(href="http://") John William Doe
-                        
-                        // POST ENTRY
-                        .post-content
-                            img(src="assets/images/blog.jpg", alt="blog image")
-                            span.post-image-caption Grape turnip garlic tomatillo silver beet cauliflower turnip greens chickpea gram.
-                            p 
-                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-                            .row   
-                                .col-md-6.col-lg-6.col-sm-12.col-xs-12    
+                    article.post.post-2-column
+                        .row 
+                            .col-lg-2.col-md-2.col-sm-2.col-xs-3
+                                .post-meta 
+                                    .post-format
+                                        i.icon-pushpin.icon-post-format  
+                                    .post-date
+                                        span.post-day 1 
+                                        span.post-month September
+                                        span.post-year 2013
+                            .col-lg-10.col-md-10.col-sm-10.col-xs-9
+                                // POST ENTRY
+                                header
+                                    h1 Climb leg rub face on everything give attitude nap all day for under the bed
+                                .post-content
+                                    p 
+                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                    img(src="assets/images/blog.jpg", alt="blog image")
+                                    span.post-image-caption Grape turnip garlic tomatillo silver beet cauliflower turnip greens chickpea gram.
                                     h3 Headings
                                     h1 Header one
                                     h2 Header two
@@ -136,7 +129,6 @@ block content
                                         li List item three
                                         li List item four
 
-                                .col-md-6.col-lg-6.col-sm-12.col-xs-12
                                     h3 Ordered List (Nested)
                                     ol
                                         li
@@ -278,8 +270,25 @@ block content
                                         | This allows you to denote
                                         var variables
                                         | .
-                            p 
-                                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                    p 
+                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+
+                                .post-meta
+                                    span.post-author
+                                        i.icon-user
+                                        a(href="http://") John William Doe
+                                    .post-meta-dot-separator 
+                                        | .
+                                    span.post-category
+                                        i.icon-circle-blank
+                                        a(href="http://") Tooklit
+                                        a(href="http://") Photography
+                                    .post-meta-dot-separator 
+                                        | .
+                                    span.post-tag
+                                        i.icon-tag
+                                        a(href="http://") Tooklit
+                                        a(href="http://") Photography
 
                 // SIDEBAR WIDGETS
                 aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget(role="complementary")

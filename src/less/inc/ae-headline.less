@@ -60,13 +60,17 @@
     font-weight: normal;
 
     h1{
-        margin: 1em auto 0px;
-        
+        // border-bottom: 1px solid darken(@default-background, 20%);
+        // border-top: 1px solid darken(@default-background, 20%);
+
+        margin: 1em 2em 0px;
+        // padding-bottom: 30px;
+        padding-top: 30px;
+
         color: @default-background;
         font-family: @font-2;
         font-size: @heading-hero-fz/1.7;
-        font-weight: 100;
-        letter-spacing: @ls-xn;
+        font-weight: 400;
         text-align: center;
 
         //*-----[Responsive 600++]-----*/
@@ -76,7 +80,7 @@
 
         //*-----[Responsive 768++]-----*/
         @media screen and (min-width: 768px) {
-            margin: 1.5em auto 0px;
+            margin: 1.5em 3em 0px;
 
             font-size: @heading-hero-fz;
         }
