@@ -9,12 +9,13 @@
 // -----------------------------------------------------------------
 
 .post {
-     // margin-right: 20px;
-     header {
+    position: relative;
+    header {
+        min-height: 130px;
         h1 {
-            margin-top: -10px;
+            margin-top: 0px;
         }
-     }
+    }
 }
 /*-----[Post Meta]-----*/
 .post-meta {
@@ -169,48 +170,60 @@
 .post-2-column {
     margin-bottom: 50px;
 
-    .post-meta {
+    .post-meta-aside {
         border: 0px;
+        
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        
+        width: 100px;
 
         padding-top: 0px;
-
+        
+        font-size: @body-fz-xs;
         text-align: center;
+
+        .post-format {
+            display: block;
+                
+            margin: 0px 30px 20px;
+        }
+        .icon-post-format {
+            padding: 10px;
+
+            font-size: @body-fz-df;
+        }
+
+        .post-date {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .post-day, 
+        .post-month,
+        .post-year {
+            display: block;
+        }
+
+        .post-day {
+            border-bottom: 1px solid lighten(@muted-color,30%);
+
+            padding-bottom: 5px;
+
+            color: @default-accent;
+            font-size: @heading-3-fz;
+        }
+
+        .post-month {
+            border-bottom: 1px solid lighten(@muted-color,30%); 
+
+            color: @heading-color;
+        }
     }
-    .post-format {
-        display: block;
-            
-        margin: 0px 40px 20px;
-    }
-    .icon-post-format {
-        padding: 10px;
 
-        font-size: @body-fz-df;
-    }
-
-    .post-date {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .post-day, 
-    .post-month,
-    .post-year {
-        display: block;
-    }
-
-    .post-day {
-        border-bottom: 1px solid lighten(@muted-color,30%);
-
-        padding-bottom: 5px;
-
-        color: @default-accent;
-        font-size: @heading-3-fz;
-    }
-
-    .post-month {
-        border-bottom: 1px solid lighten(@muted-color,30%); 
-
-        color: @heading-color;
+    .the-post {
+        margin-left: 130px;
     }
 
     .post-excerpt,
@@ -244,5 +257,54 @@
         padding-top: 10px;
 
         text-align: left;
+    }
+}
+
+#main-content.full-width-post {
+    width: 60%;
+
+    margin: 0px auto;
+    padding-right: 0px;
+    .post-meta-aside { 
+        margin-left: -130px;
+    }
+    .the-post{
+        margin-left: 0px;
+        > .post-content {
+            // width: 70%;
+
+            position: relative;
+            
+            // margin-right: 230px;
+        }
+        > .post-meta {
+        }
+    }
+
+    .in-post {
+        &.meta {
+            width: 200px;
+
+            position: absolute;
+            top: 0px;
+
+            p {
+                font-size: @body-fz-sm;
+                font-style: italic;
+                line-height: @line-height-base;
+            }
+            &.left {
+                left: -230px;
+            }
+            &.right {
+                right: -230px;
+            }
+        }
+    }
+
+    .featured {
+        &.image {
+            margin-left: -130px;
+        }
     }
 }
