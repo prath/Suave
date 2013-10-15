@@ -11,7 +11,7 @@
 .post {
     position: relative;
     header {
-        min-height: 130px;
+        // min-height: 90px;
         h1 {
             margin-top: 0px;
         }
@@ -19,16 +19,10 @@
 }
 /*-----[Post Meta]-----*/
 .post-meta {
-    border-bottom: 1px solid lighten(@default-accent, 20%);
-    border-top: 1px solid lighten(@default-accent, 20%);
     display: block;
-
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-bottom: 20px;
     
     color: @muted-color;
-    font-size: @body-fz-xs;
+    font-size: @body-fz-sm;
     &-dot-separator {
         .inlineDisplay();
     
@@ -36,6 +30,10 @@
         margin-right: 5px;
     }
     span {
+        .inlineDisplay();
+    }
+
+    .post-date {
         .inlineDisplay();
     }
 }
@@ -236,6 +234,9 @@
 
         img {
             margin-bottom: 20px;
+            &.avatar.small {
+                margin-bottom: 0px;
+            }
         }
     }
 
@@ -254,6 +255,7 @@
         border-bottom: 1px solid lighten(@default-accent, 20%);
         border-top: 1px solid lighten(@default-accent, 20%);
 
+        padding-bottom: 10px;
         padding-top: 10px;
 
         text-align: left;
@@ -261,50 +263,169 @@
 }
 
 #main-content.full-width-post {
-    width: 60%;
+    // width: 60%;
 
     margin: 0px auto;
     padding-right: 0px;
     .post-meta-aside { 
         margin-left: -130px;
+        top: 30px;
+        .post-format {
+            display: block;
+                
+            margin: 0px 0px 20px 60px;
+        }
     }
     .the-post{
         margin-left: 0px;
         > .post-content {
-            // width: 70%;
-
             position: relative;
-            
-            // margin-right: 230px;
         }
         > .post-meta {
         }
     }
+}
 
-    .in-post {
-        &.meta {
-            width: 200px;
+.in-post {
+    &.meta {
+        position: relative;
+        .meta {
+            &.content {
+                margin-top: 20px;
 
-            position: absolute;
-            top: 0px;
-
-            p {
                 font-size: @body-fz-sm;
                 font-style: italic;
                 line-height: @line-height-base;
             }
-            &.left {
-                left: -230px;
+            &.list {
+                margin: 0px;
+                padding: 0px 0px 0px 25px;
+
+                line-height: @line-height-narrow;
+                li {
+                    margin-bottom: 10px;
+                }
             }
-            &.right {
-                right: -230px;
+        }
+        margin-bottom: 30px;
+        margin-top: -5px;
+        .author {
+            &.name {
+                .inlineDisplay();
+                margin-bottom: 5px;
+
+                color: @heading-color;
+                font-size: @body-fz-sm;
+                font-style: normal;
+                font-weight: 700;
+                a {
+                    color: @heading-color;
+                    &:hover {
+                        color: @default-accent;
+                    }
+                }
+            }
+        }
+        .taxonomy {
+            a {
+                margin-right: 5px;
             }
         }
     }
+    .social {
+        a {
+            margin-right: 10px;
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 10px;
+    }
 
-    .featured {
-        &.image {
-            margin-left: -130px;
+    a {
+        color: @default-text;
+        &:hover {
+            color: @default-accent;
+        }
+    }
+}
+
+.featured {
+    &.image {
+        margin-bottom: 20px;
+    }
+}
+
+.comment {
+    &.item {
+        margin-bottom: 20px;
+    }
+
+    &.head {
+        display: block;
+
+        position: relative;
+
+        margin-left: 50px;
+    }
+
+    &.date {
+        margin-top: -5px;
+
+        font-size: @body-fz-xs;
+    }
+
+    &.content {
+        display: block;
+
+        margin-top: 10px;
+
+        &:before {
+            content: "\201C";
+        } 
+        &:after {
+            content: "\201D";
+        }
+    }
+    &.replied {
+        &.to {
+            color: @muted-color;
+            font-weight: 400;
+        }
+    }
+}
+
+.reply {
+    &.comment {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        i {
+            font-size: 10px;
+        }
+    }
+}
+
+.add {
+    &.comment {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        i {
+            font-size: 10px;
+        }
+    }
+}
+
+.read {
+    &.all {
+        &.comment {
+            color: @default-accent;
+            &:hover {
+                color: darken(@default-accent, 30%);
+            }
         }
     }
 }
