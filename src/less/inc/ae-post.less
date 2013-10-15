@@ -74,6 +74,7 @@
     .inlineDisplay();
 
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: -10px;
 
     color: @muted-color;
@@ -267,9 +268,11 @@
 
     margin: 0px auto;
     padding-right: 0px;
+
+    text-align: left;
     .post-meta-aside { 
         margin-left: -130px;
-        top: 30px;
+        top: 35px;
         .post-format {
             display: block;
                 
@@ -355,10 +358,15 @@
 .featured {
     &.image {
         margin-bottom: 20px;
+        img {
+            border-radius: 0px;
+        }
     }
 }
 
 .comment {
+    // max-height: 500px;
+    // overflow-y: scroll;
     &.item {
         margin-bottom: 20px;
     }
@@ -369,6 +377,7 @@
         position: relative;
 
         margin-left: 50px;
+        padding-right: 20px;
     }
 
     &.date {

@@ -1459,6 +1459,7 @@ footer .footer-menu:after {
 
   vertical-align: top;
   margin-left: 20px;
+  margin-right: 20px;
   margin-top: -10px;
   color: #a0a0a0;
   font-size: 11px;
@@ -1630,10 +1631,11 @@ footer .footer-menu:after {
 #main-content.full-width-post {
   margin: 0px auto;
   padding-right: 0px;
+  text-align: left;
 }
 #main-content.full-width-post .post-meta-aside {
   margin-left: -130px;
-  top: 30px;
+  top: 35px;
 }
 #main-content.full-width-post .post-meta-aside .post-format {
   display: block;
@@ -1704,6 +1706,9 @@ footer .footer-menu:after {
 .featured.image {
   margin-bottom: 20px;
 }
+.featured.image img {
+  border-radius: 0px;
+}
 .comment.item {
   margin-bottom: 20px;
 }
@@ -1711,6 +1716,7 @@ footer .footer-menu:after {
   display: block;
   position: relative;
   margin-left: 50px;
+  padding-right: 20px;
 }
 .comment.date {
   margin-top: -5px;
